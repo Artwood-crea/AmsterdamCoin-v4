@@ -112,7 +112,7 @@ Returns the number of connections to other nodes.
 Returns the proof-of-work difficulty as a multiple of the minimum difficulty.
 .TP
 \fBgetgenerate\fR
-Returns boolean true if server is trying to generate AMS, false otherwise.
+Returns boolean true if server is trying to generate CREAC, false otherwise.
 .TP
 \fBsetgenerate 'generate' ['genproclimit']\fR
 Generation is limited to ['genproclimit'] processors, \-1 is unlimited.
@@ -183,7 +183,7 @@ Returns a list of the last ['count'] transactions for 'account' \- for all accou
 Moves funds between accounts.
 .TP
 \fBsendfrom* <'account'> <'amsterdamcoinaddress'> <'amount'> ['minconf=1'] ['comment'] ['comment-to']\fR
-Sends amount from account's balance to 'amsterdamcoinaddress'. This method will fail if there is less than amount AMS with ['minconf'] confirmations in the account's balance (unless account is the empty-string-named default account; it behaves like the *sendtoaddress* method). Returns transaction ID on success.
+Sends amount from account's balance to 'amsterdamcoinaddress'. This method will fail if there is less than amount CREAC with ['minconf'] confirmations in the account's balance (unless account is the empty-string-named default account; it behaves like the *sendtoaddress* method). Returns transaction ID on success.
 .TP
 \fBsendtoaddress 'amsterdamcoinaddress' 'amount' ['comment'] ['comment-to']\fR
 Sends amount from the server's available balance to 'amsterdamcoinaddress'. amount is a real and is rounded to the nearest 0.01. Returns transaction id on success.
@@ -206,4 +206,3 @@ amsterdamcoin.conf(5)
 This manual page was written by Micah Anderson <micah@debian.org> for the Debian system (but may be used by others). Permission is granted to copy, distribute and/or modify this document under the terms of the GNU General Public License, Version 3 or any later version published by the Free Software Foundation.
 
 On Debian systems, the complete text of the GNU General Public License can be found in /usr/share/common-licenses/GPL.
-

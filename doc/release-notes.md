@@ -13,7 +13,7 @@ Please report bugs using the issue tracker at github:
 Mandatory Update
 ==============
 
-AmsterdamCoin Core v3.0.4 is a mandatory update for all users. This release contains various updates/fixes pertaining to the zAMS protocol, supply tracking, block transmission and relaying, as well as usability and quality-of-life updates to the GUI.
+AmsterdamCoin Core v3.0.4 is a mandatory update for all users. This release contains various updates/fixes pertaining to the zCREAC protocol, supply tracking, block transmission and relaying, as well as usability and quality-of-life updates to the GUI.
 
 Users will have a grace period to update their clients before versions prior to this release are no longer allowed to connect to this (and future) version(s).
 

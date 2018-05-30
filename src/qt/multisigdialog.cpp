@@ -307,7 +307,7 @@ void MultisigDialog::on_createButton_clicked()
             string fee;
             if(!createMultisigTransaction(vUserIn, vUserOut, fee, error)){
                 throw runtime_error(error);
-            }   
+            }
 
             //display status string
             ui->createButtonStatus->setStyleSheet("QTextEdit{ color: black }");
@@ -367,7 +367,7 @@ bool MultisigDialog::createMultisigTransaction(vector<CTxIn> vUserIn, vector<CTx
         }
 
         if(totalIn < totalOut){
-            throw runtime_error("Not enough AMS provided as input to complete transaction (including fee).");
+            throw runtime_error("Not enough CREAC provided as input to complete transaction (including fee).");
         }
 
         //calculate change amount
@@ -432,7 +432,7 @@ bool MultisigDialog::createMultisigTransaction(vector<CTxIn> vUserIn, vector<CTx
            tx.vout.at(changeIndex).nValue -= fee;
            feeStringRet = strprintf("%d",((double)fee)/COIN).c_str();
         }else{
-            throw runtime_error("Not enough AMS provided to cover fee");
+            throw runtime_error("Not enough CREAC provided to cover fee");
         }
 
         //clear junk from script sigs
@@ -1021,4 +1021,3 @@ void MultisigDialog::on_addPrivKeyButton_clicked()
 
     ui->keyList->addWidget(keyFrame);
 }
-
