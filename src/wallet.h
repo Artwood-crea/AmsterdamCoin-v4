@@ -81,28 +81,28 @@ enum AvailableCoinsType {
     ALL_COINS = 1,
     ONLY_DENOMINATED = 2,
     ONLY_NOT10000IFMN = 3,
-    ONLY_NONDENOMINATED_NOT10000IFMN = 4, // ONLY_NONDENOMINATED and not 10000 AMS at the same time
+    ONLY_NONDENOMINATED_NOT10000IFMN = 4, // ONLY_NONDENOMINATED and not 10000 CREAC at the same time
     ONLY_10000 = 5,                        // find masternode outputs including locked ones (use with caution)
     STAKABLE_COINS = 6                          // UTXO's that are valid for staking
 };
 
-// Possible states for zAMS send
+// Possible states for zCREAC send
 enum ZerocoinSpendStatus {
-    ZAMS_SPEND_OKAY = 0,                            // No error
-    ZAMS_SPEND_ERROR = 1,                           // Unspecified class of errors, more details are (hopefully) in the returning text
-    ZAMS_WALLET_LOCKED = 2,                         // Wallet was locked
-    ZAMS_COMMIT_FAILED = 3,                         // Commit failed, reset status
-    ZAMS_ERASE_SPENDS_FAILED = 4,                   // Erasing spends during reset failed
-    ZAMS_ERASE_NEW_MINTS_FAILED = 5,                // Erasing new mints during reset failed
-    ZAMS_TRX_FUNDS_PROBLEMS = 6,                    // Everything related to available funds
-    ZAMS_TRX_CREATE = 7,                            // Everything related to create the transaction
-    ZAMS_TRX_CHANGE = 8,                            // Everything related to transaction change
-    ZAMS_TXMINT_GENERAL = 9,                        // General errors in MintToTxIn
-    ZAMS_INVALID_COIN = 10,                         // Selected mint coin is not valid
-    ZAMS_FAILED_ACCUMULATOR_INITIALIZATION = 11,    // Failed to initialize witness
-    ZAMS_INVALID_WITNESS = 12,                      // Spend coin transaction did not verify
-    ZAMS_BAD_SERIALIZATION = 13,                    // Transaction verification failed
-    ZAMS_SPENT_USED_ZAMS = 14                       // Coin has already been spend
+    ZCREAC_SPEND_OKAY = 0,                            // No error
+    ZCREAC_SPEND_ERROR = 1,                           // Unspecified class of errors, more details are (hopefully) in the returning text
+    ZCREAC_WALLET_LOCKED = 2,                         // Wallet was locked
+    ZCREAC_COMMIT_FAILED = 3,                         // Commit failed, reset status
+    ZCREAC_ERASE_SPENDS_FAILED = 4,                   // Erasing spends during reset failed
+    ZCREAC_ERASE_NEW_MINTS_FAILED = 5,                // Erasing new mints during reset failed
+    ZCREAC_TRX_FUNDS_PROBLEMS = 6,                    // Everything related to available funds
+    ZCREAC_TRX_CREATE = 7,                            // Everything related to create the transaction
+    ZCREAC_TRX_CHANGE = 8,                            // Everything related to transaction change
+    ZCREAC_TXMINT_GENERAL = 9,                        // General errors in MintToTxIn
+    ZCREAC_INVALID_COIN = 10,                         // Selected mint coin is not valid
+    ZCREAC_FAILED_ACCUMULATOR_INITIALIZATION = 11,    // Failed to initialize witness
+    ZCREAC_INVALID_WITNESS = 12,                      // Spend coin transaction did not verify
+    ZCREAC_BAD_SERIALIZATION = 13,                    // Transaction verification failed
+    ZCREAC_SPENT_USED_ZCREAC = 14                       // Coin has already been spend
 };
 
 struct CompactTallyItem {
@@ -207,7 +207,7 @@ public:
     std::string ResetMintZerocoin(bool fExtendedSearch);
     std::string ResetSpentZerocoin();
     void ReconsiderZerocoins(std::list<CZerocoinMint>& listMintsRestored);
-    void ZAMSBackupWallet();
+    void ZCREACBackupWallet();
 
     /** Zerocin entry changed.
     * @note called with lock cs_wallet held.
@@ -310,11 +310,11 @@ public:
         return fEnableZeromint;
     }
 
-    void setZAMSAutoBackups(bool fEnabled)
+    void setZCREACAutoBackups(bool fEnabled)
     {
         fBackupMints = fEnabled;
     }
-    
+
     bool isMultiSendEnabled()
     {
         return fMultiSendMasternodeReward || fMultiSendStake;

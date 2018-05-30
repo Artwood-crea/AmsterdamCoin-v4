@@ -20,18 +20,18 @@ BitcoinUnits::BitcoinUnits(QObject* parent) : QAbstractListModel(parent),
 QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
 {
     QList<BitcoinUnits::Unit> unitlist;
-    unitlist.append(AMS);
-    unitlist.append(mAMS);
-    unitlist.append(uAMS);
+    unitlist.append(CREAC);
+    unitlist.append(mCREAC);
+    unitlist.append(uCREAC);
     return unitlist;
 }
 
 bool BitcoinUnits::valid(int unit)
 {
     switch (unit) {
-    case AMS:
-    case mAMS:
-    case uAMS:
+    case CREAC:
+    case mCREAC:
+    case uCREAC:
         return true;
     default:
         return false;
@@ -41,11 +41,11 @@ bool BitcoinUnits::valid(int unit)
 QString BitcoinUnits::id(int unit)
 {
     switch (unit) {
-    case AMS:
+    case CREAC:
         return QString("amsterdamcoin");
-    case mAMS:
+    case mCREAC:
         return QString("mamsterdamcoin");
-    case uAMS:
+    case uCREAC:
         return QString::fromUtf8("uamsterdamcoin");
     default:
         return QString("???");
@@ -56,23 +56,23 @@ QString BitcoinUnits::name(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case AMS:
-            return QString("AMS");
-        case mAMS:
-            return QString("mAMS");
-        case uAMS:
-            return QString::fromUtf8("μAMS");
+        case CREAC:
+            return QString("CREAC");
+        case mCREAC:
+            return QString("mCREAC");
+        case uCREAC:
+            return QString::fromUtf8("μCREAC");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case AMS:
-            return QString("tAMS");
-        case mAMS:
-            return QString("mtAMS");
-        case uAMS:
-            return QString::fromUtf8("μtAMS");
+        case CREAC:
+            return QString("tCREAC");
+        case mCREAC:
+            return QString("mtCREAC");
+        case uCREAC:
+            return QString::fromUtf8("μtCREAC");
         default:
             return QString("???");
         }
@@ -83,23 +83,23 @@ QString BitcoinUnits::description(int unit)
 {
     if (Params().NetworkID() == CBaseChainParams::MAIN) {
         switch (unit) {
-        case AMS:
-            return QString("AMS");
-        case mAMS:
-            return QString("Milli-AMS (1 / 1" THIN_SP_UTF8 "000)");
-        case uAMS:
-            return QString("Micro-AMS (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case CREAC:
+            return QString("CREAC");
+        case mCREAC:
+            return QString("Milli-CREAC (1 / 1" THIN_SP_UTF8 "000)");
+        case uCREAC:
+            return QString("Micro-CREAC (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
     } else {
         switch (unit) {
-        case AMS:
-            return QString("TestAMSs");
-        case mAMS:
-            return QString("Milli-TestAMS (1 / 1" THIN_SP_UTF8 "000)");
-        case uAMS:
-            return QString("Micro-TestAMS (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
+        case CREAC:
+            return QString("TestCREACs");
+        case mCREAC:
+            return QString("Milli-TestCREAC (1 / 1" THIN_SP_UTF8 "000)");
+        case uCREAC:
+            return QString("Micro-TestCREAC (1 / 1" THIN_SP_UTF8 "000" THIN_SP_UTF8 "000)");
         default:
             return QString("???");
         }
@@ -109,11 +109,11 @@ QString BitcoinUnits::description(int unit)
 qint64 BitcoinUnits::factor(int unit)
 {
     switch (unit) {
-    case AMS:
+    case CREAC:
         return 100000000;
-    case mAMS:
+    case mCREAC:
         return 100000;
-    case uAMS:
+    case uCREAC:
         return 100;
     default:
         return 100000000;
@@ -123,11 +123,11 @@ qint64 BitcoinUnits::factor(int unit)
 int BitcoinUnits::decimals(int unit)
 {
     switch (unit) {
-    case AMS:
+    case CREAC:
         return 8;
-    case mAMS:
+    case mCREAC:
         return 5;
-    case uAMS:
+    case uCREAC:
         return 2;
     default:
         return 0;
