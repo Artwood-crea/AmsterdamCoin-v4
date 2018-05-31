@@ -52,7 +52,7 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1527798192, // * UNIX timestamp of last checkpoint block
+    1527799200, // * UNIX timestamp of last checkpoint block
     0,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     720        // * estimated number of transactions per day after checkpoint
@@ -126,7 +126,7 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1527798192;
+        genesis.nTime = 1527799200;
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 21006537;
         hashGenesisBlock = genesis.GetHash();
