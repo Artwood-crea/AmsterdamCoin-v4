@@ -48,7 +48,7 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-	(0, uint256("0x0000000b0cea6419e9cfb4901b2710c9b169fedbec23e8c08475ea0d068c951a"));
+	(0, uint256("0x00000ac06d8735bec3087685f082ea759b2dbaf8ad669d67b92550added16e1c"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
@@ -131,8 +131,8 @@ public:
         genesis.nNonce = 21251093;
         hashGenesisBlock = genesis.GetHash();
 
-        assert(hashGenesisBlock == uint256("0x0000000b0cea6419e9cfb4901b2710c9b169fedbec23e8c08475ea0d068c951a"));
-        assert(genesis.hashMerkleRoot == uint256("0x5b675500ba952c60b804165079eb695f22a643c949a2282e667cdae09b38326f"));
+        assert(hashGenesisBlock == uint256("0x00000ac06d8735bec3087685f082ea759b2dbaf8ad669d67b92550added16e1c"));
+        assert(genesis.hashMerkleRoot == uint256("0xee2d7e51a6853daddfafe26b5afd9c106eec6a55895e03f524ee54b8ec23f7d9"));
 
         vSeeds.push_back(CDNSSeedData("dnss1.creacoin.info", "dnss1.creacoin.info"));
         vSeeds.push_back(CDNSSeedData("dnss2.creacoin.info", "dnss2.creacoin.info"));
