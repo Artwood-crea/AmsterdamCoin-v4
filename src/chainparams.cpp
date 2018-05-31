@@ -113,14 +113,14 @@ public:
         nZerocoinStartTime = 1528664400; // Friday, March 30, 2018 5:21:37 PM GMT+02:00 DST
 	nZerocoinStartHeight = 8250;
 
-	const char* pszTimestamp = "Crea Coin will start at 10:00 a.m. on 30 May 2018";
+	const char* pszTimestamp = "Crea Coin will start at 10:00 a.m. on 31 May 2018";
 
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
 
         txNew.vin[0].scriptSig = CScript() << 486604799 << CScriptNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
-        txNew.vout[0].nValue = 0 * COIN;
+        txNew.vout[0].nValue = 1000000 * COIN;
         txNew.vout[0].scriptPubKey = CScript() << ParseHex("04dfab48e49169da8dd843d67a836e088a2ab91b9139d8a5449b5f703270da001db34f56774c2267dc2fa7d22def8166a1fe8a2b331dad89479f52853aece7bfd2") << OP_CHECKSIG;
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
