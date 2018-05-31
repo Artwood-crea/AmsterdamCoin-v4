@@ -48,27 +48,27 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-	(0, uint256("0x00000ac06d8735bec3087685f082ea759b2dbaf8ad669d67b92550added16e1c"));
+	(0, uint256("0x00000eb719b9ff69058414f287487405e3a28faa6c4bbae8b760707dc48edc4b"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1527760801, // * UNIX timestamp of last checkpoint block
+    1527798192, // * UNIX timestamp of last checkpoint block
     0,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
-    2880        // * estimated number of transactions per day after checkpoint
+    720        // * estimated number of transactions per day after checkpoint
 };
 static Checkpoints::MapCheckpoints mapCheckpointsTestnet =
     boost::assign::map_list_of(0, uint256("0x001"));
 static const Checkpoints::CCheckpointData dataTestnet = {
     &mapCheckpointsTestnet,
-    1454124731,
+    1527798195,
     0,
     250};
 static Checkpoints::MapCheckpoints mapCheckpointsRegtest =
     boost::assign::map_list_of(0, uint256("0x001"));
 static const Checkpoints::CCheckpointData dataRegtest = {
     &mapCheckpointsRegtest,
-    1454124731,
+    1527798198,
     0,
     100};
 libzerocoin::ZerocoinParams* CChainParams::Zerocoin_Params() const
@@ -101,38 +101,38 @@ public:
         nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 100;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 120; // CreaCoin: 2 minutes
-        nTargetSpacing = 1 * 120;  // CreaCoin: 2 minutes
-        nMaturity = 51;
-	nMaxMoneyOut = 25000000 * COIN;
+        nTargetTimespan = 2 * 60; // CreaCoin: 2 minutes
+        nTargetSpacing = 2 * 60;  // CreaCoin: 2 minutes
+        nMaturity = 101;
+	nMaxMoneyOut = 2500000000000000 * COIN;
         /** Height or Time Based Activations **/
         nLastPOWBlock = 2000000;
         nModifierUpdateBlock = 1;
 
         nBlockEnforceSerialRange = 1; //Enforce serial range starting this block
-        nZerocoinStartTime = 1528664400; // Friday, March 30, 2018 5:21:37 PM GMT+02:00 DST
-	nZerocoinStartHeight = 8250;
+        nZerocoinStartTime = 1530477600; // Friday, March 30, 2018 5:21:37 PM GMT+02:00 DST
+	nZerocoinStartHeight = 21600;
 
-	const char* pszTimestamp = "Crea Coin will start at 10:00 a.m. on 31 May 2018";
+	const char* pszTimestamp = "Crea Coin 31-05-2018";
 
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
 
         txNew.vin[0].scriptSig = CScript() << 486604799 << CScriptNum(4) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
-        txNew.vout[0].nValue = 1000000 * COIN;
+        txNew.vout[0].nValue = 0 * COIN;
         txNew.vout[0].scriptPubKey = CScript() << ParseHex("04dfab48e49169da8dd843d67a836e088a2ab91b9139d8a5449b5f703270da001db34f56774c2267dc2fa7d22def8166a1fe8a2b331dad89479f52853aece7bfd2") << OP_CHECKSIG;
         genesis.vtx.push_back(txNew);
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1527760801;
+        genesis.nTime = 1527798192;
         genesis.nBits = 0x1e0ffff0;
         genesis.nNonce = 21919978;
         hashGenesisBlock = genesis.GetHash();
 
-        assert(hashGenesisBlock == uint256("0x00000ac06d8735bec3087685f082ea759b2dbaf8ad669d67b92550added16e1c"));
-        assert(genesis.hashMerkleRoot == uint256("0xee2d7e51a6853daddfafe26b5afd9c106eec6a55895e03f524ee54b8ec23f7d9"));
+        assert(hashGenesisBlock == uint256("0x00000eb719b9ff69058414f287487405e3a28faa6c4bbae8b760707dc48edc4b"));
+        assert(genesis.hashMerkleRoot == uint256("0x5fe557925c81bcb469d43def1f96cccd8fc3f12f040d7c79d631e907c6b2e2bd"));
 
         vSeeds.push_back(CDNSSeedData("dnss1.creacoin.info", "dnss1.creacoin.info"));
         vSeeds.push_back(CDNSSeedData("dnss2.creacoin.info", "dnss2.creacoin.info"));
@@ -159,7 +159,7 @@ public:
         strSporkKey = "0434273b4ec9c9111cd9ca592281e001f6737e18fbe63d2024f17873ba9d8ba3bff040c52e1bdb46c703c3baa62f4d7e8aa1f1f26d32c8ef737919762fd18e4c9e";
 
         strObfuscationPoolDummyAddress = "AWSbBnzmNkjDVaYHX7vkL1MqD96pRYWtZo";
-        nStartMasternodePayments = 1527760810; //Wed, 25 Jun 2014 20:36:16 GMT
+        nStartMasternodePayments = 1530477600; //Wed, 25 Jun 2014 20:36:16 GMT
 
         /** Zerocoin */
         zerocoinModulus = "25195908475657893494027183240048398571429282126204032027777137836043662020707595556264018525880784"
