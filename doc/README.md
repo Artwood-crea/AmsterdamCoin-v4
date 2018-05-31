@@ -13,8 +13,8 @@ The following are some helpful notes on how to run CreaCoin on your native platf
 
 Unpack the files into a directory and run:
 
-- bin/32/creacoin-qt (GUI, 32-bit) or bin/32/amsterdamcoind (headless, 32-bit)
-- bin/64/creacoin-qt (GUI, 64-bit) or bin/64/amsterdamcoind (headless, 64-bit)
+- bin/32/creacoin-qt (GUI, 32-bit) or bin/32/creacoind (headless, 32-bit)
+- bin/64/creacoin-qt (GUI, 64-bit) or bin/64/creacoind (headless, 64-bit)
 
 ### Windows
 

@@ -9,7 +9,7 @@
 #include <vector>
 
 /**
- * CBaseChainParams defines the base parameters (shared between creacoin-cli and amsterdamcoind)
+ * CBaseChainParams defines the base parameters (shared between creacoin-cli and creacoind)
  * of a given instance of the CreaCoin system.
  */
 class CBaseChainParams

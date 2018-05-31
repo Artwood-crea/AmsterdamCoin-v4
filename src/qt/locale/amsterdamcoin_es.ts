@@ -4496,10 +4496,10 @@ Por favor tenga paciencia...</translation>
         <translation>Este producto incluye software desarrollado por el Proyecto OpenSSL para uso en OpenSSL Toolkit &lt;https://www.openssl.org/&gt; y software de cifrado escrito por Eric Young y software de UPnP escrito por Thomas Bernard.</translation>
     </message>
     <message>
-        <source>To use amsterdamcoind, or the -server option to creacoin-qt, you must set an rpcpassword in the configuration file:
+        <source>To use creacoind, or the -server option to creacoin-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=amsterdamcoinrpc
+rpcuser=creacoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -4507,7 +4507,7 @@ If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
 for example: alertnotify=echo %%s | mail -s "CreaCoin Alert" admin@foo.com
 </source>
-        <translation>Para usar amsterdamcoind, o la opción -server de creacoin-qt, debes definir un rpcpassword en el archivo de configuración:
+        <translation>Para usar creacoind, o la opción -server de creacoin-qt, debes definir un rpcpassword en el archivo de configuración:
 %s
 Es recomendado que uses la siguiente contraseña aleatoria:
 rpcuser=creacoin

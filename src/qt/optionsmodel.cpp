@@ -153,7 +153,7 @@ void OptionsModel::Init()
     if (settings.contains("nPreferredDenom"))
         SoftSetArg("-preferredDenom", settings.value("nPreferredDenom").toString().toStdString());
     if (settings.contains("nAnonymizeAmsterdamCoinAmount"))
-        SoftSetArg("-anonymizeamsterdamcoinamount", settings.value("nAnonymizeAmsterdamCoinAmount").toString().toStdString());
+        SoftSetArg("-anonymizecreacoinamount", settings.value("nAnonymizeAmsterdamCoinAmount").toString().toStdString());
 
     language = settings.value("language").toString();
 }

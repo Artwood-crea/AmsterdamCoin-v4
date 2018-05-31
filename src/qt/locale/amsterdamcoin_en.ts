@@ -5700,7 +5700,7 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
 <context>
     <name>creacoin-core</name>
     <message>
-        <location filename="../amsterdamcoinstrings.cpp" line="+15"/>
+        <location filename="../creacoinstrings.cpp" line="+15"/>
         <source>(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</source>
         <translation type="unfinished">(1 = keep tx meta data e.g. account owner and payment request information, 2 = drop tx meta data)</translation>
     </message>
@@ -5941,10 +5941,10 @@ Either mint higher denominations (so fewer inputs are needed) or reduce the amou
     </message>
     <message>
         <location line="+4"/>
-        <source>To use amsterdamcoind, or the -server option to creacoin-qt, you must set an rpcpassword in the configuration file:
+        <source>To use creacoind, or the -server option to creacoin-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=amsterdamcoinrpc
+rpcuser=creacoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.

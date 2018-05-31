@@ -536,7 +536,7 @@ int main(int argc, char* argv[])
     QTextCodec::setCodecForCStrings(QTextCodec::codecForTr());
 #endif
 
-    Q_INIT_RESOURCE(amsterdamcoin_locale);
+    Q_INIT_RESOURCE(creacoin_locale);
     Q_INIT_RESOURCE(creacoin);
 
     BitcoinApplication app(argc, argv);

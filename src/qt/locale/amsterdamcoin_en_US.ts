@@ -4082,10 +4082,10 @@ https://www.transifex.com/creacoin-project/creacoin-project-translations</transl
         <translation>This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit &lt;https://www.openssl.org/&gt; and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard.</translation>
     </message>
     <message>
-        <source>To use amsterdamcoind, or the -server option to creacoin-qt, you must set an rpcpassword in the configuration file:
+        <source>To use creacoind, or the -server option to creacoin-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=amsterdamcoinrpc
+rpcuser=creacoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
@@ -4093,10 +4093,10 @@ If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
 for example: alertnotify=echo %%s | mail -s "CreaCoin Alert" admin@foo.com
 </source>
-        <translation>To use amsterdamcoind, or the -server option to creacoin-qt, you must set an rpcpassword in the configuration file:
+        <translation>To use creacoind, or the -server option to creacoin-qt, you must set an rpcpassword in the configuration file:
 %s
 It is recommended you use the following random password:
-rpcuser=amsterdamcoinrpc
+rpcuser=creacoinrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.

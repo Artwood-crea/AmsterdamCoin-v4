@@ -8,7 +8,7 @@
 #else
 #define UNUSED
 #endif
-static const char UNUSED *amsterdamcoin_strings[] = {
+static const char UNUSED *creacoin_strings[] = {
 QT_TRANSLATE_NOOP("creacoin-core", " mints deleted\n"),
 QT_TRANSLATE_NOOP("creacoin-core", " mints updated, "),
 QT_TRANSLATE_NOOP("creacoin-core", " unconfirmed transactions removed\n"),
@@ -170,11 +170,11 @@ QT_TRANSLATE_NOOP("creacoin-core", ""
 "the OpenSSL Toolkit <https://www.openssl.org/> and cryptographic software "
 "written by Eric Young and UPnP software written by Thomas Bernard."),
 QT_TRANSLATE_NOOP("creacoin-core", ""
-"To use amsterdamcoind, or the -server option to creacoin-qt, you must set an rpcpassword "
+"To use creacoind, or the -server option to creacoin-qt, you must set an rpcpassword "
 "in the configuration file:\n"
 "%s\n"
 "It is recommended you use the following random password:\n"
-"rpcuser=amsterdamcoinrpc\n"
+"rpcuser=creacoinrpc\n"
 "rpcpassword=%s\n"
 "(you do not need to remember this password)\n"
 "The username and password MUST NOT be the same.\n"

@@ -65,7 +65,7 @@
         <string>application/x-creacoin-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>amsterdamcoinpaymentrequest</string>
+          <string>creacoinpaymentrequest</string>
         </array>
       </dict>
     </dict>

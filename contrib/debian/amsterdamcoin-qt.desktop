@@ -7,6 +7,6 @@ Comment[tr]=CreaCoin, eşten eşe kriptografik sanal para birimi
 Exec=creacoin-qt %u
 Terminal=false
 Type=Application
-Icon=amsterdamcoin128
+Icon=creacoin128
 MimeType=x-scheme-handler/creacoin;
 Categories=Office;Finance;

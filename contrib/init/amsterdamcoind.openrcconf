@@ -1,25 +1,25 @@
-# /etc/conf.d/amsterdamcoind: config file for /etc/init.d/amsterdamcoind
+# /etc/conf.d/creacoind: config file for /etc/init.d/creacoind
 
 # Config file location
 #BITCOIND_CONFIGFILE="/etc/creacoin/creacoin.conf"
 
 # What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
-#BITCOIND_PIDDIR="/var/run/amsterdamcoind"
+#BITCOIND_PIDDIR="/var/run/creacoind"
 
 # What filename to give the pidfile
-#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/amsterdamcoind.pid"
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/creacoind.pid"
 
-# Where to write amsterdamcoind data (be mindful that the blockchain is large)
-#BITCOIND_DATADIR="/var/lib/amsterdamcoind"
+# Where to write creacoind data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/creacoind"
 
-# User and group to own amsterdamcoind process
+# User and group to own creacoind process
 #BITCOIND_USER="creacoin"
 #BITCOIND_GROUP="creacoin"
 
-# Path to amsterdamcoind executable
-#BITCOIND_BIN="/usr/bin/amsterdamcoind"
+# Path to creacoind executable
+#BITCOIND_BIN="/usr/bin/creacoind"
 
-# Nice value to run amsterdamcoind under
+# Nice value to run creacoind under
 #BITCOIND_NICE=0
 
 # Additional options (avoid -conf and -datadir, use flags above)

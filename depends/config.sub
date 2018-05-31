@@ -117,7 +117,7 @@ case $maybe_os in
   nto-qnx* | linux-gnu* | linux-android* | linux-dietlibc | linux-newlib* | \
   linux-musl* | linux-uclibc* | uclinux-uclibc* | uclinux-gnu* | kfreebsd*-gnu* | \
   knetbsd*-gnu* | netbsd*-gnu* | netbsd*-eabi* | \
-  kopenamsterdamcoin*-gnu* | cloudabi*-eabi* | \
+  kopencreacoin*-gnu* | cloudabi*-eabi* | \
   storm-chaos* | os2-emx* | rtmk-nova*)
     os=-$maybe_os
     basic_machine=`echo $1 | sed 's/^\(.*\)-\([^-]*-[^-]*\)$/\1/'`
@@ -772,7 +772,7 @@ case $basic_machine in
 		;;
 	i*86sol2)
 		basic_machine=`echo $1 | sed -e 's/86.*/86-pc/'`
-		os=-amsterdamcoin2
+		os=-creacoin2
 		;;
 	i386mach)
 		basic_machine=i386-mach
@@ -1165,7 +1165,7 @@ case $basic_machine in
 		;;
 	sun4sol2)
 		basic_machine=sparc-sun
-		os=-amsterdamcoin2
+		os=-creacoin2
 		;;
 	sun3 | sun3-*)
 		basic_machine=m68k-sun
@@ -1372,11 +1372,11 @@ case $os in
 	-auroraux)
 		os=-auroraux
 		;;
-	-amsterdamcoin1 | -amsterdamcoin1.*)
-		os=`echo $os | sed -e 's|amsterdamcoin1|sunos4|'`
+	-creacoin1 | -creacoin1.*)
+		os=`echo $os | sed -e 's|creacoin1|sunos4|'`
 		;;
 	-creacoin)
-		os=-amsterdamcoin2
+		os=-creacoin2
 		;;
 	-svr4*)
 		os=-sysv4
@@ -1394,7 +1394,7 @@ case $os in
 	-gnu* | -bsd* | -mach* | -minix* | -genix* | -ultrix* | -irix* \
 	      | -*vms* | -sco* | -esix* | -isc* | -aix* | -cnk* | -sunos | -sunos[34]*\
 	      | -hpux* | -unos* | -osf* | -luna* | -dgux* | -auroraux* | -creacoin* \
-	      | -sym* | -kopenamsterdamcoin* | -plan9* \
+	      | -sym* | -kopencreacoin* | -plan9* \
 	      | -amigaos* | -amigados* | -msdos* | -newsos* | -unicos* | -aof* \
 	      | -aos* | -aros* | -cloudabi* | -sortix* \
 	      | -nindy* | -vxsim* | -vxworks* | -ebmon* | -hms* | -mvs* \
@@ -1448,10 +1448,10 @@ case $os in
 		os=`echo $os | sed -e 's|linux|linux-gnu|'`
 		;;
 	-sunos5*)
-		os=`echo $os | sed -e 's|sunos5|amsterdamcoin2|'`
+		os=`echo $os | sed -e 's|sunos5|creacoin2|'`
 		;;
 	-sunos6*)
-		os=`echo $os | sed -e 's|sunos6|amsterdamcoin3|'`
+		os=`echo $os | sed -e 's|sunos6|creacoin3|'`
 		;;
 	-opened*)
 		os=-openedition

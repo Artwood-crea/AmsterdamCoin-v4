@@ -7,7 +7,7 @@
 #  spendfrom.py  # Lists available funds
 #  spendfrom.py --from=ADDRESS --to=ADDRESS --amount=11.00
 #
-# Assumes it will talk to a amsterdamcoind or creacoin-Qt running
+# Assumes it will talk to a creacoind or creacoin-Qt running
 # on localhost.
 #
 # Depends on jsonrpc
@@ -72,7 +72,7 @@ def connect_JSON(config):
     try:
         result = ServiceProxy(connect)
         # ServiceProxy is lazy-connect, so send an RPC command mostly to catch connection errors,
-        # but also make sure the amsterdamcoind we're talking to is/isn't testnet:
+        # but also make sure the creacoind we're talking to is/isn't testnet:
         if result.getmininginfo()['testnet'] != testnet:
             sys.stderr.write("RPC server at "+connect+" testnet setting mismatch\n")
             sys.exit(1)
@@ -81,32 +81,32 @@ def connect_JSON(config):
         sys.stderr.write("Error connecting to RPC server at "+connect+"\n")
         sys.exit(1)
 
-def unlock_wallet(amsterdamcoind):
-    info = amsterdamcoind.getinfo()
+def unlock_wallet(creacoind):
+    info = creacoind.getinfo()
     if 'unlocked_until' not in info:
         return True # wallet is not encrypted
     t = int(info['unlocked_until'])
     if t <= time.time():
         try:
             passphrase = getpass.getpass("Wallet is locked; enter passphrase: ")
-            amsterdamcoind.walletpassphrase(passphrase, 5)
+            creacoind.walletpassphrase(passphrase, 5)
         except:
             sys.stderr.write("Wrong passphrase\n")
 
-    info = amsterdamcoind.getinfo()
+    info = creacoind.getinfo()
     return int(info['unlocked_until']) > time.time()
 
-def list_available(amsterdamcoind):
+def list_available(creacoind):
     address_summary = dict()
 
     address_to_account = dict()
-    for info in amsterdamcoind.listreceivedbyaddress(0):
+    for info in creacoind.listreceivedbyaddress(0):
         address_to_account[info["address"]] = info["account"]
 
-    unspent = amsterdamcoind.listunspent(0)
+    unspent = creacoind.listunspent(0)
     for output in unspent:
         # listunspent doesn't give addresses, so:
-        rawtx = amsterdamcoind.getrawtransaction(output['txid'], 1)
+        rawtx = creacoind.getrawtransaction(output['txid'], 1)
         vout = rawtx["vout"][output['vout']]
         pk = vout["scriptPubKey"]
 
@@ -139,8 +139,8 @@ def select_coins(needed, inputs):
         n += 1
     return (outputs, have-needed)
 
-def create_tx(amsterdamcoind, fromaddresses, toaddress, amount, fee):
-    all_coins = list_available(amsterdamcoind)
+def create_tx(creacoind, fromaddresses, toaddress, amount, fee):
+    all_coins = list_available(creacoind)
 
     total_available = Decimal("0.0")
     needed = amount+fee
@@ -159,7 +159,7 @@ def create_tx(amsterdamcoind, fromaddresses, toaddress, amount, fee):
     # Note:
     # Python's json/jsonrpc modules have inconsistent support for Decimal numbers.
     # Instead of wrestling with getting json.dumps() (used by jsonrpc) to encode
-    # Decimals, I'm casting amounts to float before sending them to amsterdamcoind.
+    # Decimals, I'm casting amounts to float before sending them to creacoind.
     #
     outputs = { toaddress : float(amount) }
     (inputs, change_amount) = select_coins(needed, potential_inputs)
@@ -170,8 +170,8 @@ def create_tx(amsterdamcoind, fromaddresses, toaddress, amount, fee):
         else:
             outputs[change_address] = float(change_amount)
 
-    rawtx = amsterdamcoind.createrawtransaction(inputs, outputs)
-    signed_rawtx = amsterdamcoind.signrawtransaction(rawtx)
+    rawtx = creacoind.createrawtransaction(inputs, outputs)
+    signed_rawtx = creacoind.signrawtransaction(rawtx)
     if not signed_rawtx["complete"]:
         sys.stderr.write("signrawtransaction failed\n")
         sys.exit(1)
@@ -179,10 +179,10 @@ def create_tx(amsterdamcoind, fromaddresses, toaddress, amount, fee):
 
     return txdata
 
-def compute_amount_in(amsterdamcoind, txinfo):
+def compute_amount_in(creacoind, txinfo):
     result = Decimal("0.0")
     for vin in txinfo['vin']:
-        in_info = amsterdamcoind.getrawtransaction(vin['txid'], 1)
+        in_info = creacoind.getrawtransaction(vin['txid'], 1)
         vout = in_info['vout'][vin['vout']]
         result = result + vout['value']
     return result
@@ -193,12 +193,12 @@ def compute_amount_out(txinfo):
         result = result + vout['value']
     return result
 
-def sanity_test_fee(amsterdamcoind, txdata_hex, max_fee):
+def sanity_test_fee(creacoind, txdata_hex, max_fee):
     class FeeError(RuntimeError):
         pass
     try:
-        txinfo = amsterdamcoind.decoderawtransaction(txdata_hex)
-        total_in = compute_amount_in(amsterdamcoind, txinfo)
+        txinfo = creacoind.decoderawtransaction(txdata_hex)
+        total_in = compute_amount_in(creacoind, txinfo)
         total_out = compute_amount_out(txinfo)
         if total_in-total_out > max_fee:
             raise FeeError("Rejecting transaction, unreasonable fee of "+str(total_in-total_out))
@@ -240,10 +240,10 @@ def main():
     check_json_precision()
     config = read_bitcoin_config(options.datadir)
     if options.testnet: config['testnet'] = True
-    amsterdamcoind = connect_JSON(config)
+    creacoind = connect_JSON(config)
 
     if options.amount is None:
-        address_summary = list_available(amsterdamcoind)
+        address_summary = list_available(creacoind)
         for address,info in address_summary.iteritems():
             n_transactions = len(info['outputs'])
             if n_transactions > 1:
@@ -253,14 +253,14 @@ def main():
     else:
         fee = Decimal(options.fee)
         amount = Decimal(options.amount)
-        while unlock_wallet(amsterdamcoind) == False:
+        while unlock_wallet(creacoind) == False:
             pass # Keep asking for passphrase until they get it right
-        txdata = create_tx(amsterdamcoind, options.fromaddresses.split(","), options.to, amount, fee)
-        sanity_test_fee(amsterdamcoind, txdata, amount*Decimal("0.01"))
+        txdata = create_tx(creacoind, options.fromaddresses.split(","), options.to, amount, fee)
+        sanity_test_fee(creacoind, txdata, amount*Decimal("0.01"))
         if options.dry_run:
             print(txdata)
         else:
-            txid = amsterdamcoind.sendrawtransaction(txdata)
+            txid = creacoind.sendrawtransaction(txdata)
             print(txid)
 
 if __name__ == '__main__':

@@ -486,7 +486,7 @@ SOURCES += src/activemasternode.cpp \
            src/qt/csvmodelwriter.cpp \
            src/qt/obfuscationconfig.cpp \
            src/qt/creacoin.cpp \
-           src/qt/amsterdamcoinstrings.cpp \
+           src/qt/creacoinstrings.cpp \
            src/qt/editaddressdialog.cpp \
            src/qt/guiutil.cpp \
            src/qt/intro.cpp \
@@ -564,7 +564,7 @@ SOURCES += src/activemasternode.cpp \
            src/test/sighash_tests.cpp \
            src/test/sigopcount_tests.cpp \
            src/test/skiplist_tests.cpp \
-           src/test/test_amsterdamcoin.cpp \
+           src/test/test_creacoin.cpp \
            src/test/timedata_tests.cpp \
            src/test/transaction_tests.cpp \
            src/test/uint256_tests.cpp \
@@ -655,21 +655,21 @@ SOURCES += src/activemasternode.cpp \
            src/leveldb/helpers/memenv/memenv.cc \
            src/leveldb/helpers/memenv/memenv_test.cc \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.c
-RESOURCES += src/qt/creacoin.qrc src/qt/amsterdamcoin_locale.qrc
+RESOURCES += src/qt/creacoin.qrc src/qt/creacoin_locale.qrc
 
-TRANSLATIONS += src/qt/locale/amsterdamcoin_bg.ts \
-                src/qt/locale/amsterdamcoin_de.ts \
-                src/qt/locale/amsterdamcoin_en.ts \
-                src/qt/locale/amsterdamcoin_es.ts \
-                src/qt/locale/amsterdamcoin_fi.ts \
-                src/qt/locale/amsterdamcoin_fr.ts \
-                src/qt/locale/amsterdamcoin_it.ts \
-                src/qt/locale/amsterdamcoin_ja.ts \
-                src/qt/locale/amsterdamcoin_pl.ts \
-                src/qt/locale/amsterdamcoin_pt.ts \
-                src/qt/locale/amsterdamcoin_ru.ts \
-                src/qt/locale/amsterdamcoin_sk.ts \
-                src/qt/locale/amsterdamcoin_sv.ts \
-                src/qt/locale/amsterdamcoin_vi.ts \
-                src/qt/locale/amsterdamcoin_zh_CN.ts \
-                src/qt/locale/amsterdamcoin_zh_TW.ts
+TRANSLATIONS += src/qt/locale/creacoin_bg.ts \
+                src/qt/locale/creacoin_de.ts \
+                src/qt/locale/creacoin_en.ts \
+                src/qt/locale/creacoin_es.ts \
+                src/qt/locale/creacoin_fi.ts \
+                src/qt/locale/creacoin_fr.ts \
+                src/qt/locale/creacoin_it.ts \
+                src/qt/locale/creacoin_ja.ts \
+                src/qt/locale/creacoin_pl.ts \
+                src/qt/locale/creacoin_pt.ts \
+                src/qt/locale/creacoin_ru.ts \
+                src/qt/locale/creacoin_sk.ts \
+                src/qt/locale/creacoin_sv.ts \
+                src/qt/locale/creacoin_vi.ts \
+                src/qt/locale/creacoin_zh_CN.ts \
+                src/qt/locale/creacoin_zh_TW.ts

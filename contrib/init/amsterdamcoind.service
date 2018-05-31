@@ -7,13 +7,13 @@ User=creacoin
 Group=creacoin
 
 Type=forking
-PIDFile=/var/lib/amsterdamcoind/amsterdamcoind.pid
+PIDFile=/var/lib/creacoind/creacoind.pid
 
-ExecStart=/usr/bin/amsterdamcoind -daemon -pid=/var/lib/amsterdamcoind/amsterdamcoind.pid \
-          -conf=/etc/creacoin/creacoin.conf -datadir=/var/lib/amsterdamcoind
+ExecStart=/usr/bin/creacoind -daemon -pid=/var/lib/creacoind/creacoind.pid \
+          -conf=/etc/creacoin/creacoin.conf -datadir=/var/lib/creacoind
 
 ExecStop=-/usr/bin/creacoin-cli -conf=/etc/creacoin/creacoin.conf \
-         -datadir=/var/lib/amsterdamcoind stop
+         -datadir=/var/lib/creacoind stop
 
 Restart=always
 PrivateTmp=true

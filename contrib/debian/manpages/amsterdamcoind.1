@@ -1,12 +1,12 @@
-.TH AMSD "1" "February 2017" "amsterdamcoind 2.1.4.1"
+.TH AMSD "1" "February 2017" "creacoind 2.1.4.1"
 .SH NAME
 CreaCoin \- peer-to-peer network based digital currency
 .SH SYNOPSIS
-amsterdamcoind [options] <command> [params]
+creacoind [options] <command> [params]
 .TP
-amsterdamcoind [options] help <command> \- Get help for a command
+creacoind [options] help <command> \- Get help for a command
 .SH DESCRIPTION
-This  manual page documents the amsterdamcoind program. CreaCoin is a peer-to-peer digital currency. Peer-to-peer (P2P) means that there is no central authority to issue new money or keep track of transactions. Instead, these tasks are managed collectively by the nodes of the network. Advantages:
+This  manual page documents the creacoind program. CreaCoin is a peer-to-peer digital currency. Peer-to-peer (P2P) means that there is no central authority to issue new money or keep track of transactions. Instead, these tasks are managed collectively by the nodes of the network. Advantages:
 
 CreaCoin can be sent easily through the Internet, without having to trust middlemen. Transactions are designed to be irreversible. Be safe from instability caused by fractional reserve banking and central banks. The limited inflation of the CreaCoin system’s money supply is distributed evenly (by CPU power) throughout the network, not monopolized by banks.
 
@@ -84,10 +84,10 @@ This help message
 \fBbackupwallet 'destination'\fR
 Safely copies *wallet.dat* to 'destination', which can be a directory or a path with filename.
 .TP
-\fBgetaccount 'amsterdamcoinaddress'\fR
+\fBgetaccount 'creacoinaddress'\fR
 Returns the account associated with the given address.
 .TP
-\fBsetaccount 'amsterdamcoinaddress' ['account']\fR
+\fBsetaccount 'creacoinaddress' ['account']\fR
 Sets the ['account'] associated with the given address. ['account'] may be omitted to remove an address from ['account'].
 .TP
 \fBgetaccountaddress 'account'\fR
@@ -129,8 +129,8 @@ Returns a new creacoin address for receiving payments. If 'account' is specified
 \fBgetreceivedbyaccount 'account' ['minconf=1']\fR
 Returns the total amount received by addresses associated with 'account' in transactions with at least ['minconf'] confirmations.
 .TP
-\fBgetreceivedbyaddress 'amsterdamcoinaddress' ['minconf=1']\fR
-Returns the total amount received by 'amsterdamcoinaddress' in transactions with at least ['minconf'] confirmations.
+\fBgetreceivedbyaddress 'creacoinaddress' ['minconf=1']\fR
+Returns the total amount received by 'creacoinaddress' in transactions with at least ['minconf'] confirmations.
 .TP
 \fBgettransaction 'txid'\fR
 Returns information about a specific transaction, given hexadecimal transaction ID.
@@ -182,21 +182,21 @@ Returns a list of the last ['count'] transactions for 'account' \- for all accou
 \fBmove <'fromaccount'> <'toaccount'> <'amount'> ['minconf=1'] ['comment']\fR
 Moves funds between accounts.
 .TP
-\fBsendfrom* <'account'> <'amsterdamcoinaddress'> <'amount'> ['minconf=1'] ['comment'] ['comment-to']\fR
-Sends amount from account's balance to 'amsterdamcoinaddress'. This method will fail if there is less than amount AMS with ['minconf'] confirmations in the account's balance (unless account is the empty-string-named default account; it behaves like the *sendtoaddress* method). Returns transaction ID on success.
+\fBsendfrom* <'account'> <'creacoinaddress'> <'amount'> ['minconf=1'] ['comment'] ['comment-to']\fR
+Sends amount from account's balance to 'creacoinaddress'. This method will fail if there is less than amount AMS with ['minconf'] confirmations in the account's balance (unless account is the empty-string-named default account; it behaves like the *sendtoaddress* method). Returns transaction ID on success.
 .TP
-\fBsendtoaddress 'amsterdamcoinaddress' 'amount' ['comment'] ['comment-to']\fR
-Sends amount from the server's available balance to 'amsterdamcoinaddress'. amount is a real and is rounded to the nearest 0.01. Returns transaction id on success.
+\fBsendtoaddress 'creacoinaddress' 'amount' ['comment'] ['comment-to']\fR
+Sends amount from the server's available balance to 'creacoinaddress'. amount is a real and is rounded to the nearest 0.01. Returns transaction id on success.
 .TP
 \fBstop\fR
 Stops the creacoin server.
 .TP
-\fBvalidateaddress 'amsterdamcoinaddress'\fR
-Checks that 'amsterdamcoinaddress' looks like a proper CreaCoin address. Returns an object containing:
+\fBvalidateaddress 'creacoinaddress'\fR
+Checks that 'creacoinaddress' looks like a proper CreaCoin address. Returns an object containing:
 
     "isvalid" : true or false.
     "ismine"  : true if the address is in the server's wallet.
-    "address" : amsterdamcoinaddress.
+    "address" : creacoinaddress.
 
     *note: ismine and address are only returned if the address is valid.
 

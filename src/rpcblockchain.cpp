@@ -430,7 +430,7 @@ Value gettxout(const Array& params, bool fHelp)
             "     \"reqSigs\" : n,          (numeric) Number of required signatures\n"
             "     \"type\" : \"pubkeyhash\", (string) The type, eg pubkeyhash\n"
             "     \"addresses\" : [          (array of string) array of creacoin addresses\n"
-            "     \"amsterdamcoinaddress\"   	 	(string) creacoin address\n"
+            "     \"creacoinaddress\"   	 	(string) creacoin address\n"
             "        ,...\n"
             "     ]\n"
             "  },\n"

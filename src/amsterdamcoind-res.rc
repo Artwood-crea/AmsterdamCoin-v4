@@ -17,13 +17,13 @@ BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
             VALUE "CompanyName",        "CreaCoin"
-            VALUE "FileDescription",    "amsterdamcoind (OSS daemon/client for CreaCoin)"
+            VALUE "FileDescription",    "creacoind (OSS daemon/client for CreaCoin)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
-            VALUE "InternalName",       "amsterdamcoind"
+            VALUE "InternalName",       "creacoind"
             VALUE "LegalCopyright",     COPYRIGHT_STR
             VALUE "LegalTrademarks1",   "Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php."
-            VALUE "OriginalFilename",   "amsterdamcoind.exe"
-            VALUE "ProductName",        "amsterdamcoind"
+            VALUE "OriginalFilename",   "creacoind.exe"
+            VALUE "ProductName",        "creacoind"
             VALUE "ProductVersion",     VER_PRODUCTVERSION_STR
         END
     END

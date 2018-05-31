@@ -44,9 +44,9 @@ QString BitcoinUnits::id(int unit)
     case AMS:
         return QString("creacoin");
     case mAMS:
-        return QString("mamsterdamcoin");
+        return QString("mcreacoin");
     case uAMS:
-        return QString::fromUtf8("uamsterdamcoin");
+        return QString::fromUtf8("ucreacoin");
     default:
         return QString("???");
     }
