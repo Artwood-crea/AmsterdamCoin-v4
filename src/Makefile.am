@@ -70,11 +70,11 @@ if BUILD_BITCOIND
 endif
 
 if BUILD_BITCOIN_UTILS
-  bin_PROGRAMS += amsterdamcoin-cli amsterdamcoin-tx
+  bin_PROGRAMS += creacoin-cli creacoin-tx
 endif
 
 .PHONY: FORCE
-# amsterdamcoin core #
+# creacoin core #
 BITCOIN_CORE_H = \
   activemasternode.h \
   accumulators.h \
@@ -190,7 +190,7 @@ obj/build.h: FORCE
 	  $(abs_top_srcdir)
 libbitcoin_util_a-clientversion.$(OBJEXT): obj/build.h
 
-# server: shared between amsterdamcoind and amsterdamcoin-qt
+# server: shared between amsterdamcoind and creacoin-qt
 libbitcoin_server_a_CPPFLAGS = $(BITCOIN_INCLUDES) $(MINIUPNPC_CPPFLAGS) $(EVENT_CFLAGS) $(EVENT_PTHREADS_CFLAGS)
 libbitcoin_server_a_SOURCES = \
   addrman.cpp \
@@ -236,7 +236,7 @@ libbitcoin_zmq_a_SOURCES = \
   zmq/zmqpublishnotifier.cpp
 endif
 
-# wallet: shared between amsterdamcoind and amsterdamcoin-qt, but only linked
+# wallet: shared between amsterdamcoind and creacoin-qt, but only linked
 # when wallet enabled
 
 libbitcoin_wallet_a_CFLAGS = -fPIC
@@ -355,7 +355,7 @@ libzerocoin_libbitcoin_zerocoin_a_SOURCES = \
   libzerocoin/Params.cpp \
   libzerocoin/SerialNumberSignatureOfKnowledge.cpp
 
-# common: shared between amsterdamcoind, and amsterdamcoin-qt and non-server tools
+# common: shared between amsterdamcoind, and creacoin-qt and non-server tools
 libbitcoin_common_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_common_a_SOURCES = \
   accumulators.cpp \
@@ -415,7 +415,7 @@ libbitcoin_util_a_SOURCES += compat/glibc_compat.cpp
 libbitcoin_util_a_SOURCES += compat/glibcxx_compat.cpp
 endif
 
-# cli: shared between amsterdamcoin-cli and amsterdamcoin-qt
+# cli: shared between creacoin-cli and creacoin-qt
 libbitcoin_cli_a_CPPFLAGS = $(BITCOIN_INCLUDES)
 libbitcoin_cli_a_SOURCES = \
   rpcclient.cpp \
@@ -455,7 +455,7 @@ amsterdamcoind_CPPFLAGS = $(BITCOIN_INCLUDES)
 amsterdamcoind_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 
-# amsterdamcoin-cli binary #
+# creacoin-cli binary #
 amsterdamcoin_cli_LDADD = \
   $(LIBBITCOIN_CLI) \
   $(LIBBITCOIN_UTIL) \
@@ -465,12 +465,12 @@ amsterdamcoin_cli_LDADD = \
   $(EVENT_LIBS)
 
 amsterdamcoin_cli_SOURCES = \
-  amsterdamcoin-cli.cpp
+  creacoin-cli.cpp
 
 amsterdamcoin_cli_CPPFLAGS = $(BITCOIN_INCLUDES) $(EVENT_CFLAGS)
 #
 
-# amsterdamcoin-tx binary #
+# creacoin-tx binary #
 amsterdamcoin_tx_LDADD = \
   $(LIBBITCOIN_UNIVALUE) \
   $(LIBBITCOIN_COMMON) \
@@ -481,13 +481,13 @@ amsterdamcoin_tx_LDADD = \
   $(BOOST_LIBS) \
   $(CRYPTO_LIBS)
 
-amsterdamcoin_tx_SOURCES = amsterdamcoin-tx.cpp
+amsterdamcoin_tx_SOURCES = creacoin-tx.cpp
 amsterdamcoin_tx_CPPFLAGS = $(BITCOIN_INCLUDES)
 #
 amsterdamcoin_tx_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 
 if TARGET_WINDOWS
-amsterdamcoin_cli_SOURCES += amsterdamcoin-cli-res.rc
+amsterdamcoin_cli_SOURCES += creacoin-cli-res.rc
 endif
 amsterdamcoin_cli_LDFLAGS = $(RELDFLAGS) $(AM_LDFLAGS) $(LIBTOOL_APP_LDFLAGS)
 

@@ -1,4 +1,4 @@
-Source: amsterdamcoin
+Source: creacoin
 Section: utils
 Priority: optional
 Maintainer: Jonas Smedegaard <dr@jones.dk> ***TODO***
@@ -22,15 +22,15 @@ Build-Depends: debhelper,
  libqrencode-dev,
  libprotobuf-dev, protobuf-compiler
 Standards-Version: 3.9.2
-Homepage: http://www.amsterdamcoin.com
+Homepage: http://www.creacoin.com
 Vcs-Git: git://github.com/CoinProjectsAmsterdamCoin-v4.git
-Vcs-Browser: http://github.com/AmsterdamCoin-Project/AmsterdamCoin
+Vcs-Browser: http://github.com/CreaCoin-Project/CreaCoin
 
 Package: amsterdamcoind
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - daemon
- AmsterdamCoin is a free open source peer-to-peer electronic cash system that
+ CreaCoin is a free open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
@@ -40,13 +40,13 @@ Description: peer-to-peer network based digital currency - daemon
  requires 1+ GB of space, slowly growing.
  .
  This package provides the daemon, amsterdamcoind, and the CLI tool
- amsterdamcoin-cli to interact with the daemon.
+ creacoin-cli to interact with the daemon.
 
-Package: amsterdamcoin-qt
+Package: creacoin-qt
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: peer-to-peer network based digital currency - Qt GUI
- AmsterdamCoin is a free open source peer-to-peer electronic cash system that
+ CreaCoin is a free open source peer-to-peer electronic cash system that
  is completely decentralized, without the need for a central server or
  trusted parties.  Users hold the crypto keys to their own money and
  transact directly with each other, with the help of a P2P network to
@@ -55,4 +55,4 @@ Description: peer-to-peer network based digital currency - Qt GUI
  Full transaction history is stored locally at each client.  This
  requires 1+ GB of space, slowly growing.
  .
- This package provides AmsterdamCoin-Qt, a GUI for AmsterdamCoin based on Qt.
+ This package provides CreaCoin-Qt, a GUI for CreaCoin based on Qt.

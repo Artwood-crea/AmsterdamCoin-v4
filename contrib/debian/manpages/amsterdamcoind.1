@@ -1,19 +1,19 @@
 .TH AMSD "1" "February 2017" "amsterdamcoind 2.1.4.1"
 .SH NAME
-AmsterdamCoin \- peer-to-peer network based digital currency
+CreaCoin \- peer-to-peer network based digital currency
 .SH SYNOPSIS
 amsterdamcoind [options] <command> [params]
 .TP
 amsterdamcoind [options] help <command> \- Get help for a command
 .SH DESCRIPTION
-This  manual page documents the amsterdamcoind program. AmsterdamCoin is a peer-to-peer digital currency. Peer-to-peer (P2P) means that there is no central authority to issue new money or keep track of transactions. Instead, these tasks are managed collectively by the nodes of the network. Advantages:
+This  manual page documents the amsterdamcoind program. CreaCoin is a peer-to-peer digital currency. Peer-to-peer (P2P) means that there is no central authority to issue new money or keep track of transactions. Instead, these tasks are managed collectively by the nodes of the network. Advantages:
 
-AmsterdamCoin can be sent easily through the Internet, without having to trust middlemen. Transactions are designed to be irreversible. Be safe from instability caused by fractional reserve banking and central banks. The limited inflation of the AmsterdamCoin system’s money supply is distributed evenly (by CPU power) throughout the network, not monopolized by banks.
+CreaCoin can be sent easily through the Internet, without having to trust middlemen. Transactions are designed to be irreversible. Be safe from instability caused by fractional reserve banking and central banks. The limited inflation of the CreaCoin system’s money supply is distributed evenly (by CPU power) throughout the network, not monopolized by banks.
 
 .SH OPTIONS
 .TP
 \fB\-conf=\fR<file>
-Specify configuration file (default: amsterdamcoin.conf)
+Specify configuration file (default: creacoin.conf)
 .TP
 \fB\-gen\fR
 Generate coins
@@ -91,7 +91,7 @@ Returns the account associated with the given address.
 Sets the ['account'] associated with the given address. ['account'] may be omitted to remove an address from ['account'].
 .TP
 \fBgetaccountaddress 'account'\fR
-Returns a new amsterdamcoin address for 'account'.
+Returns a new creacoin address for 'account'.
 .TP
 \fBgetaddressesbyaccount 'account'\fR
 Returns the list of addresses associated with the given 'account'.
@@ -124,7 +124,7 @@ Returns a recent hashes per second performance measurement while generating.
 Returns an object containing server information.
 .TP
 \fBgetnewaddress 'account'\fR
-Returns a new amsterdamcoin address for receiving payments. If 'account' is specified (recommended), it is added to the address book so payments received with the address will be credited to 'account'.
+Returns a new creacoin address for receiving payments. If 'account' is specified (recommended), it is added to the address book so payments received with the address will be credited to 'account'.
 .TP
 \fBgetreceivedbyaccount 'account' ['minconf=1']\fR
 Returns the total amount received by addresses associated with 'account' in transactions with at least ['minconf'] confirmations.
@@ -148,7 +148,7 @@ List commands, or get help for a command.
 .TP
 \fBlistaccounts ['minconf=1']\fR
 List accounts and their current balances.
-     *note: requires amsterdamcoin 1.0.2.1 or later.
+     *note: requires creacoin 1.0.2.1 or later.
 .TP
 \fBlistreceivedbyaccount ['minconf=1'] ['includeempty=false']\fR
 ['minconf'] is the minimum number of confirmations before payments are included. ['includeempty'] whether to include addresses that haven't received any payments. Returns an array of objects containing:
@@ -177,7 +177,7 @@ Returns a list of the last ['count'] transactions for 'account' \- for all accou
     "message"       : message associated with transaction (only for send).
     "to"            : message-to associated with transaction (only for send).
 
-    *note: requires amsterdamcoin 1.0.2.1 or later.
+    *note: requires creacoin 1.0.2.1 or later.
 .TP
 \fBmove <'fromaccount'> <'toaccount'> <'amount'> ['minconf=1'] ['comment']\fR
 Moves funds between accounts.
@@ -189,10 +189,10 @@ Sends amount from account's balance to 'amsterdamcoinaddress'. This method will 
 Sends amount from the server's available balance to 'amsterdamcoinaddress'. amount is a real and is rounded to the nearest 0.01. Returns transaction id on success.
 .TP
 \fBstop\fR
-Stops the amsterdamcoin server.
+Stops the creacoin server.
 .TP
 \fBvalidateaddress 'amsterdamcoinaddress'\fR
-Checks that 'amsterdamcoinaddress' looks like a proper AmsterdamCoin address. Returns an object containing:
+Checks that 'amsterdamcoinaddress' looks like a proper CreaCoin address. Returns an object containing:
 
     "isvalid" : true or false.
     "ismine"  : true if the address is in the server's wallet.
@@ -201,7 +201,7 @@ Checks that 'amsterdamcoinaddress' looks like a proper AmsterdamCoin address. Re
     *note: ismine and address are only returned if the address is valid.
 
 .SH "SEE ALSO"
-amsterdamcoin.conf(5)
+creacoin.conf(5)
 .SH AUTHOR
 This manual page was written by Micah Anderson <micah@debian.org> for the Debian system (but may be used by others). Permission is granted to copy, distribute and/or modify this document under the terms of the GNU General Public License, Version 3 or any later version published by the Free Software Foundation.
 

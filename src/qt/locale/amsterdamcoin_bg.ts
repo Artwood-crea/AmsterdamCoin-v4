@@ -62,12 +62,12 @@
         <translation>Получаващ адрес</translation>
     </message>
     <message>
-        <source>These are your AmsterdamCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Това са вашите AmsterdamCoin адреси за изпращане на плащания. Винаги проверявайте количеството и адреса на получателя, преди да изпратите монети.</translation>
+        <source>These are your CreaCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Това са вашите CreaCoin адреси за изпращане на плащания. Винаги проверявайте количеството и адреса на получателя, преди да изпратите монети.</translation>
     </message>
     <message>
-        <source>These are your AmsterdamCoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Това са вашите AmsterdamCoin адреси за получаване на плащания. Препоръчително е да използвате нови адреси за получаване за всяка транзакция.</translation>
+        <source>These are your CreaCoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Това са вашите CreaCoin адреси за получаване на плащания. Препоръчително е да използвате нови адреси за получаване за всяка транзакция.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Потвърдете шифрирането на портфейла</translation>
     </message>
     <message>
-        <source>AmsterdamCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your AMSs from being stolen by malware infecting your computer.</source>
-        <translation>AmsterdamCoin сега ще се затвори, за да довърши процеса по шифриране. Запомнете, че шифрирането на вашия портфейл не може напълно да защити вашия AmsterdamCoin от това, да бъде откраднат чрез злонамерен софутуер, инфектирал вашия компютър.</translation>
+        <source>CreaCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your AMSs from being stolen by malware infecting your computer.</source>
+        <translation>CreaCoin сега ще се затвори, за да довърши процеса по шифриране. Запомнете, че шифрирането на вашия портфейл не може напълно да защити вашия CreaCoin от това, да бъде откраднат чрез злонамерен софутуер, инфектирал вашия компютър.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -239,16 +239,16 @@
         <translation>&amp;BIP 38 Шифриране</translation>
     </message>
     <message>
-        <source>Enter a AmsterdamCoin Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Въведете AmsterdamCoin адрес, който искате да шифрирате с BIP 38. Въведете парола в средното поле. Натиснете 'шифрирай', за да се изчисли шифррания личен ключ.</translation>
+        <source>Enter a CreaCoin Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Въведете CreaCoin адрес, който искате да шифрирате с BIP 38. Въведете парола в средното поле. Натиснете 'шифрирай', за да се изчисли шифррания личен ключ.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Адрес:</translation>
     </message>
     <message>
-        <source>The AmsterdamCoin address to sign the message with</source>
-        <translation>AmsterdamCoin адреса, с който да подпишете съобщението</translation>
+        <source>The CreaCoin address to sign the message with</source>
+        <translation>CreaCoin адреса, с който да подпишете съобщението</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Копирай сегашния подпис в системния буфер</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this AmsterdamCoin address</source>
-        <translation>Подпишете съобщението, за да докажете, че притежавате този AmsterdamCoin адрес</translation>
+        <source>Sign the message to prove you own this CreaCoin address</source>
+        <translation>Подпишете съобщението, за да докажете, че притежавате този CreaCoin адрес</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Въведете личният си BIP 38 ключ. Въведете тайната фраза в средното поле. Избери Дешифриращия Ключ за да изчислим личния ключ. След като ключа се дешифрира, за да добаите ключа към портфейла, кликнете "Импортирай адрес".</translation>
     </message>
     <message>
-        <source>The AmsterdamCoin address the message was signed with</source>
-        <translation>AmsterdamCoin адреса, който е подписано съобщението</translation>
+        <source>The CreaCoin address the message was signed with</source>
+        <translation>CreaCoin адреса, който е подписано съобщението</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified AmsterdamCoin address</source>
-        <translation>Поверете съобщението, за да се уверите, че е подписано със зададения AmsterdamCoin адрес</translation>
+        <source>Verify the message to ensure it was signed with the specified CreaCoin address</source>
+        <translation>Поверете съобщението, за да се уверите, че е подписано със зададения CreaCoin адрес</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -602,24 +602,24 @@
         <translation>Колан с инструменти</translation>
     </message>
     <message>
-        <source>AmsterdamCoin Core</source>
-        <translation>AmsterdamCoin Ядро</translation>
+        <source>CreaCoin Core</source>
+        <translation>CreaCoin Ядро</translation>
     </message>
     <message>
-        <source>Send coins to a AmsterdamCoin address</source>
-        <translation>Изпратете монети до AmsterdamCoin адрес</translation>
+        <source>Send coins to a CreaCoin address</source>
+        <translation>Изпратете монети до CreaCoin адрес</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and amsterdamcoin: URIs)</source>
-        <translation>Поискай плащане (генерира QR кодове и  AmsterdamCoin:URI)</translation>
+        <source>Request payments (generates QR codes and creacoin: URIs)</source>
+        <translation>Поискай плащане (генерира QR кодове и  CreaCoin:URI)</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
         <translation>&amp;Поверителност</translation>
     </message>
     <message>
-        <source>Privacy Action for zAMS and Obfuscation</source>
-        <translation>Поверителни действия за zAMS и Обфускация</translation>
+        <source>Privacy Action for zCREA and Obfuscation</source>
+        <translation>Поверителни действия за zCREA и Обфускация</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -630,24 +630,24 @@
         <translation>Разгледай мастърноудове</translation>
     </message>
     <message>
-        <source>&amp;About AmsterdamCoin Core</source>
-        <translation>&amp;Относно AmsterdamCoin Ядрото</translation>
+        <source>&amp;About CreaCoin Core</source>
+        <translation>&amp;Относно CreaCoin Ядрото</translation>
     </message>
     <message>
-        <source>Show information about AmsterdamCoin Core</source>
-        <translation>Информациза за AmsterdamCoin Ядрото</translation>
+        <source>Show information about CreaCoin Core</source>
+        <translation>Информациза за CreaCoin Ядрото</translation>
     </message>
     <message>
-        <source>Modify configuration options for AmsterdamCoin</source>
-        <translation>Промени AmsterdamCoin конфигурацията</translation>
+        <source>Modify configuration options for CreaCoin</source>
+        <translation>Промени CreaCoin конфигурацията</translation>
     </message>
     <message>
-        <source>Sign messages with your AmsterdamCoin addresses to prove you own them</source>
-        <translation>Подпишете съобщения със своте AmsterdamCoin адреси, за да докажете че са Ваши</translation>
+        <source>Sign messages with your CreaCoin addresses to prove you own them</source>
+        <translation>Подпишете съобщения със своте CreaCoin адреси, за да докажете че са Ваши</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified AmsterdamCoin addresses</source>
-        <translation>Проеврете съобщения, за да се убедите, че са подписани с указаните AmsterdamCoin адреси</translation>
+        <source>Verify messages to ensure they were signed with specified CreaCoin addresses</source>
+        <translation>Проеврете съобщения, за да се убедите, че са подписани с указаните CreaCoin адреси</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -678,8 +678,8 @@
         <translation>Отвори Мастърноуд конфигурационния файл</translation>
     </message>
     <message>
-        <source>Open a AmsterdamCoin: URI or payment request</source>
-        <translation>Отвори AmsterdamCoin:URI платежно нареждане</translation>
+        <source>Open a CreaCoin: URI or payment request</source>
+        <translation>Отвори CreaCoin:URI платежно нареждане</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -690,16 +690,16 @@
         <translation>Прозорец на блок сондата</translation>
     </message>
     <message>
-        <source>Show the AmsterdamCoin Core help message to get a list with possible AmsterdamCoin command-line options</source>
-        <translation>Разкрийте Помощ за AmsterdamCoin Ядрото, за да видите списък с възможни писмени команди.</translation>
+        <source>Show the CreaCoin Core help message to get a list with possible CreaCoin command-line options</source>
+        <translation>Разкрийте Помощ за CreaCoin Ядрото, за да видите списък с възможни писмени команди.</translation>
     </message>
     <message>
-        <source>AmsterdamCoin Core client</source>
-        <translation>Клиент AmsterdamCoin Ядро</translation>
+        <source>CreaCoin Core client</source>
+        <translation>Клиент CreaCoin Ядро</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to AmsterdamCoin network</source>
-        <translation><numerusform>%n активни връзки към AmsterdamCoin мрежата</numerusform><numerusform>%n активни свръзки към AmsterdamCoin мрежата</numerusform></translation>
+        <source>%n active connection(s) to CreaCoin network</source>
+        <translation><numerusform>%n активни връзки към CreaCoin мрежата</numerusform><numerusform>%n активни свръзки към CreaCoin мрежата</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -853,8 +853,8 @@ Address: %4
         <translation>ТекстовЕтикет</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (amsterdamcoin.conf).</source>
-        <translation>Не всички преводи ще бъдат показани. За да разгледате всички преводи, трябва да зададете txindex=1 в конфигурационния файл (amsterdamcoin.conf).</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (creacoin.conf).</source>
+        <translation>Не всички преводи ще бъдат показани. За да разгледате всички преводи, трябва да зададете txindex=1 в конфигурационния файл (creacoin.conf).</translation>
     </message>
 </context>
 <context>
@@ -1142,8 +1142,8 @@ Address: %4
         <translation>Редактирай адрес за изпращане</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid AmsterdamCoin address.</source>
-        <translation>Зададения адрес "%1"не е валиден AmsterdamCoin адрес.</translation>
+        <source>The entered address "%1" is not a valid CreaCoin address.</source>
+        <translation>Зададения адрес "%1"не е валиден CreaCoin адрес.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1188,16 +1188,16 @@ Address: %4
         <translation>версия</translation>
     </message>
     <message>
-        <source>AmsterdamCoin Core</source>
-        <translation>AmsterdamCoin Ядро</translation>
+        <source>CreaCoin Core</source>
+        <translation>CreaCoin Ядро</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About AmsterdamCoin Core</source>
-        <translation>Относно AmsterdamCoin Ядрото</translation>
+        <source>About CreaCoin Core</source>
+        <translation>Относно CreaCoin Ядрото</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1243,16 +1243,16 @@ Address: %4
         <translation>Привет</translation>
     </message>
     <message>
-        <source>Welcome to AmsterdamCoin Core.</source>
-        <translation>Добре Дошли в AmsterdamCoin Ядрото</translation>
+        <source>Welcome to CreaCoin Core.</source>
+        <translation>Добре Дошли в CreaCoin Ядрото</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where AmsterdamCoin Core will store its data.</source>
-        <translation>Тъй като това е първия път, в който стартирате програмата, имате възможността да изберете къде AmsterdamCoin Ядрото ще съхранява своите данни.</translation>
+        <source>As this is the first time the program is launched, you can choose where CreaCoin Core will store its data.</source>
+        <translation>Тъй като това е първия път, в който стартирате програмата, имате възможността да изберете къде CreaCoin Ядрото ще съхранява своите данни.</translation>
     </message>
     <message>
-        <source>AmsterdamCoin Core will download and store a copy of the AmsterdamCoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>AmsterdamCoin Ядрото ще изтегли и запише копие на целия AmsterdamCoin блокчейн. Поне %1 гигабайта ще бъдат съхранявани в тази папка, като тенденцията е файла да расте. Портфейла също ще бъде запазен в тази папка.</translation>
+        <source>CreaCoin Core will download and store a copy of the CreaCoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>CreaCoin Ядрото ще изтегли и запише копие на целия CreaCoin блокчейн. Поне %1 гигабайта ще бъдат съхранявани в тази папка, като тенденцията е файла да расте. Портфейла също ще бъде запазен в тази папка.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1263,8 +1263,8 @@ Address: %4
         <translation>Задай своя папка за данни:</translation>
     </message>
     <message>
-        <source>AmsterdamCoin Core</source>
-        <translation>AmsterdamCoin Ядро</translation>
+        <source>CreaCoin Core</source>
+        <translation>CreaCoin Ядро</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1405,12 +1405,12 @@ Address: %4
         <translation>Въведете адреса на Получателя</translation>
     </message>
     <message>
-        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other AmsterdamCoin addresses after it matures.
-To Add: enter percentage to give and AmsterdamCoin address to add to the MultiSend vector.
+        <source>MultiSend allows you to automatically send up to 100% of your stake or masternode reward to a list of other CreaCoin addresses after it matures.
+To Add: enter percentage to give and CreaCoin address to add to the MultiSend vector.
 To Delete: Enter address to delete and press delete.
 MultiSend will not be activated unless you have clicked Activate</source>
-        <translation>МултиИзпращане Ви позволява автоматично да изпращате до 100% от вашите стейк или мастърноуд възнаграждения към списък от други AmsterdamCoin адреси.
-Да Добавите: въведете процент и задайте AmsterdamCoin адрес към вектора за МултиИзпращане
+        <translation>МултиИзпращане Ви позволява автоматично да изпращате до 100% от вашите стейк или мастърноуд възнаграждения към списък от други CreaCoin адреси.
+Да Добавите: въведете процент и задайте CreaCoin адрес към вектора за МултиИзпращане
 Да Прамахнете: Въведете адрес за изстриване и натиснете истрий (del).
 МултиИзпращането няма да бъде активирано докато не кликнете "Активирай"</translation>
     </message>
@@ -1580,15 +1580,15 @@ Please check the address and try again.</source>
         <translation>Конфигурация на Обфускацията</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening AmsterdamCoin's configuration screen.</source>
+        <source>Obfuscation was successfully set to basic (%1 and 2 rounds). You can change this at any time by opening CreaCoin's configuration screen.</source>
         <translation>Обфускацията е успешно конфигурирана на елементарно ниво (%1 и 2 кръга). Moжете да промените тази настройка по всяко време от същото място.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening AmsterdamCoin's configuration screen.</source>
+        <source>Obfuscation was successfully set to high (%1 and 8 rounds). You can change this at any time by opening CreaCoin's configuration screen.</source>
         <translation>Обфускацията е успешно конфигурирана на високо ниво (%1 и 8 кръга). Moжете да промените тази настройка по всяко време от същото място.</translation>
     </message>
     <message>
-        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening AmsterdamCoin's configuration screen.</source>
+        <source>Obfuscation was successfully set to maximum (%1 and 16 rounds). You can change this at any time by opening CreaCoin's configuration screen.</source>
         <translation>Обфускацията е успешно конфигурирана на максимално ниво (%1 и 16 кръга). Moжете да промените тази настройка по всяко време от същото място.</translation>
     </message>
 </context>
@@ -1650,8 +1650,8 @@ Please check the address and try again.</source>
         <translation>Aко изключите харча на непотвърдено ресто, рестото от превод&lt;br/&gt;не може да се използва, докато превода не получи поне 1 потвърждение. &lt;br/&gt;Това влияе и на начина по който общите Ви средства се преизчисляват.</translation>
     </message>
     <message>
-        <source>Automatically open the AmsterdamCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Автоматично отвори AmsterdamCoin порта в рутера. Това става само ако рутера Ви подържа UPnP и последния е включен.</translation>
+        <source>Automatically open the CreaCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Автоматично отвори CreaCoin порта в рутера. Това става само ако рутера Ви подържа UPnP и последния е включен.</translation>
     </message>
     <message>
         <source>Accept connections from outside</source>
@@ -1670,12 +1670,12 @@ Please check the address and try again.</source>
         <translation>Експерт</translation>
     </message>
     <message>
-        <source>Automatically start AmsterdamCoin after logging in to the system.</source>
-        <translation>Стартирай AmsterdamCoin автоматично след влизане в системата.</translation>
+        <source>Automatically start CreaCoin after logging in to the system.</source>
+        <translation>Стартирай CreaCoin автоматично след влизане в системата.</translation>
     </message>
     <message>
-        <source>&amp;Start AmsterdamCoin on system login</source>
-        <translation>&amp;Стартирай AmsterdamCoin заедно с операционната система</translation>
+        <source>&amp;Start CreaCoin on system login</source>
+        <translation>&amp;Стартирай CreaCoin заедно с операционната система</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1702,34 +1702,34 @@ Please check the address and try again.</source>
         <translation>&amp;Мрежа</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting AmsterdamCoin.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting CreaCoin.</source>
         <translation>Промяна на езика. Настройката е активна след рестарт на портфейла.</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/amsterdamcoin-project/amsterdamcoin-project-translations</source>
+https://www.transifex.com/creacoin-project/creacoin-project-translations</source>
         <translation>Липсващ език или непълен превод? Помогнете с преводите тук:
-https://www.transifex.com/amsterdamcoin-project/amsterdamcoin-project-translations</translation>
+https://www.transifex.com/creacoin-project/creacoin-project-translations</translation>
     </message>
     <message>
-        <source>Percentage of incoming AMS which get automatically converted to zAMS via Zerocoin Protocol (min: 10%)</source>
-        <translation>Процент от входящите AMS, който автоматично да се конвертира в zAMS посредтвом Zerocoin Протокола (мин: 10%)</translation>
+        <source>Percentage of incoming AMS which get automatically converted to zCREA via Zerocoin Protocol (min: 10%)</source>
+        <translation>Процент от входящите AMS, който автоматично да се конвертира в zCREA посредтвом Zerocoin Протокола (мин: 10%)</translation>
     </message>
     <message>
-        <source>Percentage of autominted zAMS</source>
-        <translation>Процент автоматично сечени zAMS</translation>
+        <source>Percentage of autominted zCREA</source>
+        <translation>Процент автоматично сечени zCREA</translation>
     </message>
     <message>
         <source>Wait with automatic conversion to Zerocoin until enough AMS for this denomination is available</source>
-        <translation>Не бързай с автоматичното конвертиране в zAMS докато не се съберат достатъчно AMS за тази деноминация</translation>
+        <translation>Не бързай с автоматичното конвертиране в zCREA докато не се съберат достатъчно AMS за тази деноминация</translation>
     </message>
     <message>
-        <source>Preferred Automint zAMS Denomination</source>
-        <translation>Предпочитани деноминации, в които да се сече автоматичен zAMS</translation>
+        <source>Preferred Automint zCREA Denomination</source>
+        <translation>Предпочитани деноминации, в които да се сече автоматичен zCREA</translation>
     </message>
     <message>
-        <source>Connect to the AmsterdamCoin network through a SOCKS5 proxy.</source>
-        <translation>Свържи се с AmsterdamCoin мрежата със SOCKS5 прокси.</translation>
+        <source>Connect to the CreaCoin network through a SOCKS5 proxy.</source>
+        <translation>Свържи се с CreaCoin мрежата със SOCKS5 прокси.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1887,8 +1887,8 @@ https://www.transifex.com/amsterdamcoin-project/amsterdamcoin-project-translatio
         <translation>Възнаграждение от стейкване или мастърноуд, които все още не са узрели.</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the AmsterdamCoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с AmsterdamCoin мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the CreaCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с CreaCoin мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
     </message>
     <message>
         <source>Unconfirmed transactions to watch-only addresses</source>
@@ -1931,8 +1931,8 @@ https://www.transifex.com/amsterdamcoin-project/amsterdamcoin-project-translatio
         <translation>AMS:</translation>
     </message>
     <message>
-        <source>zAMS:</source>
-        <translation>zAMS:</translation>
+        <source>zCREA:</source>
+        <translation>zCREA:</translation>
     </message>
     <message>
         <source>0 %</source>
@@ -1974,12 +1974,12 @@ https://www.transifex.com/amsterdamcoin-project/amsterdamcoin-project-translatio
         <translation>Грешен адрес за плащане %1</translation>
     </message>
     <message>
-        <source>Cannot start amsterdamcoin: click-to-pay handler</source>
-        <translation>Провал при стартирането на amsterdamcoin: click-to-pay обработвател</translation>
+        <source>Cannot start creacoin: click-to-pay handler</source>
+        <translation>Провал при стартирането на creacoin: click-to-pay обработвател</translation>
     </message>
     <message>
-        <source>URI cannot be parsed! This can be caused by an invalid AmsterdamCoin address or malformed URI parameters.</source>
-        <translation>URI не може да се парсне. Вероятна причина е невалиден AmsterdamCoin адрес или зле-форматирани URI Параметри.</translation>
+        <source>URI cannot be parsed! This can be caused by an invalid CreaCoin address or malformed URI parameters.</source>
+        <translation>URI не може да се парсне. Вероятна причина е невалиден CreaCoin адрес или зле-форматирани URI Параметри.</translation>
     </message>
     <message>
         <source>Payment request file cannot be read! This can be caused by an invalid payment request file.</source>
@@ -2064,20 +2064,20 @@ https://www.transifex.com/amsterdamcoin-project/amsterdamcoin-project-translatio
         <translation>AMS скрити посредством Зерокойн протокола</translation>
     </message>
     <message>
-        <source>ZeroAmsterdamCoin (zAMS)</source>
-        <translation>ZeroAmsterdamCoin (zAMS)</translation>
+        <source>ZeroAmsterdamCoin (zCREA)</source>
+        <translation>ZeroAmsterdamCoin (zCREA)</translation>
     </message>
     <message>
         <source>Zerocoin Actions:</source>
         <translation>Zerocoin Действия:</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the AmsterdamCoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с AmsterdamCoin мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the CreaCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>Информацията на вашия екран може би е стара. Вашия портфейла синхронизира автоматично с CreaCoin мрежата след като има успешна свръзка, но процеса отнема време и не е завършил все още.</translation>
     </message>
     <message>
-        <source>Enter an amount of AMS to convert to zAMS</source>
-        <translation>Въведете колко AMS  да се конвертират в zAMS</translation>
+        <source>Enter an amount of AMS to convert to zCREA</source>
+        <translation>Въведете колко AMS  да се конвертират в zCREA</translation>
     </message>
     <message>
         <source>Mint Zerocoin</source>
@@ -2088,8 +2088,8 @@ https://www.transifex.com/amsterdamcoin-project/amsterdamcoin-project-translatio
         <translation>0</translation>
     </message>
     <message>
-        <source>zAMS</source>
-        <translation>zAMS</translation>
+        <source>zCREA</source>
+        <translation>zCREA</translation>
     </message>
     <message>
         <source>Available for Minting:</source>
@@ -2132,12 +2132,12 @@ https://www.transifex.com/amsterdamcoin-project/amsterdamcoin-project-translatio
         <translation>Състояния и/или Съобщения от последните действия по сечене на монети.</translation>
     </message>
     <message>
-        <source>zAMS Control</source>
-        <translation>zAMS Контрол</translation>
+        <source>zCREA Control</source>
+        <translation>zCREA Контрол</translation>
     </message>
     <message>
-        <source>zAMS Selected:</source>
-        <translation>Избрани zAMS:</translation>
+        <source>zCREA Selected:</source>
+        <translation>Избрани zCREA:</translation>
     </message>
     <message>
         <source>Quantity Selected:</source>
@@ -2156,8 +2156,8 @@ https://www.transifex.com/amsterdamcoin-project/amsterdamcoin-project-translatio
         <translation>Налични:</translation>
     </message>
     <message>
-        <source>0 zAMS</source>
-        <translation>0 zAMS</translation>
+        <source>0 zCREA</source>
+        <translation>0 zCREA</translation>
     </message>
     <message>
         <source>Security Level for Zerocoin Transactions. More is better, but needs more time and resources.</source>
@@ -2176,7 +2176,7 @@ https://www.transifex.com/amsterdamcoin-project/amsterdamcoin-project-translatio
         <translation>Плати На:</translation>
     </message>
     <message>
-        <source>The AmsterdamCoin address to send the payment to. Creates local payment to yourself when empty.</source>
+        <source>The CreaCoin address to send the payment to. Creates local payment to yourself when empty.</source>
         <translation>Адреса на който да изпратим плащането. Ако е празно - плащането е до себе си.</translation>
     </message>
     <message>
@@ -2209,7 +2209,7 @@ https://www.transifex.com/amsterdamcoin-project/amsterdamcoin-project-translatio
     </message>
     <message>
         <source>Convert Change to Zerocoin (might cost additional fees)</source>
-        <translation>Изсечи zAMS от рестото (ще струва допълнително заради таксите)</translation>
+        <translation>Изсечи zCREA от рестото (ще струва допълнително заради таксите)</translation>
     </message>
     <message>
         <source>If checked, the wallet tries to minimize the returning change instead of minimizing the number of spent denominations.</source>
@@ -2376,8 +2376,8 @@ https://www.transifex.com/amsterdamcoin-project/amsterdamcoin-project-translatio
         <translation>Копирай сумата</translation>
     </message>
     <message>
-        <source>Zerocoin functionality is not enabled on the AmsterdamCoin network yet.</source>
-        <translation>Zerocoin функцията все още не е активирана в AmsterdamCoin мрежата.</translation>
+        <source>Zerocoin functionality is not enabled on the CreaCoin network yet.</source>
+        <translation>Zerocoin функцията все още не е активирана в CreaCoin мрежата.</translation>
     </message>
     <message>
         <source>Error: Your wallet is locked. Please enter the wallet passphrase first.</source>
@@ -2396,8 +2396,8 @@ https://www.transifex.com/amsterdamcoin-project/amsterdamcoin-project-translatio
         <translation>Успешно изсечени</translation>
     </message>
     <message>
-        <source> zAMS in </source>
-        <translation>zAMS в</translation>
+        <source> zCREA in </source>
+        <translation>zCREA в</translation>
     </message>
     <message>
         <source> sec. Used denominations:
@@ -2430,8 +2430,8 @@ Please be patient...</source>
         <translation>Без 'Плати На' адрес, плащането е локално</translation>
     </message>
     <message>
-        <source>Invalid AmsterdamCoin Address</source>
-        <translation>Невалиден AmsterdamCoin адрес</translation>
+        <source>Invalid CreaCoin Address</source>
+        <translation>Невалиден CreaCoin адрес</translation>
     </message>
     <message>
         <source>Invalid Send Amount</source>
@@ -2474,8 +2474,8 @@ Please be patient...</source>
         <translation>Харченето на Zerocoin се провали със статус =</translation>
     </message>
     <message>
-        <source>zAMS Spend #: </source>
-        <translation>zAMS Похарчени #:</translation>
+        <source>zCREA Spend #: </source>
+        <translation>zCREA Похарчени #:</translation>
     </message>
     <message>
         <source>denomination: </source>
@@ -2498,8 +2498,8 @@ Please be patient...</source>
         <translation>адрес:</translation>
     </message>
     <message>
-        <source>zAMS Mint</source>
-        <translation>Сечене на zAMS</translation>
+        <source>zCREA Mint</source>
+        <translation>Сечене на zCREA</translation>
     </message>
     <message>
         <source>Sending successful, return code: </source>
@@ -2521,8 +2521,8 @@ Please be patient...</source>
         <translation>Сума</translation>
     </message>
     <message>
-        <source>Enter a AmsterdamCoin address (e.g. %1)</source>
-        <translation>Задайте AmsterdamCoin адрес (например %1)</translation>
+        <source>Enter a CreaCoin address (e.g. %1)</source>
+        <translation>Задайте CreaCoin адрес (например %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -2659,8 +2659,8 @@ Please be patient...</source>
         <translation>Блокчейн</translation>
     </message>
     <message>
-        <source>Open the AmsterdamCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Отвори AmsterdamCoin дебъг лог файла от сегашната папка. Това може да отнеме известно време за по-дълги файлове.</translation>
+        <source>Open the CreaCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Отвори CreaCoin дебъг лог файла от сегашната папка. Това може да отнеме известно време за по-дълги файлове.</translation>
     </message>
     <message>
         <source>Number of Masternodes</source>
@@ -2827,8 +2827,8 @@ Please be patient...</source>
         <translation>Изходящи:</translation>
     </message>
     <message>
-        <source>Welcome to the AmsterdamCoin RPC console.</source>
-        <translation>Добре Дошли в RPC конзолата на AmsterdamCoin.</translation>
+        <source>Welcome to the CreaCoin RPC console.</source>
+        <translation>Добре Дошли в RPC конзолата на CreaCoin.</translation>
     </message>
     <message>
         <source>Use up and down arrows to navigate history, and &lt;b&gt;Ctrl-L&lt;/b&gt; to clear screen.</source>
@@ -2898,12 +2898,12 @@ Please be patient...</source>
         <translation>Незадължителен етикет, който да асоциираме с адреса за получаване.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the AmsterdamCoin network.</source>
-        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по AmsterdamCoin мрежата.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the CreaCoin network.</source>
+        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по CreaCoin мрежата.</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the AmsterdamCoin network.</source>
-        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. &lt;br&gt;Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по AmsterdamCoin мрежата.</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the CreaCoin network.</source>
+        <translation>Съобщение свободен текст, което да се прикачи към платежното нареждане, за да бъде показано когато нареждането се отвори от клиента на когото е изпратено. &lt;br&gt;Обърнете внимание, че съобщението няма да бъде изпратено заедно с плащането по CreaCoin мрежата.</translation>
     </message>
     <message>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
@@ -3187,7 +3187,7 @@ Please be patient...</source>
         <translation>Ако собствената такса е настроена на 1000 uAMS и превода е само 250 байта, то тогава "за килобайт" само плаща 250 uAMS входяща такса,&lt;br /&gt; докато "минимална сума" плаща 1000 uAMS. За транзакции по-големи от килобайт, и двете плащат за килобайт.</translation>
     </message>
     <message>
-        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for AmsterdamCoin transactions than the network can process.</source>
+        <source>Paying only the minimum fee is just fine as long as there is less transaction volume than space in the blocks.&lt;br /&gt;But be aware that this can end up in a never confirming transaction once there is more demand for CreaCoin transactions than the network can process.</source>
         <translation>Няма проблем да платите минималната такса, стига обема преводи да е по-малък от наличното място в блоковете. &lt;br /&gt;Но имайте впредвид, че това може да се окаже в превод, който никога не получава потвърждение ако заявките за преводи са повече от колкото мрежата може да понесе.</translation>
     </message>
     <message>
@@ -3295,7 +3295,7 @@ Please be patient...</source>
         <translation>анонимни средства</translation>
     </message>
     <message>
-        <source>Warning: Invalid AmsterdamCoin address</source>
+        <source>Warning: Invalid CreaCoin address</source>
         <translation>Предупреждение: Невалиден AMS адрес</translation>
     </message>
     <message>
@@ -3402,8 +3402,8 @@ Please be patient...</source>
         <translation>Плати На:</translation>
     </message>
     <message>
-        <source>The AmsterdamCoin address to send the payment to</source>
-        <translation>AmsterdamCoin адреса - получател на плащането</translation>
+        <source>The CreaCoin address to send the payment to</source>
+        <translation>CreaCoin адреса - получател на плащането</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3442,8 +3442,8 @@ Please be patient...</source>
         <translation>Съобщение:</translation>
     </message>
     <message>
-        <source>A message that was attached to the AmsterdamCoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the AmsterdamCoin network.</source>
-        <translation>Съобщение, което е било прикачено към AmsterdamCoin:URI и което ще бъде запазено заедно с превода за ваша информация. Внимание: Това съобщение е само за Вас, то няма да бъде изпратено по AmsterdamCoin мрежата.</translation>
+        <source>A message that was attached to the CreaCoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the CreaCoin network.</source>
+        <translation>Съобщение, което е било прикачено към CreaCoin:URI и което ще бъде запазено заедно с превода за ваша информация. Внимание: Това съобщение е само за Вас, то няма да бъде изпратено по CreaCoin мрежата.</translation>
     </message>
     <message>
         <source>This is an unverified payment request.</source>
@@ -3469,8 +3469,8 @@ Please be patient...</source>
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>AmsterdamCoin Core is shutting down...</source>
-        <translation>Изключване на AmsterdamCoin Ядрото...</translation>
+        <source>CreaCoin Core is shutting down...</source>
+        <translation>Изключване на CreaCoin Ядрото...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -3492,8 +3492,8 @@ Please be patient...</source>
         <translation>Може да подписвате съобщения с Вашите адреси, за да докажете че сте техен притежател. Внимавайте да не подписвате нищо съмнително, тъй като има хакерски атаки, които целят да придобият вашата самоличност. Само подписвайте пълен и ясен текст, с който сте напълно съгласни.</translation>
     </message>
     <message>
-        <source>The AmsterdamCoin address to sign the message with</source>
-        <translation>AmsterdamCoin адреса, с който да подпишете съобщението</translation>
+        <source>The CreaCoin address to sign the message with</source>
+        <translation>CreaCoin адреса, с който да подпишете съобщението</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -3524,16 +3524,16 @@ Please be patient...</source>
         <translation>Копирай сегашния подпис в системния буфер</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this AmsterdamCoin address</source>
-        <translation>Подпишете съобщението, за да докажете, че притежавате този AmsterdamCoin адрес</translation>
+        <source>Sign the message to prove you own this CreaCoin address</source>
+        <translation>Подпишете съобщението, за да докажете, че притежавате този CreaCoin адрес</translation>
     </message>
     <message>
-        <source>The AmsterdamCoin address the message was signed with</source>
-        <translation>AmsterdamCoin адреса, който е подписано съобщението</translation>
+        <source>The CreaCoin address the message was signed with</source>
+        <translation>CreaCoin адреса, който е подписано съобщението</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified AmsterdamCoin address</source>
-        <translation>Поверете съобщението, за да се уверите, че е подписано със зададения AmsterdamCoin адрес</translation>
+        <source>Verify the message to ensure it was signed with the specified CreaCoin address</source>
+        <translation>Поверете съобщението, за да се уверите, че е подписано със зададения CreaCoin адрес</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -3619,8 +3619,8 @@ Please be patient...</source>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>AmsterdamCoin Core</source>
-        <translation>AmsterdamCoin Ядро</translation>
+        <source>CreaCoin Core</source>
+        <translation>CreaCoin Ядро</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -3635,8 +3635,8 @@ Please be patient...</source>
         <translation>Dash Core разработчици</translation>
     </message>
     <message>
-        <source>The AmsterdamCoin Core developers</source>
-        <translation>AmsterdamCoin Core разработчици</translation>
+        <source>The CreaCoin Core developers</source>
+        <translation>CreaCoin Core разработчици</translation>
     </message>
     <message>
         <source>[testnet]</source>
@@ -3955,32 +3955,32 @@ Please be patient...</source>
         <translation>Обфускирани</translation>
     </message>
     <message>
-        <source>Converted AMS to zAMS</source>
-        <translation>Конвертиран AMS във zAMS</translation>
+        <source>Converted AMS to zCREA</source>
+        <translation>Конвертиран AMS във zCREA</translation>
     </message>
     <message>
-        <source>Spent zAMS</source>
-        <translation>Похарчени zAMS</translation>
+        <source>Spent zCREA</source>
+        <translation>Похарчени zCREA</translation>
     </message>
     <message>
-        <source>Received AMS from zAMS</source>
-        <translation>Получен AMS от zAMS</translation>
+        <source>Received AMS from zCREA</source>
+        <translation>Получен AMS от zCREA</translation>
     </message>
     <message>
-        <source>Minted Change as zAMS from zAMS Spend</source>
-        <translation>Исечено ресто като zAMS от похарчените zAMS</translation>
+        <source>Minted Change as zCREA from zCREA Spend</source>
+        <translation>Исечено ресто като zCREA от похарчените zCREA</translation>
     </message>
     <message>
-        <source>Converted zAMS to AMS</source>
-        <translation>Конвертирани zAMS в AMS</translation>
+        <source>Converted zCREA to AMS</source>
+        <translation>Конвертирани zCREA в AMS</translation>
     </message>
     <message>
         <source>watch-only</source>
         <translation>наблюдение само</translation>
     </message>
     <message>
-        <source>zAMS Accumulator</source>
-        <translation>zAMS Акумулатор</translation>
+        <source>zCREA Accumulator</source>
+        <translation>zCREA Акумулатор</translation>
     </message>
     <message>
         <source>(n/a)</source>
@@ -4086,8 +4086,8 @@ Please be patient...</source>
         <translation>Мастърноуд възнаграждение</translation>
     </message>
     <message>
-        <source>Received AMS from zAMS</source>
-        <translation>Получен AMS от zAMS</translation>
+        <source>Received AMS from zCREA</source>
+        <translation>Получен AMS от zCREA</translation>
     </message>
     <message>
         <source>Zerocoin Mint</source>
@@ -4098,8 +4098,8 @@ Please be patient...</source>
         <translation>Харчене на Zerocoin</translation>
     </message>
     <message>
-        <source>Zerocoin Spend, Change in zAMS</source>
-        <translation>Харчене на Zerocoin, Ресто в zAMS</translation>
+        <source>Zerocoin Spend, Change in zCREA</source>
+        <translation>Харчене на Zerocoin, Ресто в zCREA</translation>
     </message>
     <message>
         <source>Zerocoin Spend to Self</source>
@@ -4261,8 +4261,8 @@ Please be patient...</source>
 <context>
     <name>ZAMSControlDialog</name>
     <message>
-        <source>Select zAMS to Spend</source>
-        <translation>Изберете zAMS за Изпращане</translation>
+        <source>Select zCREA to Spend</source>
+        <translation>Изберете zCREA за Изпращане</translation>
     </message>
     <message>
         <source>Quantity</source>
@@ -4273,8 +4273,8 @@ Please be patient...</source>
         <translation>0</translation>
     </message>
     <message>
-        <source>zAMS</source>
-        <translation>zAMS</translation>
+        <source>zCREA</source>
+        <translation>zCREA</translation>
     </message>
     <message>
         <source>Select/Deselect All</source>
@@ -4286,7 +4286,7 @@ Please be patient...</source>
     </message>
 </context>
 <context>
-    <name>amsterdamcoin-core</name>
+    <name>creacoin-core</name>
     <message>
         <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
         <translation>Промяна на поведението на автоматично финализираното гласоподаване. mode=auto: Гласувай само за точни финализирани бюджети, които съвпадат с моят генериран бюджет. (string, default:auto)</translation>
@@ -4304,8 +4304,8 @@ Please be patient...</source>
         <translation>Изтрий всички преводи от портфейла и възстанови само тези части от блокчейна - сканира при стартиране.</translation>
     </message>
     <message>
-        <source>Disable all AmsterdamCoin specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
-        <translation>Изключи всякаква AmsterdamCoin функционалност (Мастърноудове, Обфускация, SwiftTX, Бюджетиране) (0-1 default: %u)</translation>
+        <source>Disable all CreaCoin specific functionality (Masternodes, Obfuscation, SwiftTX, Budgeting) (0-1, default: %u)</source>
+        <translation>Изключи всякаква CreaCoin функционалност (Мастърноудове, Обфускация, SwiftTX, Бюджетиране) (0-1 default: %u)</translation>
     </message>
     <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>

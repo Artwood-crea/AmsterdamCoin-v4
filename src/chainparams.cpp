@@ -48,11 +48,11 @@ static void convertSeed6(std::vector<CAddress>& vSeedsOut, const SeedSpec6* data
 
 static Checkpoints::MapCheckpoints mapCheckpoints =
     boost::assign::map_list_of
-	(0, uint256("0x00000a0e00ed255330b6e645e6e943c5d50c8b62a5c92ef2603c17bad9ac3a73"));
+	(0, uint256("0x0000000b0cea6419e9cfb4901b2710c9b169fedbec23e8c08475ea0d068c951a"));
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1527674400, // * UNIX timestamp of last checkpoint block
+    1527760801, // * UNIX timestamp of last checkpoint block
     0,    // * total number of transactions between genesis and last checkpoint
                 //   (the tx=... number in the SetBestChain debug.log lines)
     2880        // * estimated number of transactions per day after checkpoint
@@ -101,8 +101,8 @@ public:
         nSubsidyHalvingInterval = 210000;
         nMaxReorganizationDepth = 100;
         nMinerThreads = 0;
-        nTargetTimespan = 1 * 120; // CreaCoin: 1 minute
-        nTargetSpacing = 1 * 120;  // CreaCoin: 1 minute
+        nTargetTimespan = 1 * 120; // CreaCoin: 2 minutes
+        nTargetSpacing = 1 * 120;  // CreaCoin: 2 minutes
         nMaturity = 51;
 	nMaxMoneyOut = 25000000 * COIN;
         /** Height or Time Based Activations **/
@@ -126,13 +126,13 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime = 1527674400;
+        genesis.nTime = 1527760801;
         genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 868987;
+        genesis.nNonce = 21251093;
         hashGenesisBlock = genesis.GetHash();
 
-        assert(hashGenesisBlock == uint256("0x00000a0e00ed255330b6e645e6e943c5d50c8b62a5c92ef2603c17bad9ac3a73"));
-        assert(genesis.hashMerkleRoot == uint256("0xbf3bb8ffbe75764e90cd8811c275a3ccdd90dd4ce8516541b433fc26e7daddf3"));
+        assert(hashGenesisBlock == uint256("0x0000000b0cea6419e9cfb4901b2710c9b169fedbec23e8c08475ea0d068c951a"));
+        assert(genesis.hashMerkleRoot == uint256("0x5b675500ba952c60b804165079eb695f22a643c949a2282e667cdae09b38326f"));
 
         vSeeds.push_back(CDNSSeedData("dnss1.creacoin.info", "dnss1.creacoin.info"));
         vSeeds.push_back(CDNSSeedData("dnss2.creacoin.info", "dnss2.creacoin.info"));
@@ -159,7 +159,7 @@ public:
         strSporkKey = "0434273b4ec9c9111cd9ca592281e001f6737e18fbe63d2024f17873ba9d8ba3bff040c52e1bdb46c703c3baa62f4d7e8aa1f1f26d32c8ef737919762fd18e4c9e";
 
         strObfuscationPoolDummyAddress = "AWSbBnzmNkjDVaYHX7vkL1MqD96pRYWtZo";
-        nStartMasternodePayments = 1527710400; //Wed, 25 Jun 2014 20:36:16 GMT
+        nStartMasternodePayments = 1527760810; //Wed, 25 Jun 2014 20:36:16 GMT
 
         /** Zerocoin */
         zerocoinModulus = "25195908475657893494027183240048398571429282126204032027777137836043662020707595556264018525880784"

@@ -1,18 +1,18 @@
 [Unit]
-Description=AmsterdamCoin's distributed currency daemon
+Description=CreaCoin's distributed currency daemon
 After=network.target
 
 [Service]
-User=amsterdamcoin
-Group=amsterdamcoin
+User=creacoin
+Group=creacoin
 
 Type=forking
 PIDFile=/var/lib/amsterdamcoind/amsterdamcoind.pid
 
 ExecStart=/usr/bin/amsterdamcoind -daemon -pid=/var/lib/amsterdamcoind/amsterdamcoind.pid \
-          -conf=/etc/amsterdamcoin/amsterdamcoin.conf -datadir=/var/lib/amsterdamcoind
+          -conf=/etc/creacoin/creacoin.conf -datadir=/var/lib/amsterdamcoind
 
-ExecStop=-/usr/bin/amsterdamcoin-cli -conf=/etc/amsterdamcoin/amsterdamcoin.conf \
+ExecStop=-/usr/bin/creacoin-cli -conf=/etc/creacoin/creacoin.conf \
          -datadir=/var/lib/amsterdamcoind stop
 
 Restart=always

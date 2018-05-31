@@ -78,7 +78,7 @@ HEADERS += src/activemasternode.h \
            src/crypter.h \
            src/obfuscation-relay.h \
            src/obfuscation.h \
-           src/amsterdamcoin-config.h \
+           src/creacoin-config.h \
            src/db.h \
            src/eccryptoverify.h \
            src/ecwrapper.h \
@@ -131,7 +131,7 @@ HEADERS += src/activemasternode.h \
            src/wallet_ismine.h \
            src/walletdb.h \
            src/compat/sanity.h \
-           src/config/amsterdamcoin-config.h \
+           src/config/creacoin-config.h \
            src/crypto/common.h \
 		   src/crypto/scrypt.h \
            src/crypto/hmac_sha256.h \
@@ -339,7 +339,7 @@ HEADERS += src/activemasternode.h \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.h \
            src/crypto/aes_helper.c \
            src/qt/bitcoinamountfield.moc \
-           src/qt/amsterdamcoin.moc \
+           src/qt/creacoin.moc \
            src/qt/intro.moc \
            src/qt/overviewpage.moc \
            src/qt/rpcconsole.moc \
@@ -380,9 +380,9 @@ SOURCES += src/activemasternode.cpp \
            src/crypter.cpp \
            src/obfuscation-relay.cpp \
            src/obfuscation.cpp \
-           src/amsterdamcoin-cli.cpp \
-           src/amsterdamcoin-tx.cpp \
-           src/amsterdamcoin.cpp \
+           src/creacoin-cli.cpp \
+           src/creacoin-tx.cpp \
+           src/creacoin.cpp \
            src/db.cpp \
            src/eccryptoverify.cpp \
            src/ecwrapper.cpp \
@@ -485,7 +485,7 @@ SOURCES += src/activemasternode.cpp \
            src/qt/coincontroltreewidget.cpp \
            src/qt/csvmodelwriter.cpp \
            src/qt/obfuscationconfig.cpp \
-           src/qt/amsterdamcoin.cpp \
+           src/qt/creacoin.cpp \
            src/qt/amsterdamcoinstrings.cpp \
            src/qt/editaddressdialog.cpp \
            src/qt/guiutil.cpp \
@@ -655,7 +655,7 @@ SOURCES += src/activemasternode.cpp \
            src/leveldb/helpers/memenv/memenv.cc \
            src/leveldb/helpers/memenv/memenv_test.cc \
            src/secp256k1/src/java/org_bitcoin_NativeSecp256k1.c
-RESOURCES += src/qt/amsterdamcoin.qrc src/qt/amsterdamcoin_locale.qrc
+RESOURCES += src/qt/creacoin.qrc src/qt/amsterdamcoin_locale.qrc
 
 TRANSLATIONS += src/qt/locale/amsterdamcoin_bg.ts \
                 src/qt/locale/amsterdamcoin_de.ts \

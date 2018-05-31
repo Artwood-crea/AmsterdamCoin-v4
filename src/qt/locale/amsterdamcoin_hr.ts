@@ -115,8 +115,8 @@
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>The AmsterdamCoin address the message was signed with</source>
-        <translation>AmsterdamCoin adresa s kojom je potpisana poruka</translation>
+        <source>The CreaCoin address the message was signed with</source>
+        <translation>CreaCoin adresa s kojom je potpisana poruka</translation>
     </message>
     <message>
         <source>Allowed: 0-9,a-z,A-Z,</source>
@@ -150,8 +150,8 @@
         <translation>Otvori konfiguracijsku datoteku</translation>
     </message>
     <message>
-        <source>AmsterdamCoin Core</source>
-        <translation>AmsterdamCoin Core</translation>
+        <source>CreaCoin Core</source>
+        <translation>CreaCoin Core</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -162,8 +162,8 @@
         <translation>&amp;BIP38 alat</translation>
     </message>
     <message>
-        <source>AmsterdamCoin Core client</source>
-        <translation>AmsterdamCoin Core klijent</translation>
+        <source>CreaCoin Core client</source>
+        <translation>CreaCoin Core klijent</translation>
     </message>
     <message>
         <source>Error</source>
@@ -256,15 +256,15 @@
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>AmsterdamCoin Core</source>
-        <translation>AmsterdamCoin Core</translation>
+        <source>CreaCoin Core</source>
+        <translation>CreaCoin Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>AmsterdamCoin Core</source>
-        <translation>AmsterdamCoin Core</translation>
+        <source>CreaCoin Core</source>
+        <translation>CreaCoin Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -597,8 +597,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>AmsterdamCoin Core is shutting down...</source>
-        <translation>AmsterdamCoin Core se gasi...</translation>
+        <source>CreaCoin Core is shutting down...</source>
+        <translation>CreaCoin Core se gasi...</translation>
     </message>
     </context>
 <context>
@@ -620,8 +620,8 @@
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>The AmsterdamCoin address the message was signed with</source>
-        <translation>AmsterdamCoin adresa s kojom je potpisana poruka</translation>
+        <source>The CreaCoin address the message was signed with</source>
+        <translation>CreaCoin adresa s kojom je potpisana poruka</translation>
     </message>
     <message>
         <source>Message signed.</source>
@@ -635,8 +635,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>AmsterdamCoin Core</source>
-        <translation>AmsterdamCoin Core</translation>
+        <source>CreaCoin Core</source>
+        <translation>CreaCoin Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -790,7 +790,7 @@
     </message>
     </context>
 <context>
-    <name>amsterdamcoin-core</name>
+    <name>creacoin-core</name>
     <message>
         <source>Error</source>
         <translation>Greška</translation>

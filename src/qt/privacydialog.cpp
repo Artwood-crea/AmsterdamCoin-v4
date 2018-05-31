@@ -30,14 +30,14 @@ PrivacyDialog::PrivacyDialog(QWidget* parent) : QDialog(parent),
     nDisplayUnit = 0; // just make sure it's not unitialized
     ui->setupUi(this);
 
-    // "Spending 999999 zAMS ought to be enough for anybody." - Bill Gates, 2017
-    ui->zAMSpayAmount->setValidator( new QDoubleValidator(0.0, 21000000.0, 20, this) );
+    // "Spending 999999 zCREA ought to be enough for anybody." - Bill Gates, 2017
+    ui->zCREApayAmount->setValidator( new QDoubleValidator(0.0, 21000000.0, 20, this) );
     ui->labelMintAmountValue->setValidator( new QIntValidator(0, 999999, this) );
 
     // Default texts for (mini-) coincontrol
     ui->labelCoinControlQuantity->setText (tr("Coins automatically selected"));
     ui->labelCoinControlAmount->setText (tr("Coins automatically selected"));
-    ui->labelzAMSSyncStatus->setText("(" + tr("out of sync") + ")");
+    ui->labelzCREASyncStatus->setText("(" + tr("out of sync") + ")");
 
     // Sunken frame for minting messages
     ui->TEMintStatus->setFrameStyle(QFrame::StyledPanel | QFrame::Sunken);
@@ -66,7 +66,7 @@ PrivacyDialog::PrivacyDialog(QWidget* parent) : QDialog(parent),
     ui->labelzDenom7Text->setText("Denom. with value <b>1000</b>:");
     ui->labelzDenom8Text->setText("Denom. with value <b>5000</b>:");
 
-    // AmsterdamCoin settings
+    // CreaCoin settings
     QSettings settings;
     if (!settings.contains("nSecurityLevel")){
         nSecurityLevel = 42;
@@ -94,11 +94,11 @@ PrivacyDialog::PrivacyDialog(QWidget* parent) : QDialog(parent),
 
     //temporary disable for maintenance
     if(GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
-        ui->pushButtonMintzAMS->setEnabled(false);
-        ui->pushButtonMintzAMS->setToolTip(tr("zAMS is currently disabled due to maintenance."));
+        ui->pushButtonMintzCREA->setEnabled(false);
+        ui->pushButtonMintzCREA->setToolTip(tr("zCREA is currently disabled due to maintenance."));
 
-        ui->pushButtonSpendzAMS->setEnabled(false);
-        ui->pushButtonSpendzAMS->setToolTip(tr("zAMS is currently disabled due to maintenance."));
+        ui->pushButtonSpendzCREA->setEnabled(false);
+        ui->pushButtonSpendzCREA->setToolTip(tr("zCREA is currently disabled due to maintenance."));
     }
 }
 
@@ -137,18 +137,18 @@ void PrivacyDialog::on_addressBookButton_clicked()
     dlg.setModel(walletModel->getAddressTableModel());
     if (dlg.exec()) {
         ui->payTo->setText(dlg.getReturnValue());
-        ui->zAMSpayAmount->setFocus();
+        ui->zCREApayAmount->setFocus();
     }
 }
 
-void PrivacyDialog::on_pushButtonMintzAMS_clicked()
+void PrivacyDialog::on_pushButtonMintzCREA_clicked()
 {
     if (!walletModel || !walletModel->getOptionsModel())
         return;
 
     if(GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
         QMessageBox::information(this, tr("Mint Zerocoin"),
-                                 tr("zAMS is currently undergoing maintenance."), QMessageBox::Ok,
+                                 tr("zCREA is currently undergoing maintenance."), QMessageBox::Ok,
                                  QMessageBox::Ok);
         return;
     }
@@ -176,7 +176,7 @@ void PrivacyDialog::on_pushButtonMintzAMS_clicked()
         return;
     }
 
-    ui->TEMintStatus->setPlainText(tr("Minting ") + ui->labelMintAmountValue->text() + " zAMS...");
+    ui->TEMintStatus->setPlainText(tr("Minting ") + ui->labelMintAmountValue->text() + " zCREA...");
     ui->TEMintStatus->repaint ();
     
     int64_t nTime = GetTimeMillis();
@@ -194,7 +194,7 @@ void PrivacyDialog::on_pushButtonMintzAMS_clicked()
     double fDuration = (double)(GetTimeMillis() - nTime)/1000.0;
 
     // Minting successfully finished. Show some stats for entertainment.
-    QString strStatsHeader = tr("Successfully minted ") + ui->labelMintAmountValue->text() + tr(" zAMS in ") + 
+    QString strStatsHeader = tr("Successfully minted ") + ui->labelMintAmountValue->text() + tr(" zCREA in ") + 
                              QString::number(fDuration) + tr(" sec. Used denominations:\n");
     
     // Clear amount to avoid double spending when accidentally clicking twice
@@ -253,7 +253,7 @@ void PrivacyDialog::on_pushButtonSpentReset_clicked()
     return;
 }
 
-void PrivacyDialog::on_pushButtonSpendzAMS_clicked()
+void PrivacyDialog::on_pushButtonSpendzCREA_clicked()
 {
 
     if (!walletModel || !walletModel->getOptionsModel() || !pwalletMain)
@@ -261,7 +261,7 @@ void PrivacyDialog::on_pushButtonSpendzAMS_clicked()
 
     if(GetAdjustedTime() > GetSporkValue(SPORK_16_ZEROCOIN_MAINTENANCE_MODE)) {
         QMessageBox::information(this, tr("Mint Zerocoin"),
-                                 tr("zAMS is currently undergoing maintenance."), QMessageBox::Ok, QMessageBox::Ok);
+                                 tr("zCREA is currently undergoing maintenance."), QMessageBox::Ok, QMessageBox::Ok);
         return;
     }
 
@@ -273,24 +273,24 @@ void PrivacyDialog::on_pushButtonSpendzAMS_clicked()
             // Unlock wallet was cancelled
             return;
         }
-        // Wallet is unlocked now, sedn zAMS
-        sendzAMS();
+        // Wallet is unlocked now, sedn zCREA
+        sendzCREA();
         return;
     }
-    // Wallet already unlocked or not encrypted at all, send zAMS
-    sendzAMS();
+    // Wallet already unlocked or not encrypted at all, send zCREA
+    sendzCREA();
 }
 
 void PrivacyDialog::on_pushButtonZAMSControl_clicked()
 {
-    ZAMSControlDialog* zAMSControl = new ZAMSControlDialog(this);
-    zAMSControl->setModel(walletModel);
-    zAMSControl->exec();
+    ZAMSControlDialog* zCREAControl = new ZAMSControlDialog(this);
+    zCREAControl->setModel(walletModel);
+    zCREAControl->exec();
 }
 
 void PrivacyDialog::setZAMSControlLabels(int64_t nAmount, int nQuantity)
 {
-    ui->labelzAMSSelected_int->setText(QString::number(nAmount));
+    ui->labelzCREASelected_int->setText(QString::number(nAmount));
     ui->labelQuantitySelected_int->setText(QString::number(nQuantity));
 }
 
@@ -299,7 +299,7 @@ static inline int64_t roundint64(double d)
     return (int64_t)(d > 0 ? d + 0.5 : d - 0.5);
 }
 
-void PrivacyDialog::sendzAMS()
+void PrivacyDialog::sendzCREA()
 {
     QSettings settings;
 
@@ -310,31 +310,31 @@ void PrivacyDialog::sendzAMS()
     }
     else{
         if (!address.IsValid()) {
-            QMessageBox::warning(this, tr("Spend Zerocoin"), tr("Invalid AmsterdamCoin Address"), QMessageBox::Ok, QMessageBox::Ok);
+            QMessageBox::warning(this, tr("Spend Zerocoin"), tr("Invalid CreaCoin Address"), QMessageBox::Ok, QMessageBox::Ok);
             ui->payTo->setFocus();
             return;
         }
     }
 
     // Double is allowed now
-    double dAmount = ui->zAMSpayAmount->text().toDouble();
+    double dAmount = ui->zCREApayAmount->text().toDouble();
     CAmount nAmount = roundint64(dAmount* COIN);
 
     // Check amount validity
     if (!MoneyRange(nAmount) || nAmount <= 0.0) {
         QMessageBox::warning(this, tr("Spend Zerocoin"), tr("Invalid Send Amount"), QMessageBox::Ok, QMessageBox::Ok);
-        ui->zAMSpayAmount->setFocus();
+        ui->zCREApayAmount->setFocus();
         return;
     }
 
-    // Convert change to zAMS
+    // Convert change to zCREA
     bool fMintChange = ui->checkBoxMintChange->isChecked();
 
     // Persist minimize change setting
     fMinimizeChange = ui->checkBoxMinimizeChange->isChecked();
     settings.setValue("fMinimizeChange", fMinimizeChange);
 
-    // Warn for additional fees if amount is not an integer and change as zAMS is requested
+    // Warn for additional fees if amount is not an integer and change as zCREA is requested
     bool fWholeNumber = floor(dAmount) == dAmount;
     double dzFee = 0.0;
 
@@ -351,7 +351,7 @@ void PrivacyDialog::sendzAMS()
 
         if (retval != QMessageBox::Yes) {
             // Sending canceled
-            ui->zAMSpayAmount->setFocus();
+            ui->zCREApayAmount->setFocus();
             return;
         }
     }
@@ -370,7 +370,7 @@ void PrivacyDialog::sendzAMS()
 
     // General info
     QString strQuestionString = tr("Are you sure you want to send?<br /><br />");
-    QString strAmount = "<b>" + QString::number(dAmount, 'f', 8) + " zAMS</b>";
+    QString strAmount = "<b>" + QString::number(dAmount, 'f', 8) + " zCREA</b>";
     QString strAddress = tr(" to address ") + QString::fromStdString(address.ToString()) + strAddressLabel + " <br />";
 
     if(ui->payTo->text().isEmpty()){
@@ -396,13 +396,13 @@ void PrivacyDialog::sendzAMS()
     ui->TEMintStatus->setPlainText(tr("Spending Zerocoin.\nComputationally expensive, might need several minutes depending on the selected Security Level and your hardware. \nPlease be patient..."));
     ui->TEMintStatus->repaint();
 
-    // use mints from zAMS selector if applicable
+    // use mints from zCREA selector if applicable
     vector<CZerocoinMint> vMintsSelected;
     if (!ZAMSControlDialog::listSelectedMints.empty()) {
         vMintsSelected = ZAMSControlDialog::GetSelectedMints();
     }
 
-    // Spend zAMS
+    // Spend zCREA
     CWalletTx wtxNew;
     CZerocoinSpendReceipt receipt;
     bool fSuccess = false;
@@ -418,7 +418,7 @@ void PrivacyDialog::sendzAMS()
     // Display errors during spend
     if (!fSuccess) {
         int nNeededSpends = receipt.GetNeededSpends(); // Number of spends we would need for this transaction
-        const int nMaxSpends = Params().Zerocoin_MaxSpendsPerTransaction(); // Maximum possible spends for one zAMS transaction
+        const int nMaxSpends = Params().Zerocoin_MaxSpendsPerTransaction(); // Maximum possible spends for one zCREA transaction
         if (nNeededSpends > nMaxSpends) {
             QString strStatusMessage = tr("Too much inputs (") + QString::number(nNeededSpends, 10) + tr(") needed. \nMaximum allowed: ") + QString::number(nMaxSpends, 10);
             strStatusMessage += tr("\nEither mint higher denominations (so fewer inputs are needed) or reduce the amount to spend.");
@@ -429,7 +429,7 @@ void PrivacyDialog::sendzAMS()
             QMessageBox::warning(this, tr("Spend Zerocoin"), receipt.GetStatusMessage().c_str(), QMessageBox::Ok, QMessageBox::Ok);
             ui->TEMintStatus->setPlainText(tr("Spend Zerocoin failed with status = ") +QString::number(receipt.GetStatus(), 10) + "\n" + "Message: " + QString::fromStdString(receipt.GetStatusMessage()));
         }
-        ui->zAMSpayAmount->setFocus();
+        ui->zCREApayAmount->setFocus();
         ui->TEMintStatus->repaint();
         return;
     }
@@ -442,7 +442,7 @@ void PrivacyDialog::sendzAMS()
     CAmount nValueIn = 0;
     int nCount = 0;
     for (CZerocoinSpend spend : receipt.GetSpends()) {
-        strStats += tr("zAMS Spend #: ") + QString::number(nCount) + ", ";
+        strStats += tr("zCREA Spend #: ") + QString::number(nCount) + ", ";
         strStats += tr("denomination: ") + QString::number(spend.GetDenomination()) + ", ";
         strStats += tr("serial: ") + spend.GetSerial().ToString().c_str() + "\n";
         strStats += tr("Spend is 1 of : ") + QString::number(spend.GetMintCount()) + " mints in the accumulator\n";
@@ -457,7 +457,7 @@ void PrivacyDialog::sendzAMS()
         strStats += tr("address: ");
         CTxDestination dest;
         if(txout.scriptPubKey.IsZerocoinMint())
-            strStats += tr("zAMS Mint");
+            strStats += tr("zCREA Mint");
         else if(ExtractDestination(txout.scriptPubKey, dest))
             strStats += tr(CBitcoinAddress(dest).ToString().c_str());
         strStats += "\n";
@@ -472,7 +472,7 @@ void PrivacyDialog::sendzAMS()
     strReturn += strStats;
 
     // Clear amount to avoid double spending when accidentally clicking twice
-    ui->zAMSpayAmount->setText ("0");
+    ui->zCREApayAmount->setText ("0");
 
     ui->TEMintStatus->setPlainText(strReturn);
     ui->TEMintStatus->repaint();
@@ -614,7 +614,7 @@ void PrivacyDialog::setBalance(const CAmount& balance, const CAmount& unconfirme
 
         strDenomStats = strUnconfirmed + QString::number(mapDenomBalances.at(denom)) + " x " +
                         QString::number(nCoins) + " = <b>" + 
-                        QString::number(nSumPerCoin) + " zAMS </b>";
+                        QString::number(nSumPerCoin) + " zCREA </b>";
 
         switch (nCoins) {
             case libzerocoin::CoinDenomination::ZQ_ONE: 
@@ -652,9 +652,9 @@ void PrivacyDialog::setBalance(const CAmount& balance, const CAmount& unconfirme
         nLockedBalance = walletModel->getLockedBalance();
     }
 
-    ui->labelzAvailableAmount->setText(QString::number(zerocoinBalance/COIN) + QString(" zAMS "));
-    ui->labelzAvailableAmount_2->setText(QString::number(matureZerocoinBalance/COIN) + QString(" zAMS "));
-    ui->labelzAMSAmountValue->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, balance - immatureBalance - nLockedBalance, false, BitcoinUnits::separatorAlways));
+    ui->labelzAvailableAmount->setText(QString::number(zerocoinBalance/COIN) + QString(" zCREA "));
+    ui->labelzAvailableAmount_2->setText(QString::number(matureZerocoinBalance/COIN) + QString(" zCREA "));
+    ui->labelzCREAAmountValue->setText(BitcoinUnits::floorHtmlWithUnit(nDisplayUnit, balance - immatureBalance - nLockedBalance, false, BitcoinUnits::separatorAlways));
 }
 
 void PrivacyDialog::updateDisplayUnit()
@@ -670,7 +670,7 @@ void PrivacyDialog::updateDisplayUnit()
 
 void PrivacyDialog::showOutOfSyncWarning(bool fShow)
 {
-    ui->labelzAMSSyncStatus->setVisible(fShow);
+    ui->labelzCREASyncStatus->setVisible(fShow);
 }
 
 void PrivacyDialog::keyPressEvent(QKeyEvent* event)

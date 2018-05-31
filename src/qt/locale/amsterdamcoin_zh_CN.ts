@@ -43,11 +43,11 @@
     </message>
     <message>
         <source>Choose the address to send coins to</source>
-        <translation>选择发送AmsterdamCoin coin的地址</translation>
+        <translation>选择发送CreaCoin coin的地址</translation>
     </message>
     <message>
         <source>Choose the address to receive coins with</source>
-        <translation>选择接收AmsterdamCoin coin的地址</translation>
+        <translation>选择接收CreaCoin coin的地址</translation>
     </message>
     <message>
         <source>C&amp;hoose</source>
@@ -62,12 +62,12 @@
         <translation>接收地址</translation>
     </message>
     <message>
-        <source>These are your AmsterdamCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>这是用于发送AmsterdamCoin的地址。在发送AmsterdamCoin之前，请认真核查发送金额和接收地址。</translation>
+        <source>These are your CreaCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>这是用于发送CreaCoin的地址。在发送CreaCoin之前，请认真核查发送金额和接收地址。</translation>
     </message>
     <message>
-        <source>These are your AmsterdamCoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>这是用于接收AmsterdamCoin的钱包地址。建议每一笔交易都使用一个新的钱包地址。</translation>
+        <source>These are your CreaCoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>这是用于接收CreaCoin的钱包地址。建议每一笔交易都使用一个新的钱包地址。</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>确认钱包加密</translation>
     </message>
     <message>
-        <source>AmsterdamCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your AMSs from being stolen by malware infecting your computer.</source>
-        <translation>AmsterdamCoin将关闭以完成加密过程。但是，仅仅加密您的钱包是不够的，因为它并不能阻止恶意软件从您的电脑里面偷取AMSs。</translation>
+        <source>CreaCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your AMSs from being stolen by malware infecting your computer.</source>
+        <translation>CreaCoin将关闭以完成加密过程。但是，仅仅加密您的钱包是不够的，因为它并不能阻止恶意软件从您的电脑里面偷取AMSs。</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -239,16 +239,16 @@
         <translation>&amp;BIP 38 加密</translation>
     </message>
     <message>
-        <source>Enter a AmsterdamCoin Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>输入您要使用BIP 38加密的AmsterdamCoin地址。在中间框中输入密码。按加密计算加密私钥。</translation>
+        <source>Enter a CreaCoin Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>输入您要使用BIP 38加密的CreaCoin地址。在中间框中输入密码。按加密计算加密私钥。</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>地址：</translation>
     </message>
     <message>
-        <source>The AmsterdamCoin address to sign the message with</source>
-        <translation>该AmsterdamCoin地址签名的消息</translation>
+        <source>The CreaCoin address to sign the message with</source>
+        <translation>该CreaCoin地址签名的消息</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>将当前签名复制到系统剪贴板</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this AmsterdamCoin address</source>
-        <translation>签署消息以证明您拥有此AmsterdamCoin地址</translation>
+        <source>Sign the message to prove you own this CreaCoin address</source>
+        <translation>签署消息以证明您拥有此CreaCoin地址</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>输入BIP 38加密私钥。 在中间框中输入密码。 单击解密密钥计算私钥。 密钥解密后，单击“导入地址”将将该私钥添加到钱包中。</translation>
     </message>
     <message>
-        <source>The AmsterdamCoin address the message was signed with</source>
-        <translation>由AmsterdamCoin地址签名的消息</translation>
+        <source>The CreaCoin address the message was signed with</source>
+        <translation>由CreaCoin地址签名的消息</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified AmsterdamCoin address</source>
-        <translation>验证消息确保它已使用指定的AmsterdamCoin地址进行签名</translation>
+        <source>Verify the message to ensure it was signed with the specified CreaCoin address</source>
+        <translation>验证消息确保它已使用指定的CreaCoin地址进行签名</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -602,24 +602,24 @@
         <translation>标签工具栏</translation>
     </message>
     <message>
-        <source>AmsterdamCoin Core</source>
-        <translation>AmsterdamCoin Core</translation>
+        <source>CreaCoin Core</source>
+        <translation>CreaCoin Core</translation>
     </message>
     <message>
-        <source>Send coins to a AmsterdamCoin address</source>
-        <translation>发送数字货币到AmsterdamCoin地址</translation>
+        <source>Send coins to a CreaCoin address</source>
+        <translation>发送数字货币到CreaCoin地址</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and amsterdamcoin: URIs)</source>
-        <translation>请求支付（生成二维码和amsterdamcoin：URIs）</translation>
+        <source>Request payments (generates QR codes and creacoin: URIs)</source>
+        <translation>请求支付（生成二维码和creacoin：URIs）</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
         <translation>&amp;P隐私</translation>
     </message>
     <message>
-        <source>Privacy Action for zAMS and Obfuscation</source>
-        <translation>zAMS和混淆的隐私操作</translation>
+        <source>Privacy Action for zCREA and Obfuscation</source>
+        <translation>zCREA和混淆的隐私操作</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -630,24 +630,24 @@
         <translation>浏览主节点</translation>
     </message>
     <message>
-        <source>&amp;About AmsterdamCoin Core</source>
-        <translation>&amp;A关于AmsterdamCoin Core</translation>
+        <source>&amp;About CreaCoin Core</source>
+        <translation>&amp;A关于CreaCoin Core</translation>
     </message>
     <message>
-        <source>Show information about AmsterdamCoin Core</source>
-        <translation>显示AmsterdamCoin  Core的相关信息</translation>
+        <source>Show information about CreaCoin Core</source>
+        <translation>显示CreaCoin  Core的相关信息</translation>
     </message>
     <message>
-        <source>Modify configuration options for AmsterdamCoin</source>
-        <translation>修改AmsterdamCoin的配置选项</translation>
+        <source>Modify configuration options for CreaCoin</source>
+        <translation>修改CreaCoin的配置选项</translation>
     </message>
     <message>
-        <source>Sign messages with your AmsterdamCoin addresses to prove you own them</source>
-        <translation>使用您的AmsterdamCoin地址验证消息，以证明您拥有他们</translation>
+        <source>Sign messages with your CreaCoin addresses to prove you own them</source>
+        <translation>使用您的CreaCoin地址验证消息，以证明您拥有他们</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified AmsterdamCoin addresses</source>
-        <translation>验证消息确保它已使用指定的AmsterdamCoin地址进行签名</translation>
+        <source>Verify messages to ensure they were signed with specified CreaCoin addresses</source>
+        <translation>验证消息确保它已使用指定的CreaCoin地址进行签名</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -678,8 +678,8 @@
         <translation>打开主节点配置文件</translation>
     </message>
     <message>
-        <source>Open a AmsterdamCoin: URI or payment request</source>
-        <translation>打开AmsterdamCoin：URI或付款请求</translation>
+        <source>Open a CreaCoin: URI or payment request</source>
+        <translation>打开CreaCoin：URI或付款请求</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -690,16 +690,16 @@
         <translation>区块浏览窗口</translation>
     </message>
     <message>
-        <source>Show the AmsterdamCoin Core help message to get a list with possible AmsterdamCoin command-line options</source>
-        <translation>显示AmsterdamCoin Core帮助信息并获取AmsterdamCoin命令行选项列表</translation>
+        <source>Show the CreaCoin Core help message to get a list with possible CreaCoin command-line options</source>
+        <translation>显示CreaCoin Core帮助信息并获取CreaCoin命令行选项列表</translation>
     </message>
     <message>
-        <source>AmsterdamCoin Core client</source>
-        <translation>AmsterdamCoin Core 客户端</translation>
+        <source>CreaCoin Core client</source>
+        <translation>CreaCoin Core 客户端</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to AmsterdamCoin network</source>
-        <translation><numerusform>%n 活动连接到AmsterdamCoin网络
+        <source>%n active connection(s) to CreaCoin network</source>
+        <translation><numerusform>%n 活动连接到CreaCoin网络
 </numerusform></translation>
     </message>
     <message>
@@ -865,31 +865,31 @@ Address: %4
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>AmsterdamCoin Core</source>
-        <translation>AmsterdamCoin Core</translation>
+        <source>CreaCoin Core</source>
+        <translation>CreaCoin Core</translation>
     </message>
     <message>
-        <source>About AmsterdamCoin Core</source>
-        <translation>关于AmsterdamCoin Core</translation>
+        <source>About CreaCoin Core</source>
+        <translation>关于CreaCoin Core</translation>
     </message>
     </context>
 <context>
     <name>Intro</name>
     <message>
-        <source>Welcome to AmsterdamCoin Core.</source>
-        <translation>欢迎使用 AmsterdamCoin Core</translation>
+        <source>Welcome to CreaCoin Core.</source>
+        <translation>欢迎使用 CreaCoin Core</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where AmsterdamCoin Core will store its data.</source>
-        <translation>由于这是该程序第一次启动，您可以选择存储AmsterdamCoin Core 数据的位置。</translation>
+        <source>As this is the first time the program is launched, you can choose where CreaCoin Core will store its data.</source>
+        <translation>由于这是该程序第一次启动，您可以选择存储CreaCoin Core 数据的位置。</translation>
     </message>
     <message>
-        <source>AmsterdamCoin Core will download and store a copy of the AmsterdamCoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>AmsterdamCoin Core将下载并存储AmsterdamCoin区块链副本。 至少 %1 GB的数据将存储在此目录中，并且会随着时间的推移而增长。 钱包也将存储在此目录中。</translation>
+        <source>CreaCoin Core will download and store a copy of the CreaCoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>CreaCoin Core将下载并存储CreaCoin区块链副本。 至少 %1 GB的数据将存储在此目录中，并且会随着时间的推移而增长。 钱包也将存储在此目录中。</translation>
     </message>
     <message>
-        <source>AmsterdamCoin Core</source>
-        <translation>AmsterdamCoin Core</translation>
+        <source>CreaCoin Core</source>
+        <translation>CreaCoin Core</translation>
     </message>
     <message>
         <source>Error</source>
@@ -971,16 +971,16 @@ Address: %4
         <translation>如果您要禁用未经确认发送，在至少有一个确认之前&lt;br/&gt;不能更改。&lt;br/&gt;这也将影响您的余额计算。</translation>
     </message>
     <message>
-        <source>Automatically open the AmsterdamCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>自动打开路由器上的AmsterdamCoin钱包使用的端口。 这只有当您的路由器支持UPnP并且该享生效时才有用。</translation>
+        <source>Automatically open the CreaCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>自动打开路由器上的CreaCoin钱包使用的端口。 这只有当您的路由器支持UPnP并且该享生效时才有用。</translation>
     </message>
     <message>
         <source>&amp;Connect through SOCKS5 proxy (default proxy):</source>
         <translation>&amp;使用SOCKS5代理（默认代理）</translation>
     </message>
     <message>
-        <source>&amp;Start AmsterdamCoin on system login</source>
-        <translation>&amp;开机启动AmsterdamCoin</translation>
+        <source>&amp;Start CreaCoin on system login</source>
+        <translation>&amp;开机启动CreaCoin</translation>
     </message>
     <message>
         <source>Enable coin &amp;control features</source>
@@ -1040,7 +1040,7 @@ Address: %4
     </message>
     <message>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>选择显示发送AmsterdamCoin的默认单位。</translation>
+        <translation>选择显示发送CreaCoin的默认单位。</translation>
     </message>
     <message>
         <source>Decimal digits</source>
@@ -1118,8 +1118,8 @@ Address: %4
         <translation>您目前的支出余额</translation>
     </message>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the AmsterdamCoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>显示的信息可能已过期。建立连接后，您的钱包会自动与AmsterdamCoin网络同步，但此过程尚未完成。</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the CreaCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>显示的信息可能已过期。建立连接后，您的钱包会自动与CreaCoin网络同步，但此过程尚未完成。</translation>
     </message>
     <message>
         <source>Your current total balance</source>
@@ -1139,8 +1139,8 @@ Address: %4
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the AmsterdamCoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>显示的信息可能已过期。建立连接后，您的钱包会自动与AmsterdamCoin网络同步，但此过程尚未完成。</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the CreaCoin network after a connection is established, but this process has not completed yet.</source>
+        <translation>显示的信息可能已过期。建立连接后，您的钱包会自动与CreaCoin网络同步，但此过程尚未完成。</translation>
     </message>
     <message>
         <source>Pay &amp;To:</source>
@@ -1227,12 +1227,12 @@ Address: %4
         <translation>&amp;消息：</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the AmsterdamCoin network.</source>
-        <translation>附加到付款请求的可选消息，将在请求打开时显示。 注意：消息不会在付款时通过AmsterdamCoin网络发送。</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the CreaCoin network.</source>
+        <translation>附加到付款请求的可选消息，将在请求打开时显示。 注意：消息不会在付款时通过CreaCoin网络发送。</translation>
     </message>
     <message>
-        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the AmsterdamCoin network.</source>
-        <translation>附加到付款请求的可选消息，将在请求打开时显示。&lt;br&gt; 注意：消息不会在付款时通过AmsterdamCoin网络发送。</translation>
+        <source>An optional message to attach to the payment request, which will be displayed when the request is opened.&lt;br&gt;Note: The message will not be sent with the payment over the CreaCoin network.</source>
+        <translation>附加到付款请求的可选消息，将在请求打开时显示。&lt;br&gt; 注意：消息不会在付款时通过CreaCoin网络发送。</translation>
     </message>
     <message>
         <source>&amp;Label:</source>
@@ -1367,8 +1367,8 @@ Address: %4
         <translation>消息:</translation>
     </message>
     <message>
-        <source>A message that was attached to the AmsterdamCoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the AmsterdamCoin network.</source>
-        <translation>附加到AmsterdamCoin：URI的消息，该消息将与转账信息一起存储以供参考。 注意：此消息不会通过AmsterdamCoin网络发送。</translation>
+        <source>A message that was attached to the CreaCoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the CreaCoin network.</source>
+        <translation>附加到CreaCoin：URI的消息，该消息将与转账信息一起存储以供参考。 注意：此消息不会通过CreaCoin网络发送。</translation>
     </message>
     <message>
         <source>Enter a label for this address to add it to your address book</source>
@@ -1393,8 +1393,8 @@ Address: %4
         <translation>您可以使用地址签名消息，以证明您拥有他们。 小心不要签名任何您不了解的，因为网络钓鱼攻击可能会试图欺骗您，以让您签名。 只能签署您熟悉并且了解和同意的。</translation>
     </message>
     <message>
-        <source>The AmsterdamCoin address to sign the message with</source>
-        <translation>该AmsterdamCoin地址签名的消息</translation>
+        <source>The CreaCoin address to sign the message with</source>
+        <translation>该CreaCoin地址签名的消息</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -1421,16 +1421,16 @@ Address: %4
         <translation>将当前签名复制到系统剪贴板</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this AmsterdamCoin address</source>
-        <translation>签署消息以证明您拥有此AmsterdamCoin地址</translation>
+        <source>Sign the message to prove you own this CreaCoin address</source>
+        <translation>签署消息以证明您拥有此CreaCoin地址</translation>
     </message>
     <message>
-        <source>The AmsterdamCoin address the message was signed with</source>
-        <translation>由AmsterdamCoin地址签名的消息</translation>
+        <source>The CreaCoin address the message was signed with</source>
+        <translation>由CreaCoin地址签名的消息</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified AmsterdamCoin address</source>
-        <translation>验证消息确保它已使用指定的AmsterdamCoin地址进行签名</translation>
+        <source>Verify the message to ensure it was signed with the specified CreaCoin address</source>
+        <translation>验证消息确保它已使用指定的CreaCoin地址进行签名</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -1508,8 +1508,8 @@ Address: %4
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>AmsterdamCoin Core</source>
-        <translation>AmsterdamCoin Core</translation>
+        <source>CreaCoin Core</source>
+        <translation>CreaCoin Core</translation>
     </message>
     </context>
 <context>
@@ -1591,14 +1591,14 @@ Address: %4
     <name>ZAMSControlDialog</name>
     </context>
 <context>
-    <name>amsterdamcoin-core</name>
+    <name>creacoin-core</name>
     <message>
         <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
         <translation>在收到相关警报时执行命令，或者看到一个很长的分叉（cmd中的%s被消息替换）</translation>
     </message>
     <message>
-        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong AmsterdamCoin Core will not work properly.</source>
-        <translation>注意：请检查您的电脑的日期和时间是否正确！ 如果您的时间设置不正确，AmsterdamCoin Core将无法正常工作。</translation>
+        <source>Warning: Please check that your computer's date and time are correct! If your clock is wrong CreaCoin Core will not work properly.</source>
+        <translation>注意：请检查您的电脑的日期和时间是否正确！ 如果您的时间设置不正确，CreaCoin Core将无法正常工作。</translation>
     </message>
     <message>
         <source>Warning: wallet.dat corrupt, data salvaged! Original wallet.dat saved as wallet.{timestamp}.bak in %s; if your balance or transactions are incorrect you should restore from a backup.</source>

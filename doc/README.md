@@ -1,39 +1,39 @@
-AmsterdamCoin Core
+CreaCoin Core
 =====================
 
 Setup
 ---------------------
-[AmsterdamCoin Core](http://amsterdamcoin.com/wallet) is the original AmsterdamCoin client and it builds the backbone of the network. However, it downloads and stores the entire history of AmsterdamCoin transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
+[CreaCoin Core](http://creacoin.com/wallet) is the original CreaCoin client and it builds the backbone of the network. However, it downloads and stores the entire history of CreaCoin transactions; depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more. Thankfully you only have to do this once.
 
 Running
 ---------------------
-The following are some helpful notes on how to run AmsterdamCoin on your native platform.
+The following are some helpful notes on how to run CreaCoin on your native platform.
 
 ### Unix
 
 Unpack the files into a directory and run:
 
-- bin/32/amsterdamcoin-qt (GUI, 32-bit) or bin/32/amsterdamcoind (headless, 32-bit)
-- bin/64/amsterdamcoin-qt (GUI, 64-bit) or bin/64/amsterdamcoind (headless, 64-bit)
+- bin/32/creacoin-qt (GUI, 32-bit) or bin/32/amsterdamcoind (headless, 32-bit)
+- bin/64/creacoin-qt (GUI, 64-bit) or bin/64/amsterdamcoind (headless, 64-bit)
 
 ### Windows
 
-Unpack the files into a directory, and then run amsterdamcoin-qt.exe.
+Unpack the files into a directory, and then run creacoin-qt.exe.
 
 ### OSX
 
-Drag AmsterdamCoin-Qt to your applications folder, and then run AmsterdamCoin-Qt.
+Drag CreaCoin-Qt to your applications folder, and then run CreaCoin-Qt.
 
 ### Need Help?
 
-* See the documentation at the [AmsterdamCoin Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
+* See the documentation at the [CreaCoin Wiki](https://en.bitcoin.it/wiki/Main_Page) ***TODO***
 for help and more information.
-* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [AmsterdamCoin Forum](http://forum.amsterdamcoin.com/).
-* Join one of our Slack groups [AmsterdamCoin Slack Groups](https://amsterdamcoin.com/slack-logins/).
+* Ask for help on [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or on the [CreaCoin Forum](http://forum.creacoin.com/).
+* Join one of our Slack groups [CreaCoin Slack Groups](https://creacoin.com/slack-logins/).
 
 Building
 ---------------------
-The following are developer notes on how to build AmsterdamCoin on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
+The following are developer notes on how to build CreaCoin on your native platform. They are not complete guides, but include notes on the necessary libraries, compile flags, etc.
 
 - [OSX Build Notes](build-osx.md)
 - [Unix Build Notes](build-unix.md)
@@ -41,7 +41,7 @@ The following are developer notes on how to build AmsterdamCoin on your native p
 
 Development
 ---------------------
-The AmsterdamCoin repo's [root README](https://github.com/AmsterdamCoin-Project/AmsterdamCoin/blob/master/README.md) contains relevant information on the development process and automated testing.
+The CreaCoin repo's [root README](https://github.com/CreaCoin-Project/CreaCoin/blob/master/README.md) contains relevant information on the development process and automated testing.
 
 - [Developer Notes](developer-notes.md)
 - [Multiwallet Qt Development](multiwallet-qt.md)
@@ -55,8 +55,8 @@ The AmsterdamCoin repo's [root README](https://github.com/AmsterdamCoin-Project/
 
 ### Resources
 
-* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [AmsterdamCoin](http://forum.amsterdamcoin.com/) forum.
-* Join the [AmsterdamCoin-Dev](https://amsterdamcoin-dev.slack.com/) Slack group ([Sign-Up](https://amsterdamcoin-dev.herokuapp.com/)).
+* Discuss on the [BitcoinTalk](https://bitcointalk.org/index.php?topic=1262920.0) or the [CreaCoin](http://forum.creacoin.com/) forum.
+* Join the [CreaCoin-Dev](https://creacoin-dev.slack.com/) Slack group ([Sign-Up](https://creacoin-dev.herokuapp.com/)).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

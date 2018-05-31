@@ -70,7 +70,7 @@
                <cursorShape>WhatsThisCursor</cursorShape>
               </property>
               <property name="toolTip">
-               <string>The displayed information may be out of date. Your wallet automatically synchronizes with the AmsterdamCoin network after a connection is established, but this process has not completed yet.</string>
+               <string>The displayed information may be out of date. Your wallet automatically synchronizes with the CreaCoin network after a connection is established, but this process has not completed yet.</string>
               </property>
               <property name="styleSheet">
                <string notr="true">QLabel { color: red; }</string>
@@ -1056,14 +1056,14 @@
                 <string/>
                </property>
                <property name="text">
-                <string>zAMS:</string>
+                <string>zCREA:</string>
                </property>
               </widget>
              </item>
              <item row="4" column="2">
-              <widget class="QLabel" name="labelzAMSPercent">
+              <widget class="QLabel" name="labelzCREAPercent">
                <property name="toolTip">
-                <string>Current percentage of zAMS.
+                <string>Current percentage of zCREA.
 If AutoMint is enabled this percentage will settle around the configured AutoMint percentage (default = 10%)</string>
                </property>
                <property name="text">
@@ -1087,7 +1087,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
              <item row="2" column="1">
               <widget class="QLabel" name="labelLockedBalance">
                <property name="toolTip">
-                <string>Locked AMS or Masternode collaterals. These are excluded from zAMS minting.</string>
+                <string>Locked AMS or Masternode collaterals. These are excluded from zCREA minting.</string>
                </property>
                <property name="text">
                 <string>0.000 000 00 AMS</string>
@@ -1100,7 +1100,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
              <item row="2" column="0">
               <widget class="QLabel" name="labelLockedBalanceText">
                <property name="toolTip">
-                <string>Locked AMS or Masternode collaterals. These are excluded from zAMS minting.</string>
+                <string>Locked AMS or Masternode collaterals. These are excluded from zCREA minting.</string>
                </property>
                <property name="text">
                 <string>Locked:</string>
@@ -1110,7 +1110,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
              <item row="3" column="0">
               <widget class="QLabel" name="labelUnLockedBalanceText">
                <property name="toolTip">
-                <string>Unlocked AMSs. These can be used for zAMS minting.</string>
+                <string>Unlocked AMSs. These can be used for zCREA minting.</string>
                </property>
                <property name="text">
                 <string>Unlocked:</string>
@@ -1120,7 +1120,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
              <item row="3" column="1">
               <widget class="QLabel" name="labelUnLockedBalance">
                <property name="toolTip">
-                <string>Unlocked AMSs. These can be used for zAMS minting.</string>
+                <string>Unlocked AMSs. These can be used for zCREA minting.</string>
                </property>
                <property name="text">
                 <string>0.000 000 00 AMS</string>
@@ -1205,7 +1205,7 @@ If AutoMint is enabled this percentage will settle around the configured AutoMin
               <widget class="QLabel" name="labelzBalanceMatureText">
                <property name="toolTip">
                 <string>Mature: more than 20 confirmation and more than 3 mints of the same denomination after it was minted.
-These zAMS are spendable.</string>
+These zCREA are spendable.</string>
                </property>
                <property name="text">
                 <string>Mature:</string>
@@ -1231,7 +1231,7 @@ These zAMS are spendable.</string>
                 <cursorShape>IBeamCursor</cursorShape>
                </property>
                <property name="toolTip">
-                <string>All available zAMS, unconfirmed and immature zAMS included.</string>
+                <string>All available zCREA, unconfirmed and immature zCREA included.</string>
                </property>
                <property name="text">
                 <string notr="true">0.000 000 00 AMS</string>
@@ -1266,7 +1266,7 @@ These zAMS are spendable.</string>
              <item row="1" column="0">
               <widget class="QLabel" name="labelzBalanceText">
                <property name="toolTip">
-                <string>All available zAMS, unconfirmed and immature zAMS included.</string>
+                <string>All available zCREA, unconfirmed and immature zCREA included.</string>
                </property>
                <property name="text">
                 <string>Total:</string>
@@ -1309,7 +1309,7 @@ These zAMS are spendable.</string>
                </property>
                <property name="toolTip">
                 <string>Mature: more than 20 confirmation and more than 3 mints of the same denomination after it was minted.
-These zAMS are spendable.</string>
+These zCREA are spendable.</string>
                </property>
                <property name="text">
                 <string>0.000 000 00 AMS</string>
@@ -1463,7 +1463,7 @@ Immature: confirmed, but less than 3 mints of the same denomination after it was
                <cursorShape>WhatsThisCursor</cursorShape>
               </property>
               <property name="toolTip">
-               <string>The displayed information may be out of date. Your wallet automatically synchronizes with the AmsterdamCoin network after a connection is established, but this process has not completed yet.</string>
+               <string>The displayed information may be out of date. Your wallet automatically synchronizes with the CreaCoin network after a connection is established, but this process has not completed yet.</string>
               </property>
               <property name="styleSheet">
                <string notr="true">QLabel { color: red; }</string>

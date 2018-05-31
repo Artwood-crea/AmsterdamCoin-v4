@@ -1368,14 +1368,14 @@ then
 case $os in
 	# First match some system type aliases
 	# that might get confused with valid system types.
-	# -amsterdamcoin* is a basic system type, with this one exception.
+	# -creacoin* is a basic system type, with this one exception.
 	-auroraux)
 		os=-auroraux
 		;;
 	-amsterdamcoin1 | -amsterdamcoin1.*)
 		os=`echo $os | sed -e 's|amsterdamcoin1|sunos4|'`
 		;;
-	-amsterdamcoin)
+	-creacoin)
 		os=-amsterdamcoin2
 		;;
 	-svr4*)
@@ -1393,7 +1393,7 @@ case $os in
 	# -sysv* is not here because it comes later, after sysvr4.
 	-gnu* | -bsd* | -mach* | -minix* | -genix* | -ultrix* | -irix* \
 	      | -*vms* | -sco* | -esix* | -isc* | -aix* | -cnk* | -sunos | -sunos[34]*\
-	      | -hpux* | -unos* | -osf* | -luna* | -dgux* | -auroraux* | -amsterdamcoin* \
+	      | -hpux* | -unos* | -osf* | -luna* | -dgux* | -auroraux* | -creacoin* \
 	      | -sym* | -kopenamsterdamcoin* | -plan9* \
 	      | -amigaos* | -amigados* | -msdos* | -newsos* | -unicos* | -aof* \
 	      | -aos* | -aros* | -cloudabi* | -sortix* \

@@ -62,12 +62,12 @@
         <translation>Adresy pro přijetí peněz</translation>
     </message>
     <message>
-        <source>These are your AmsterdamCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Toto jsou Vaše AmsterdamCoin adresy pro poslání platby. Vždy si překontrolujte množství peněz a cílovou adresu než platbu odešlete.</translation>
+        <source>These are your CreaCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Toto jsou Vaše CreaCoin adresy pro poslání platby. Vždy si překontrolujte množství peněz a cílovou adresu než platbu odešlete.</translation>
     </message>
     <message>
-        <source>These are your AmsterdamCoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Toto jsou Vaše AmsterdamCoin adresy pro přijetí plateb. Je doporučeno použít novou adresu pro každou novou transakci.</translation>
+        <source>These are your CreaCoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Toto jsou Vaše CreaCoin adresy pro přijetí plateb. Je doporučeno použít novou adresu pro každou novou transakci.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -176,8 +176,8 @@
         <translation>Potvrdit zašifrování peněženky</translation>
     </message>
     <message>
-        <source>AmsterdamCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your AMSs from being stolen by malware infecting your computer.</source>
-        <translation>AmsterdamCoin se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše AMSy před krádží, pokud je Váš počítač infikován malwarem.</translation>
+        <source>CreaCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your AMSs from being stolen by malware infecting your computer.</source>
+        <translation>CreaCoin se teď zavře pro dokončení šifrovacího procesu. Prosím, vemte na vědomí, že zašifrování Vaší peněženky plně neochrání Vaše AMSy před krádží, pokud je Váš počítač infikován malwarem.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -239,16 +239,16 @@
         <translation>&amp;BIP 38 Šifrovat</translation>
     </message>
     <message>
-        <source>Enter a AmsterdamCoin Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
-        <translation>Zadejte AmsterdamCoin adresu, kterou si přejete zašifrovat pomocí BIP38. Frázové heslo zadejte do prostředního boxu. Stiskněte šifrovat pro výpočet šifrovaného privátního klíče.</translation>
+        <source>Enter a CreaCoin Address that you would like to encrypt using BIP 38. Enter a passphrase in the middle box. Press encrypt to compute the encrypted private key.</source>
+        <translation>Zadejte CreaCoin adresu, kterou si přejete zašifrovat pomocí BIP38. Frázové heslo zadejte do prostředního boxu. Stiskněte šifrovat pro výpočet šifrovaného privátního klíče.</translation>
     </message>
     <message>
         <source>Address:</source>
         <translation>Adresa:</translation>
     </message>
     <message>
-        <source>The AmsterdamCoin address to sign the message with</source>
-        <translation>AmsterdamCoin adresa pro podepsání zprávy</translation>
+        <source>The CreaCoin address to sign the message with</source>
+        <translation>CreaCoin adresa pro podepsání zprávy</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -279,8 +279,8 @@
         <translation>Kopírovat aktuální podpis do systémové mezipaměti</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this AmsterdamCoin address</source>
-        <translation>Podepsat zprávu k prokázání, že vlastníte tuto AmsterdamCoin adresu</translation>
+        <source>Sign the message to prove you own this CreaCoin address</source>
+        <translation>Podepsat zprávu k prokázání, že vlastníte tuto CreaCoin adresu</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -303,12 +303,12 @@
         <translation>Vložte BIP 38 šifrovaný privítní klíc. Frázové heslo vložte do prostředního boxu. Kliknětě na Dešifrovat Klíč pro výpočet privátního klíče. Poté co bude klíč dešifrován, kliknutím na 'Importovat Adresu' přidáte privátní klíč do Vaší peněženky.</translation>
     </message>
     <message>
-        <source>The AmsterdamCoin address the message was signed with</source>
-        <translation>AmsterdamCoin adresa zprávy byla podpsána</translation>
+        <source>The CreaCoin address the message was signed with</source>
+        <translation>CreaCoin adresa zprávy byla podpsána</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified AmsterdamCoin address</source>
-        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou AmsterdamCoin adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified CreaCoin address</source>
+        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou CreaCoin adresou</translation>
     </message>
     <message>
         <source>Decrypt &amp;Key</source>
@@ -598,16 +598,16 @@
         <translation>Nástrojová lišta záložek</translation>
     </message>
     <message>
-        <source>AmsterdamCoin Core</source>
-        <translation>AmsterdamCoin Core</translation>
+        <source>CreaCoin Core</source>
+        <translation>CreaCoin Core</translation>
     </message>
     <message>
-        <source>Send coins to a AmsterdamCoin address</source>
-        <translation>Odeslat platbuna AmsterdamCoin adresu</translation>
+        <source>Send coins to a CreaCoin address</source>
+        <translation>Odeslat platbuna CreaCoin adresu</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and amsterdamcoin: URIs)</source>
-        <translation>Vyžádat platbu (generování QK kódu a amsterdamcoin: URIs)</translation>
+        <source>Request payments (generates QR codes and creacoin: URIs)</source>
+        <translation>Vyžádat platbu (generování QK kódu a creacoin: URIs)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -618,24 +618,24 @@
         <translation>Procházet masternody</translation>
     </message>
     <message>
-        <source>&amp;About AmsterdamCoin Core</source>
-        <translation>&amp;O AmsterdamCoin Core</translation>
+        <source>&amp;About CreaCoin Core</source>
+        <translation>&amp;O CreaCoin Core</translation>
     </message>
     <message>
-        <source>Show information about AmsterdamCoin Core</source>
-        <translation>Zobraz informace o AmsterdamCoin Core</translation>
+        <source>Show information about CreaCoin Core</source>
+        <translation>Zobraz informace o CreaCoin Core</translation>
     </message>
     <message>
-        <source>Modify configuration options for AmsterdamCoin</source>
-        <translation>Upravit možnosti konfigurace pro AmsterdamCoin</translation>
+        <source>Modify configuration options for CreaCoin</source>
+        <translation>Upravit možnosti konfigurace pro CreaCoin</translation>
     </message>
     <message>
-        <source>Sign messages with your AmsterdamCoin addresses to prove you own them</source>
-        <translation>Podepsat zprávy Vaší AmsterdamCoin adresou pro prokázaní, že jste jejich vlastníkem</translation>
+        <source>Sign messages with your CreaCoin addresses to prove you own them</source>
+        <translation>Podepsat zprávy Vaší CreaCoin adresou pro prokázaní, že jste jejich vlastníkem</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified AmsterdamCoin addresses</source>
-        <translation>Ověřit zprávy k zajištění, že bylypodepsány vybranými AmsterdamCoin adresami</translation>
+        <source>Verify messages to ensure they were signed with specified CreaCoin addresses</source>
+        <translation>Ověřit zprávy k zajištění, že bylypodepsány vybranými CreaCoin adresami</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -666,8 +666,8 @@
         <translation>Otevřít Masternodový konfigurační soubor</translation>
     </message>
     <message>
-        <source>Open a AmsterdamCoin: URI or payment request</source>
-        <translation>Otevřít AmsterdamCoin: URI nebo platební žádost</translation>
+        <source>Open a CreaCoin: URI or payment request</source>
+        <translation>Otevřít CreaCoin: URI nebo platební žádost</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -678,12 +678,12 @@
         <translation>Okno blokového průzkumníka</translation>
     </message>
     <message>
-        <source>Show the AmsterdamCoin Core help message to get a list with possible AmsterdamCoin command-line options</source>
-        <translation>Zobrazit AmsterdamCoin Core pomocnou zpráv pro získání seznamu možných parametrů AmsterdamCoin pro příkazy do příkazové řádky</translation>
+        <source>Show the CreaCoin Core help message to get a list with possible CreaCoin command-line options</source>
+        <translation>Zobrazit CreaCoin Core pomocnou zpráv pro získání seznamu možných parametrů CreaCoin pro příkazy do příkazové řádky</translation>
     </message>
     <message>
-        <source>AmsterdamCoin Core client</source>
-        <translation>AmsterdamCoin Core klient</translation>
+        <source>CreaCoin Core client</source>
+        <translation>CreaCoin Core klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -809,8 +809,8 @@ MultiSend: %1</translation>
         <translation>TextPopisku</translation>
     </message>
     <message>
-        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (amsterdamcoin.conf).</source>
-        <translation>Ne všechny transakce budou zobrazeny. Pro zobrazení všech transackí nastavte v konfiguračním souboru (amsterdamcoin.conf) txindex=1.</translation>
+        <source>Not all transactions will be shown. To view all transactions you need to set txindex=1 in the configuration file (creacoin.conf).</source>
+        <translation>Ne všechny transakce budou zobrazeny. Pro zobrazení všech transackí nastavte v konfiguračním souboru (creacoin.conf) txindex=1.</translation>
     </message>
 </context>
 <context>
@@ -1066,8 +1066,8 @@ MultiSend: %1</translation>
         <translation>Upravit adresu k odeslání platby</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid AmsterdamCoin address.</source>
-        <translation>Zadaná adresa "%1" není validní AmsterdamCoin adresa.</translation>
+        <source>The entered address "%1" is not a valid CreaCoin address.</source>
+        <translation>Zadaná adresa "%1" není validní CreaCoin adresa.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -1112,12 +1112,12 @@ MultiSend: %1</translation>
         <translation>verze</translation>
     </message>
     <message>
-        <source>AmsterdamCoin Core</source>
-        <translation>AmsterdamCoin Core</translation>
+        <source>CreaCoin Core</source>
+        <translation>CreaCoin Core</translation>
     </message>
     <message>
-        <source>About AmsterdamCoin Core</source>
-        <translation>O AmsterdamCoin Core</translation>
+        <source>About CreaCoin Core</source>
+        <translation>O CreaCoin Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -1151,16 +1151,16 @@ MultiSend: %1</translation>
         <translation>Vítejte</translation>
     </message>
     <message>
-        <source>Welcome to AmsterdamCoin Core.</source>
-        <translation>Vítejte v AmsterdamCoin Core.</translation>
+        <source>Welcome to CreaCoin Core.</source>
+        <translation>Vítejte v CreaCoin Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where AmsterdamCoin Core will store its data.</source>
-        <translation>Při prvním spuštění programu si můžete vybrat, kam bude AmsterdamCoin Core ukládat svá data.</translation>
+        <source>As this is the first time the program is launched, you can choose where CreaCoin Core will store its data.</source>
+        <translation>Při prvním spuštění programu si můžete vybrat, kam bude CreaCoin Core ukládat svá data.</translation>
     </message>
     <message>
-        <source>AmsterdamCoin Core will download and store a copy of the AmsterdamCoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
-        <translation>AmsterdamCoin Core stáhne a uloží kopii AmsterdamCoin blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
+        <source>CreaCoin Core will download and store a copy of the CreaCoin block chain. At least %1GB of data will be stored in this directory, and it will grow over time. The wallet will also be stored in this directory.</source>
+        <translation>CreaCoin Core stáhne a uloží kopii CreaCoin blockchainu. Nejméně %1GB dat bude do této složky uloženo a v průběhu času bude ukládat další data. Peněženka bude v této složce uložena také.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -1171,8 +1171,8 @@ MultiSend: %1</translation>
         <translation>Použít vlastní složku pro data</translation>
     </message>
     <message>
-        <source>AmsterdamCoin Core</source>
-        <translation>AmsterdamCoin Core</translation>
+        <source>CreaCoin Core</source>
+        <translation>CreaCoin Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1520,12 +1520,12 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start AmsterdamCoin after logging in to the system.</source>
-        <translation>Automaticky spustit AmsterdamCoin po přihlášení do systému</translation>
+        <source>Automatically start CreaCoin after logging in to the system.</source>
+        <translation>Automaticky spustit CreaCoin po přihlášení do systému</translation>
     </message>
     <message>
-        <source>&amp;Start AmsterdamCoin on system login</source>
-        <translation>&amp;Spusti AmsterdamCoin při přihlášení do systému</translation>
+        <source>&amp;Start CreaCoin on system login</source>
+        <translation>&amp;Spusti CreaCoin při přihlášení do systému</translation>
     </message>
     <message>
         <source>Show Masternodes Tab</source>
@@ -2186,8 +2186,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
 <context>
     <name>SignVerifyMessageDialog</name>
     <message>
-        <source>The AmsterdamCoin address to sign the message with</source>
-        <translation>AmsterdamCoin adresa pro podepsání zprávy</translation>
+        <source>The CreaCoin address to sign the message with</source>
+        <translation>CreaCoin adresa pro podepsání zprávy</translation>
     </message>
     <message>
         <source>Choose previously used address</source>
@@ -2214,16 +2214,16 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
         <translation>Kopírovat aktuální podpis do systémové mezipaměti</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this AmsterdamCoin address</source>
-        <translation>Podepsat zprávu k prokázání, že vlastníte tuto AmsterdamCoin adresu</translation>
+        <source>Sign the message to prove you own this CreaCoin address</source>
+        <translation>Podepsat zprávu k prokázání, že vlastníte tuto CreaCoin adresu</translation>
     </message>
     <message>
-        <source>The AmsterdamCoin address the message was signed with</source>
-        <translation>AmsterdamCoin adresa zprávy byla podpsána</translation>
+        <source>The CreaCoin address the message was signed with</source>
+        <translation>CreaCoin adresa zprávy byla podpsána</translation>
     </message>
     <message>
-        <source>Verify the message to ensure it was signed with the specified AmsterdamCoin address</source>
-        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou AmsterdamCoin adresou</translation>
+        <source>Verify the message to ensure it was signed with the specified CreaCoin address</source>
+        <translation>Verifikujte zprávu pro ujištění, že byla podepsána zmíněnou CreaCoin adresou</translation>
     </message>
     <message>
         <source>Sign &amp;Message</source>
@@ -2265,8 +2265,8 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>AmsterdamCoin Core</source>
-        <translation>AmsterdamCoin Core</translation>
+        <source>CreaCoin Core</source>
+        <translation>CreaCoin Core</translation>
     </message>
     </context>
 <context>
@@ -2376,7 +2376,7 @@ Prosím zkontrolujte adresu a zkuste to znovu.</translation>
     </message>
     </context>
 <context>
-    <name>amsterdamcoin-core</name>
+    <name>creacoin-core</name>
     <message>
         <source>Error</source>
         <translation>Chyba</translation>

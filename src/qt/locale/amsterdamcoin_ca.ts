@@ -62,12 +62,12 @@
         <translation>Adreces de recepció</translation>
     </message>
     <message>
-        <source>These are your AmsterdamCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation>Aquestes són les teves adreces AmsterdamCoin per fer enviar pagaments. Sempre comprova l'import i l'adreça de recepció abans d'enviar les monedes.</translation>
+        <source>These are your CreaCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>Aquestes són les teves adreces CreaCoin per fer enviar pagaments. Sempre comprova l'import i l'adreça de recepció abans d'enviar les monedes.</translation>
     </message>
     <message>
-        <source>These are your AmsterdamCoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation>Aquestes són les teves adreces AmsterdamCoin per rebre pagaments. Es recomana utilitzar noves adreces de recepció per cada transacció.</translation>
+        <source>These are your CreaCoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>Aquestes són les teves adreces CreaCoin per rebre pagaments. Es recomana utilitzar noves adreces de recepció per cada transacció.</translation>
     </message>
     <message>
         <source>&amp;Copy Address</source>
@@ -168,8 +168,8 @@
         <translation>Confirma l'encriptació del moneder</translation>
     </message>
     <message>
-        <source>AmsterdamCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your AMSs from being stolen by malware infecting your computer.</source>
-        <translation>AmsterdamCoin es tancarà per finalitzar el procés d'encriptació. Recorda que encriptant el teu moneder no protegeix els teus AMS de ser robats si el teu ordinador està infectat amb programari maliciós.</translation>
+        <source>CreaCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your AMSs from being stolen by malware infecting your computer.</source>
+        <translation>CreaCoin es tancarà per finalitzar el procés d'encriptació. Recorda que encriptant el teu moneder no protegeix els teus AMS de ser robats si el teu ordinador està infectat amb programari maliciós.</translation>
     </message>
     <message>
         <source>Are you sure you wish to encrypt your wallet?</source>
@@ -418,12 +418,12 @@
         <translation>A&amp;juda</translation>
     </message>
     <message>
-        <source>AmsterdamCoin Core</source>
-        <translation>AmsterdamCoin Core</translation>
+        <source>CreaCoin Core</source>
+        <translation>CreaCoin Core</translation>
     </message>
     <message>
-        <source>Send coins to a AmsterdamCoin address</source>
-        <translation>Envia monedes a una adreça AmsterdamCoin</translation>
+        <source>Send coins to a CreaCoin address</source>
+        <translation>Envia monedes a una adreça CreaCoin</translation>
     </message>
     <message>
         <source>&amp;Privacy</source>
@@ -434,8 +434,8 @@
         <translation>&amp;Masternodes</translation>
     </message>
     <message>
-        <source>&amp;About AmsterdamCoin Core</source>
-        <translation>&amp;Sobre AmsterdamCoin Core</translation>
+        <source>&amp;About CreaCoin Core</source>
+        <translation>&amp;Sobre CreaCoin Core</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -458,12 +458,12 @@
         <translation>Obre el fitxer de configuració del Masternode</translation>
     </message>
     <message>
-        <source>AmsterdamCoin Core client</source>
-        <translation>Client AmsterdamCoin core</translation>
+        <source>CreaCoin Core client</source>
+        <translation>Client CreaCoin core</translation>
     </message>
     <message numerus="yes">
-        <source>%n active connection(s) to AmsterdamCoin network</source>
-        <translation><numerusform>%n connexió activa a la xarxa AmsterdamCoin</numerusform><numerusform>%n connexions actives a la xarxa AmsterdamCoin</numerusform></translation>
+        <source>%n active connection(s) to CreaCoin network</source>
+        <translation><numerusform>%n connexió activa a la xarxa CreaCoin</numerusform><numerusform>%n connexions actives a la xarxa CreaCoin</numerusform></translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -814,8 +814,8 @@
         <translation>Edita l'adreça d'enviament</translation>
     </message>
     <message>
-        <source>The entered address "%1" is not a valid AmsterdamCoin address.</source>
-        <translation>L'adreça introduïda "%1" no és una adreça AmsterdamCoin vàlida.</translation>
+        <source>The entered address "%1" is not a valid CreaCoin address.</source>
+        <translation>L'adreça introduïda "%1" no és una adreça CreaCoin vàlida.</translation>
     </message>
     <message>
         <source>The entered address "%1" is already in the address book.</source>
@@ -860,16 +860,16 @@
         <translation>versió</translation>
     </message>
     <message>
-        <source>AmsterdamCoin Core</source>
-        <translation>AmsterdamCoin Core</translation>
+        <source>CreaCoin Core</source>
+        <translation>CreaCoin Core</translation>
     </message>
     <message>
         <source>(%1-bit)</source>
         <translation>(%1-bit)</translation>
     </message>
     <message>
-        <source>About AmsterdamCoin Core</source>
-        <translation>Sobre AmsterdamCoin Core</translation>
+        <source>About CreaCoin Core</source>
+        <translation>Sobre CreaCoin Core</translation>
     </message>
     <message>
         <source>Command-line options</source>
@@ -915,12 +915,12 @@
         <translation>Benvingut</translation>
     </message>
     <message>
-        <source>Welcome to AmsterdamCoin Core.</source>
-        <translation>Benvingut a AmsterdamCoin Core.</translation>
+        <source>Welcome to CreaCoin Core.</source>
+        <translation>Benvingut a CreaCoin Core.</translation>
     </message>
     <message>
-        <source>As this is the first time the program is launched, you can choose where AmsterdamCoin Core will store its data.</source>
-        <translation>Al ser el primer cop que s'inicia el programa, pots escollir on es desaran les dades del AmsterdamCoin Core.</translation>
+        <source>As this is the first time the program is launched, you can choose where CreaCoin Core will store its data.</source>
+        <translation>Al ser el primer cop que s'inicia el programa, pots escollir on es desaran les dades del CreaCoin Core.</translation>
     </message>
     <message>
         <source>Use the default data directory</source>
@@ -931,8 +931,8 @@
         <translation>Usar una carpeta de dades personalitzada:</translation>
     </message>
     <message>
-        <source>AmsterdamCoin Core</source>
-        <translation>AmsterdamCoin Core</translation>
+        <source>CreaCoin Core</source>
+        <translation>CreaCoin Core</translation>
     </message>
     <message>
         <source>Error: Specified data directory "%1" cannot be created.</source>
@@ -1208,8 +1208,8 @@
         <translation>Expert</translation>
     </message>
     <message>
-        <source>Automatically start AmsterdamCoin after logging in to the system.</source>
-        <translation>Inicia AmsterdamCoin automàticament després d'identificar-te en el sistema.</translation>
+        <source>Automatically start CreaCoin after logging in to the system.</source>
+        <translation>Inicia CreaCoin automàticament després d'identificar-te en el sistema.</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1275,8 +1275,8 @@
         <translation>AMS:</translation>
     </message>
     <message>
-        <source>zAMS:</source>
-        <translation>zAMS:</translation>
+        <source>zCREA:</source>
+        <translation>zCREA:</translation>
     </message>
     <message>
         <source>0 %</source>
@@ -1304,16 +1304,16 @@
 <context>
     <name>PrivacyDialog</name>
     <message>
-        <source>ZeroAmsterdamCoin (zAMS)</source>
-        <translation>ZeroAmsterdamCoin (zAMS)</translation>
+        <source>ZeroAmsterdamCoin (zCREA)</source>
+        <translation>ZeroAmsterdamCoin (zCREA)</translation>
     </message>
     <message>
         <source>0</source>
         <translation>0</translation>
     </message>
     <message>
-        <source>zAMS</source>
-        <translation>zAMS</translation>
+        <source>zCREA</source>
+        <translation>zCREA</translation>
     </message>
     <message>
         <source>0.000 000 00 AMS</source>
@@ -1332,8 +1332,8 @@
         <translation>Import:</translation>
     </message>
     <message>
-        <source>0 zAMS</source>
-        <translation>0 zAMS</translation>
+        <source>0 zCREA</source>
+        <translation>0 zCREA</translation>
     </message>
     <message>
         <source>Alt+A</source>
@@ -1719,8 +1719,8 @@
 <context>
     <name>ShutdownWindow</name>
     <message>
-        <source>AmsterdamCoin Core is shutting down...</source>
-        <translation>AmsterdamCoin Core s'està tancant...</translation>
+        <source>CreaCoin Core is shutting down...</source>
+        <translation>CreaCoin Core s'està tancant...</translation>
     </message>
     <message>
         <source>Do not shut down the computer until this window disappears.</source>
@@ -1785,8 +1785,8 @@
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>AmsterdamCoin Core</source>
-        <translation>AmsterdamCoin Core</translation>
+        <source>CreaCoin Core</source>
+        <translation>CreaCoin Core</translation>
     </message>
     <message>
         <source>Version %1</source>
@@ -1979,12 +1979,12 @@
         <translation>0</translation>
     </message>
     <message>
-        <source>zAMS</source>
-        <translation>zAMS</translation>
+        <source>zCREA</source>
+        <translation>zCREA</translation>
     </message>
     </context>
 <context>
-    <name>amsterdamcoin-core</name>
+    <name>creacoin-core</name>
     <message>
         <source>Can't mix while sync in progress.</source>
         <translation>No es pot mesclar mentre s'està sincronitzant.</translation>

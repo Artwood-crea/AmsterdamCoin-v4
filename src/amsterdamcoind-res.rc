@@ -16,8 +16,8 @@ BEGIN
     BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
-            VALUE "CompanyName",        "AmsterdamCoin"
-            VALUE "FileDescription",    "amsterdamcoind (OSS daemon/client for AmsterdamCoin)"
+            VALUE "CompanyName",        "CreaCoin"
+            VALUE "FileDescription",    "amsterdamcoind (OSS daemon/client for CreaCoin)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "amsterdamcoind"
             VALUE "LegalCopyright",     COPYRIGHT_STR

@@ -445,7 +445,7 @@
       <string>Buy AMS</string>
      </property>
      <property name="icon">
-      <iconset resource="../amsterdamcoin.qrc">
+      <iconset resource="../creacoin.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -1754,7 +1754,7 @@
       <string>Sell AMS</string>
      </property>
      <property name="icon">
-      <iconset resource="../amsterdamcoin">
+      <iconset resource="../creacoin">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -2941,10 +2941,10 @@
       </rect>
      </property>
      <property name="text">
-      <string>Generate AmsterdamCoin Deposit Address</string>
+      <string>Generate CreaCoin Deposit Address</string>
      </property>
      <property name="icon">
-      <iconset resource="../amsterdamcoin.qrc">
+      <iconset resource="../creacoin.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -3206,7 +3206,7 @@
        <string/>
       </property>
       <property name="pixmap">
-       <pixmap resource="../amsterdamcoin.qrc">:/icons/transaction_1</pixmap>
+       <pixmap resource="../creacoin.qrc">:/icons/transaction_1</pixmap>
       </property>
       <property name="scaledContents">
        <bool>true</bool>
@@ -3253,7 +3253,7 @@
       <string>Update API Keys</string>
      </property>
      <property name="icon">
-      <iconset resource="../amsterdamcoin.qrc">
+      <iconset resource="../creacoin.qrc">
        <normaloff>:/icons/bitcoin</normaloff>:/icons/bitcoin</iconset>
      </property>
     </widget>
@@ -3408,7 +3408,7 @@
   </widget>
  </widget>
  <resources>
-  <include location="../amsterdamcoin.qrc"/>
+  <include location="../creacoin.qrc"/>
  </resources>
  <connections/>
 </ui>

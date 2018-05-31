@@ -2,12 +2,12 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2015-2017 The AmsterdamCoin developers
+// Copyright (c) 2015-2017 The CreaCoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/amsterdamcoin-config.h"
+#include "config/creacoin-config.h"
 #endif
 
 #include "util.h"
@@ -106,7 +106,7 @@ std::string to_internal(const std::string&);
 
 using namespace std;
 
-// AmsterdamCoin only features
+// CreaCoin only features
 // Masternode
 bool fMasterNode = false;
 string strMasterNodePrivKey = "";
@@ -238,8 +238,8 @@ bool LogAcceptCategory(const char* category)
             const vector<string>& categories = mapMultiArgs["-debug"];
             ptrCategory.reset(new set<string>(categories.begin(), categories.end()));
             // thread_specific_ptr automatically deletes the set when the thread ends.
-            // "amsterdamcoin" is a composite category enabling all AmsterdamCoin-related debug output
-            if (ptrCategory->count(string("amsterdamcoin"))) {
+            // "creacoin" is a composite category enabling all CreaCoin-related debug output
+            if (ptrCategory->count(string("creacoin"))) {
                 ptrCategory->insert(string("obfuscation"));
                 ptrCategory->insert(string("swiftx"));
                 ptrCategory->insert(string("masternode"));
@@ -404,7 +404,7 @@ static std::string FormatException(std::exception* pex, const char* pszThread)
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "amsterdamcoin";
+    const char* pszModule = "creacoin";
 #endif
     if (pex)
         return strprintf(
@@ -425,13 +425,13 @@ void PrintExceptionContinue(std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-// Windows < Vista: C:\Documents and Settings\Username\Application Data\AmsterdamCoin
-// Windows >= Vista: C:\Users\Username\AppData\Roaming\AmsterdamCoin
-// Mac: ~/Library/Application Support/AmsterdamCoin
-// Unix: ~/.amsterdamcoin
+// Windows < Vista: C:\Documents and Settings\Username\Application Data\CreaCoin
+// Windows >= Vista: C:\Users\Username\AppData\Roaming\CreaCoin
+// Mac: ~/Library/Application Support/CreaCoin
+// Unix: ~/.creacoin
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "AmsterdamCoin";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "CreaCoin";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
@@ -443,10 +443,10 @@ boost::filesystem::path GetDefaultDataDir()
     // Mac
     pathRet /= "Library/Application Support";
     TryCreateDirectory(pathRet);
-    return pathRet / "AmsterdamCoin";
+    return pathRet / "CreaCoin";
 #else
     // Unix
-    return pathRet / ".amsterdamcoin";
+    return pathRet / ".creacoin";
 #endif
 #endif
 }
@@ -493,7 +493,7 @@ void ClearDatadirCache()
 
 boost::filesystem::path GetConfigFile()
 {
-    boost::filesystem::path pathConfigFile(GetArg("-conf", "amsterdamcoin.conf"));
+    boost::filesystem::path pathConfigFile(GetArg("-conf", "creacoin.conf"));
     if (!pathConfigFile.is_complete())
         pathConfigFile = GetDataDir(false) / pathConfigFile;
 
@@ -512,7 +512,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
 {
     boost::filesystem::ifstream streamConfig(GetConfigFile());
     if (!streamConfig.good()) {
-        // Create empty amsterdamcoin.conf if it does not exist
+        // Create empty creacoin.conf if it does not exist
         FILE* configFile = fopen(GetConfigFile().string().c_str(), "a");
         if (configFile != NULL)
             fclose(configFile);
@@ -523,7 +523,7 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
     setOptions.insert("*");
 
     for (boost::program_options::detail::config_file_iterator it(streamConfig, setOptions), end; it != end; ++it) {
-        // Don't overwrite existing settings so command line settings override amsterdamcoin.conf
+        // Don't overwrite existing settings so command line settings override creacoin.conf
         string strKey = string("-") + it->string_key;
         string strValue = it->value[0];
         InterpretNegativeSetting(strKey, strValue);

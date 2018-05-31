@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2015-2017 The AmsterdamCoin developers
+// Copyright (c) 2015-2017 The CreaCoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -96,7 +96,7 @@ Object blockToJSON(const CBlock& block, const CBlockIndex* blockindex, bool txDe
         zamsObj.push_back(Pair(to_string(denom), ValueFromAmount(blockindex->mapZerocoinSupply.at(denom) * (denom*COIN))));
     }
     zamsObj.emplace_back(Pair("total", ValueFromAmount(blockindex->GetZerocoinSupply())));
-    result.emplace_back(Pair("zAMSsupply", zamsObj));
+    result.emplace_back(Pair("zCREAsupply", zamsObj));
 
     return result;
 }
@@ -176,7 +176,7 @@ Value getrawmempool(const Array& params, bool fHelp)
             "{                           (json object)\n"
             "  \"transactionid\" : {       (json object)\n"
             "    \"size\" : n,             (numeric) transaction size in bytes\n"
-            "    \"fee\" : n,              (numeric) transaction fee in amsterdamcoin\n"
+            "    \"fee\" : n,              (numeric) transaction fee in creacoin\n"
             "    \"time\" : n,             (numeric) local time transaction entered pool in seconds since 1 Jan 1970 GMT\n"
             "    \"height\" : n,           (numeric) block height when transaction entered pool\n"
             "    \"startingpriority\" : n, (numeric) priority when transaction entered pool\n"
@@ -279,17 +279,17 @@ Value getblock(const Array& params, bool fHelp)
             "  \"previousblockhash\" : \"hash\",  (string) The hash of the previous block\n"
             "  \"nextblockhash\" : \"hash\"       (string) The hash of the next block\n"
             "  \"moneysupply\" : \"supply\"       (numeric) The money supply when this block was added to the blockchain\n"
-            "  \"zAMSsupply\" :\n"
+            "  \"zCREAsupply\" :\n"
             "  {\n"
-            "     \"1\" : n,            (numeric) supply of 1 zAMS denomination\n"
-            "     \"5\" : n,            (numeric) supply of 5 zAMS denomination\n"
-            "     \"10\" : n,           (numeric) supply of 10 zAMS denomination\n"
-            "     \"50\" : n,           (numeric) supply of 50 zAMS denomination\n"
-            "     \"100\" : n,          (numeric) supply of 100 zAMS denomination\n"
-            "     \"500\" : n,          (numeric) supply of 500 zAMS denomination\n"
-            "     \"1000\" : n,         (numeric) supply of 1000 zAMS denomination\n"
-            "     \"5000\" : n,         (numeric) supply of 5000 zAMS denomination\n"
-            "     \"total\" : n,        (numeric) The total supply of all zAMS denominations\n"
+            "     \"1\" : n,            (numeric) supply of 1 zCREA denomination\n"
+            "     \"5\" : n,            (numeric) supply of 5 zCREA denomination\n"
+            "     \"10\" : n,           (numeric) supply of 10 zCREA denomination\n"
+            "     \"50\" : n,           (numeric) supply of 50 zCREA denomination\n"
+            "     \"100\" : n,          (numeric) supply of 100 zCREA denomination\n"
+            "     \"500\" : n,          (numeric) supply of 500 zCREA denomination\n"
+            "     \"1000\" : n,         (numeric) supply of 1000 zCREA denomination\n"
+            "     \"5000\" : n,         (numeric) supply of 5000 zCREA denomination\n"
+            "     \"total\" : n,        (numeric) The total supply of all zCREA denominations\n"
             "  }\n"
             "}\n"
             "\nResult (for verbose=false):\n"
@@ -429,8 +429,8 @@ Value gettxout(const Array& params, bool fHelp)
             "     \"hex\" : \"hex\",        (string) \n"
             "     \"reqSigs\" : n,          (numeric) Number of required signatures\n"
             "     \"type\" : \"pubkeyhash\", (string) The type, eg pubkeyhash\n"
-            "     \"addresses\" : [          (array of string) array of amsterdamcoin addresses\n"
-            "     \"amsterdamcoinaddress\"   	 	(string) amsterdamcoin address\n"
+            "     \"addresses\" : [          (array of string) array of creacoin addresses\n"
+            "     \"amsterdamcoinaddress\"   	 	(string) creacoin address\n"
             "        ,...\n"
             "     ]\n"
             "  },\n"

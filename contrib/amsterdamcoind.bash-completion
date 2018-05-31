@@ -1,4 +1,4 @@
-# bash programmable completion for amsterdamcoind(1) and amsterdamcoin-cli(1)
+# bash programmable completion for amsterdamcoind(1) and creacoin-cli(1)
 # Copyright (c) 2012,2014 Christian von Roques <roques@mti.ag>
 # Distributed under the MIT/X11 software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -19,7 +19,7 @@ _amsterdamcoin_rpc() {
     $amsterdamcoind "${rpcargs[@]}" "$@"
 }
 
-# Add amsterdamcoin accounts to COMPREPLY
+# Add creacoin accounts to COMPREPLY
 _amsterdamcoin_accounts() {
     local accounts
     accounts=$(_amsterdamcoin_rpc listaccounts | awk '/".*"/ { a=$1; gsub(/"/, "", a); print a}')
@@ -133,7 +133,7 @@ _amsterdamcoind() {
     esac
 }
 
-complete -F _amsterdamcoind amsterdamcoind amsterdamcoin-cli
+complete -F _amsterdamcoind amsterdamcoind creacoin-cli
 }
 
 # Local variables:

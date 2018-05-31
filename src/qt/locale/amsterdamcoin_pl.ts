@@ -227,8 +227,8 @@
         <translation>Zakodowany klucz:</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this AmsterdamCoin address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres AmsterdamCoin jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this CreaCoin address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres CreaCoin jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Encrypt &amp;Key</source>
@@ -518,16 +518,16 @@
         <translation>&amp;Pomoc</translation>
     </message>
     <message>
-        <source>AmsterdamCoin Core</source>
-        <translation>&amp;Rdzeń AmsterdamCoin</translation>
+        <source>CreaCoin Core</source>
+        <translation>&amp;Rdzeń CreaCoin</translation>
     </message>
     <message>
-        <source>Send coins to a AmsterdamCoin address</source>
-        <translation>Wyślij monety do adresu AmsterdamCoin</translation>
+        <source>Send coins to a CreaCoin address</source>
+        <translation>Wyślij monety do adresu CreaCoin</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and amsterdamcoin: URIs)</source>
-        <translation>Zarządaj płatności (generuje kod QR i amsterdamcoin:URI)</translation>
+        <source>Request payments (generates QR codes and creacoin: URIs)</source>
+        <translation>Zarządaj płatności (generuje kod QR i creacoin:URI)</translation>
     </message>
     <message>
         <source>&amp;Masternodes</source>
@@ -538,24 +538,24 @@
         <translation>Przeglądaj masternodes</translation>
     </message>
     <message>
-        <source>&amp;About AmsterdamCoin Core</source>
+        <source>&amp;About CreaCoin Core</source>
         <translation>&amp;O rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Show information about AmsterdamCoin Core</source>
+        <source>Show information about CreaCoin Core</source>
         <translation>Pokaż informacje o rdzeniu bitcoina</translation>
     </message>
     <message>
-        <source>Modify configuration options for AmsterdamCoin</source>
-        <translation>Modyfikuj opcje konfiguracji AmsterdamCoin</translation>
+        <source>Modify configuration options for CreaCoin</source>
+        <translation>Modyfikuj opcje konfiguracji CreaCoin</translation>
     </message>
     <message>
-        <source>Sign messages with your AmsterdamCoin addresses to prove you own them</source>
-        <translation>Zatwierdź wiadomość z twoimi adresami AmsterdamCoin, by udowodnić, że jesteś w ich posiadaniu</translation>
+        <source>Sign messages with your CreaCoin addresses to prove you own them</source>
+        <translation>Zatwierdź wiadomość z twoimi adresami CreaCoin, by udowodnić, że jesteś w ich posiadaniu</translation>
     </message>
     <message>
-        <source>Verify messages to ensure they were signed with specified AmsterdamCoin addresses</source>
-        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu AmsterdamCoin</translation>
+        <source>Verify messages to ensure they were signed with specified CreaCoin addresses</source>
+        <translation>Zweryfikuj wiadomości by upewnić się, że zostały zatwierdzone z podanego adresu CreaCoin</translation>
     </message>
     <message>
         <source>&amp;BIP38 tool</source>
@@ -582,8 +582,8 @@
         <translation>Otwórz &amp;Plik konfiguracji Masternode</translation>
     </message>
     <message>
-        <source>Open a AmsterdamCoin: URI or payment request</source>
-        <translation>Otwórz AmsterdamCoin: URI i żądanie zapłaty</translation>
+        <source>Open a CreaCoin: URI or payment request</source>
+        <translation>Otwórz CreaCoin: URI i żądanie zapłaty</translation>
     </message>
     <message>
         <source>&amp;Blockchain explorer</source>
@@ -594,12 +594,12 @@
         <translation>Okno eksplorera bloków</translation>
     </message>
     <message>
-        <source>Show the AmsterdamCoin Core help message to get a list with possible AmsterdamCoin command-line options</source>
-        <translation>Pokaż wiadomość pomocy rdzenia AmsterdamCoin, aby dostać listę możliwych opcji AmsterdamCoin command-line</translation>
+        <source>Show the CreaCoin Core help message to get a list with possible CreaCoin command-line options</source>
+        <translation>Pokaż wiadomość pomocy rdzenia CreaCoin, aby dostać listę możliwych opcji CreaCoin command-line</translation>
     </message>
     <message>
-        <source>AmsterdamCoin Core client</source>
-        <translation>Rdzeń AmsterdamCoin klient</translation>
+        <source>CreaCoin Core client</source>
+        <translation>Rdzeń CreaCoin klient</translation>
     </message>
     <message>
         <source>Synchronizing with network...</source>
@@ -912,8 +912,8 @@ MultiWysyłlka: %1</translation>
 <context>
     <name>HelpMessageDialog</name>
     <message>
-        <source>AmsterdamCoin Core</source>
-        <translation>&amp;Rdzeń AmsterdamCoin</translation>
+        <source>CreaCoin Core</source>
+        <translation>&amp;Rdzeń CreaCoin</translation>
     </message>
     </context>
 <context>
@@ -927,8 +927,8 @@ MultiWysyłlka: %1</translation>
         <translation>Użyj niestandardowej ścieżki danych</translation>
     </message>
     <message>
-        <source>AmsterdamCoin Core</source>
-        <translation>&amp;Rdzeń AmsterdamCoin</translation>
+        <source>CreaCoin Core</source>
+        <translation>&amp;Rdzeń CreaCoin</translation>
     </message>
     <message>
         <source>Error</source>
@@ -1188,12 +1188,12 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>Zezwól na przychodzące połączenia</translation>
     </message>
     <message>
-        <source>Automatically start AmsterdamCoin after logging in to the system.</source>
-        <translation>Automatycznie uruchom AmsterdamCoin po zalogowaniu do systemu</translation>
+        <source>Automatically start CreaCoin after logging in to the system.</source>
+        <translation>Automatycznie uruchom CreaCoin po zalogowaniu do systemu</translation>
     </message>
     <message>
-        <source>&amp;Start AmsterdamCoin on system login</source>
-        <translation>&amp;Uruchom AmsterdamCoin podczas logowania do systemu</translation>
+        <source>&amp;Start CreaCoin on system login</source>
+        <translation>&amp;Uruchom CreaCoin podczas logowania do systemu</translation>
     </message>
     <message>
         <source>Whether to show coin control features or not.</source>
@@ -1212,18 +1212,18 @@ Proszę sprawdzić adres i spróbować ponownie</translation>
         <translation>&amp;Sieć</translation>
     </message>
     <message>
-        <source>The user interface language can be set here. This setting will take effect after restarting AmsterdamCoin.</source>
-        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie AmsterdamCoin</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting CreaCoin.</source>
+        <translation>Język interfejsu użytkownika może być wybrany tutaj. Ustawienia ulegną zmianie po restarcie CreaCoin</translation>
     </message>
     <message>
         <source>Language missing or translation incomplete? Help contributing translations here:
-https://www.transifex.com/amsterdamcoin-project/amsterdamcoin-project-translations</source>
+https://www.transifex.com/creacoin-project/creacoin-project-translations</source>
         <translation>Brakuje języka bądź nieukończona pełnego tłumaczenia? Pomóż w tłumaczeniu tutaj:
-https://www.transifex.com/amsterdamcoin-project/amsterdamcoin-project-translations </translation>
+https://www.transifex.com/creacoin-project/creacoin-project-translations </translation>
     </message>
     <message>
-        <source>Connect to the AmsterdamCoin network through a SOCKS5 proxy.</source>
-        <translation>Połącz z siecią AmsterdamCoin poprzez SOCKS5 proxy.</translation>
+        <source>Connect to the CreaCoin network through a SOCKS5 proxy.</source>
+        <translation>Połącz z siecią CreaCoin poprzez SOCKS5 proxy.</translation>
     </message>
     <message>
         <source>Proxy &amp;IP:</source>
@@ -1461,8 +1461,8 @@ https://www.transifex.com/amsterdamcoin-project/amsterdamcoin-project-translatio
         <translation>Liczba</translation>
     </message>
     <message>
-        <source>Enter a AmsterdamCoin address (e.g. %1)</source>
-        <translation>Wprowadź adres AmsterdamCoin (np. %1)</translation>
+        <source>Enter a CreaCoin address (e.g. %1)</source>
+        <translation>Wprowadź adres CreaCoin (np. %1)</translation>
     </message>
     <message>
         <source>%1 d</source>
@@ -1900,8 +1900,8 @@ https://www.transifex.com/amsterdamcoin-project/amsterdamcoin-project-translatio
         <translation>Alt+P</translation>
     </message>
     <message>
-        <source>Sign the message to prove you own this AmsterdamCoin address</source>
-        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres AmsterdamCoin jest w twoim posiadaniu</translation>
+        <source>Sign the message to prove you own this CreaCoin address</source>
+        <translation>Zatwierdź wiadomość, aby udowodnić, że podany adres CreaCoin jest w twoim posiadaniu</translation>
     </message>
     <message>
         <source>Clear &amp;All</source>
@@ -1935,8 +1935,8 @@ https://www.transifex.com/amsterdamcoin-project/amsterdamcoin-project-translatio
 <context>
     <name>SplashScreen</name>
     <message>
-        <source>AmsterdamCoin Core</source>
-        <translation>&amp;Rdzeń AmsterdamCoin</translation>
+        <source>CreaCoin Core</source>
+        <translation>&amp;Rdzeń CreaCoin</translation>
     </message>
     </context>
 <context>
@@ -2034,7 +2034,7 @@ https://www.transifex.com/amsterdamcoin-project/amsterdamcoin-project-translatio
     </message>
     </context>
 <context>
-    <name>amsterdamcoin-core</name>
+    <name>creacoin-core</name>
     <message>
         <source>Error</source>
         <translation>Błąd</translation>

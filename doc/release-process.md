@@ -3,7 +3,7 @@ Release Process
 
 Before every release candidate:
 
-* Update translations (ping Fuzzbawls on Slack) see [translation_process.md](https://github.com/AmsterdamCoin-Project/AmsterdamCoin/blob/master/doc/translation_process.md#synchronising-translations).
+* Update translations (ping Fuzzbawls on Slack) see [translation_process.md](https://github.com/CreaCoin-Project/CreaCoin/blob/master/doc/translation_process.md#synchronising-translations).
 
 Before every minor and major release:
 
@@ -24,12 +24,12 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/amsterdamcoin-project/gitian.sigs.git
-    git clone https://github.com/amsterdamcoin-project/amsterdamcoin-detached-sigs.git
+    git clone https://github.com/creacoin-project/gitian.sigs.git
+    git clone https://github.com/creacoin-project/creacoin-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
     git clone https://github.com/CoinProjectsAmsterdamCoin-v4.git
 
-### AmsterdamCoin maintainers/release engineers, suggestion for writing release notes
+### CreaCoin maintainers/release engineers, suggestion for writing release notes
 
 Write release notes. git shortlog helps a lot, for example:
 
@@ -50,7 +50,7 @@ If you're using the automated script (found in [contrib/gitian-build.sh](/contri
 
 Setup Gitian descriptors:
 
-    pushd ./amsterdamcoin
+    pushd ./creacoin
     export SIGNER=(your Gitian key, ie bluematt, sipa, etc)
     export VERSION=(new version, e.g. 0.8.0)
     git fetch
@@ -84,7 +84,7 @@ Create the OS X SDK tarball, see the [OS X readme](README_osx.md) for details, a
 By default, Gitian will fetch source files as needed. To cache them ahead of time:
 
     pushd ./gitian-builder
-    make -C ../amsterdamcoin/depends download SOURCES_PATH=`pwd`/cache/common
+    make -C ../creacoin/depends download SOURCES_PATH=`pwd`/cache/common
     popd
 
 Only missing files will be fetched, so this is safe to re-run for each build.
@@ -92,55 +92,55 @@ Only missing files will be fetched, so this is safe to re-run for each build.
 NOTE: Offline builds must use the --url flag to ensure Gitian fetches only from local URLs. For example:
 
     pushd ./gitian-builder
-    ./bin/gbuild --url amsterdamcoin=/path/to/amsterdamcoin,signature=/path/to/sigs {rest of arguments}
+    ./bin/gbuild --url creacoin=/path/to/creacoin,signature=/path/to/sigs {rest of arguments}
     popd
 
 The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 
-### Build and sign AmsterdamCoin Core for Linux, Windows, and OS X:
+### Build and sign CreaCoin Core for Linux, Windows, and OS X:
 
     pushd ./gitian-builder
-    ./bin/gbuild --memory 3000 --commit amsterdamcoin=v${VERSION} ../amsterdamcoin/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../amsterdamcoin/contrib/gitian-descriptors/gitian-linux.yml
-    mv build/out/amsterdamcoin-*.tar.gz build/out/src/amsterdamcoin-*.tar.gz ../
+    ./bin/gbuild --memory 3000 --commit creacoin=v${VERSION} ../creacoin/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../creacoin/contrib/gitian-descriptors/gitian-linux.yml
+    mv build/out/creacoin-*.tar.gz build/out/src/creacoin-*.tar.gz ../
 
-    ./bin/gbuild --memory 3000 --commit amsterdamcoin=v${VERSION} ../amsterdamcoin/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../amsterdamcoin/contrib/gitian-descriptors/gitian-win.yml
-    mv build/out/amsterdamcoin-*-win-unsigned.tar.gz inputs/amsterdamcoin-win-unsigned.tar.gz
-    mv build/out/amsterdamcoin-*.zip build/out/amsterdamcoin-*.exe ../
+    ./bin/gbuild --memory 3000 --commit creacoin=v${VERSION} ../creacoin/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs/ ../creacoin/contrib/gitian-descriptors/gitian-win.yml
+    mv build/out/creacoin-*-win-unsigned.tar.gz inputs/creacoin-win-unsigned.tar.gz
+    mv build/out/creacoin-*.zip build/out/creacoin-*.exe ../
 
-    ./bin/gbuild --memory 3000 --commit amsterdamcoin=v${VERSION} ../amsterdamcoin/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../amsterdamcoin/contrib/gitian-descriptors/gitian-osx.yml
-    mv build/out/amsterdamcoin-*-osx-unsigned.tar.gz inputs/amsterdamcoin-osx-unsigned.tar.gz
-    mv build/out/amsterdamcoin-*.tar.gz build/out/amsterdamcoin-*.dmg ../
+    ./bin/gbuild --memory 3000 --commit creacoin=v${VERSION} ../creacoin/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs/ ../creacoin/contrib/gitian-descriptors/gitian-osx.yml
+    mv build/out/creacoin-*-osx-unsigned.tar.gz inputs/creacoin-osx-unsigned.tar.gz
+    mv build/out/creacoin-*.tar.gz build/out/creacoin-*.dmg ../
 
-    ./bin/gbuild --memory 3000 --commit amsterdamcoin=v${VERSION} ../amsterdamcoin/contrib/gitian-descriptors/gitian-aarch64.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../amsterdamcoin/contrib/gitian-descriptors/gitian-aarch64.yml
-    mv build/out/amsterdamcoin-*.tar.gz build/out/src/amsterdamcoin-*.tar.gz ../
+    ./bin/gbuild --memory 3000 --commit creacoin=v${VERSION} ../creacoin/contrib/gitian-descriptors/gitian-aarch64.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs/ ../creacoin/contrib/gitian-descriptors/gitian-aarch64.yml
+    mv build/out/creacoin-*.tar.gz build/out/src/creacoin-*.tar.gz ../
     popd
 
 Build output expected:
 
-  1. source tarball (`amsterdamcoin-${VERSION}.tar.gz`)
-  2. linux 32-bit and 64-bit dist tarballs (`amsterdamcoin-${VERSION}-linux[32|64].tar.gz`)
-  3. windows 32-bit and 64-bit unsigned installers and dist zips (`amsterdamcoin-${VERSION}-win[32|64]-setup-unsigned.exe`, `amsterdamcoin-${VERSION}-win[32|64].zip`)
-  4. OS X unsigned installer and dist tarball (`amsterdamcoin-${VERSION}-osx-unsigned.dmg`, `amsterdamcoin-${VERSION}-osx64.tar.gz`)
+  1. source tarball (`creacoin-${VERSION}.tar.gz`)
+  2. linux 32-bit and 64-bit dist tarballs (`creacoin-${VERSION}-linux[32|64].tar.gz`)
+  3. windows 32-bit and 64-bit unsigned installers and dist zips (`creacoin-${VERSION}-win[32|64]-setup-unsigned.exe`, `creacoin-${VERSION}-win[32|64].zip`)
+  4. OS X unsigned installer and dist tarball (`creacoin-${VERSION}-osx-unsigned.dmg`, `creacoin-${VERSION}-osx64.tar.gz`)
   5. Gitian signatures (in `gitian.sigs/${VERSION}-<linux|{win,osx}-unsigned>/(your Gitian key)/`)
 
 ### Verify other gitian builders signatures to your own. (Optional)
 
 Add other gitian builders keys to your gpg keyring, and/or refresh keys.
 
-    gpg --import amsterdamcoin/contrib/gitian-keys/*.pgp
+    gpg --import creacoin/contrib/gitian-keys/*.pgp
     gpg --refresh-keys
 
 Verify the signatures
 
     pushd ./gitian-builder
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../amsterdamcoin/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../amsterdamcoin/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../amsterdamcoin/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../amsterdamcoin/contrib/gitian-descriptors/gitian-aarch64.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-linux ../creacoin/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-unsigned ../creacoin/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-unsigned ../creacoin/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-aarch64 ../creacoin/contrib/gitian-descriptors/gitian-aarch64.yml
     popd
 
 ### Next steps:
@@ -162,22 +162,22 @@ Codesigner only: Create Windows/OS X detached signatures:
 
 Codesigner only: Sign the osx binary:
 
-    transfer amsterdamcoin-osx-unsigned.tar.gz to osx for signing
-    tar xf amsterdamcoin-osx-unsigned.tar.gz
+    transfer creacoin-osx-unsigned.tar.gz to osx for signing
+    tar xf creacoin-osx-unsigned.tar.gz
     ./detached-sig-create.sh -s "Key ID"
     Enter the keychain password and authorize the signature
     Move signature-osx.tar.gz back to the gitian host
 
 Codesigner only: Sign the windows binaries:
 
-    tar xf amsterdamcoin-win-unsigned.tar.gz
+    tar xf creacoin-win-unsigned.tar.gz
     ./detached-sig-create.sh -key /path/to/codesign.key
     Enter the passphrase for the key when prompted
     signature-win.tar.gz will be created
 
 Codesigner only: Commit the detached codesign payloads:
 
-    cd ~/amsterdamcoin-detached-sigs
+    cd ~/creacoin-detached-sigs
     checkout the appropriate branch for this release series
     rm -rf *
     tar xf signature-osx.tar.gz
@@ -190,25 +190,25 @@ Codesigner only: Commit the detached codesign payloads:
 Non-codesigners: wait for Windows/OS X detached signatures:
 
 - Once the Windows/OS X builds each have 3 matching signatures, they will be signed with their respective release keys.
-- Detached signatures will then be committed to the [amsterdamcoin-detached-sigs](https://github.com/AmsterdamCoin-Project/amsterdamcoin-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
+- Detached signatures will then be committed to the [creacoin-detached-sigs](https://github.com/CreaCoin-Project/creacoin-detached-sigs) repository, which can be combined with the unsigned apps to create signed binaries.
 
 Create (and optionally verify) the signed OS X binary:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../amsterdamcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../amsterdamcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../amsterdamcoin/contrib/gitian-descriptors/gitian-osx-signer.yml
-    mv build/out/amsterdamcoin-osx-signed.dmg ../amsterdamcoin-${VERSION}-osx.dmg
+    ./bin/gbuild -i --commit signature=v${VERSION} ../creacoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs/ ../creacoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-osx-signed ../creacoin/contrib/gitian-descriptors/gitian-osx-signer.yml
+    mv build/out/creacoin-osx-signed.dmg ../creacoin-${VERSION}-osx.dmg
     popd
 
 Create (and optionally verify) the signed Windows binaries:
 
     pushd ./gitian-builder
-    ./bin/gbuild -i --commit signature=v${VERSION} ../amsterdamcoin/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../amsterdamcoin/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../amsterdamcoin/contrib/gitian-descriptors/gitian-win-signer.yml
-    mv build/out/amsterdamcoin-*win64-setup.exe ../amsterdamcoin-${VERSION}-win64-setup.exe
-    mv build/out/amsterdamcoin-*win32-setup.exe ../amsterdamcoin-${VERSION}-win32-setup.exe
+    ./bin/gbuild -i --commit signature=v${VERSION} ../creacoin/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs/ ../creacoin/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs/ -r ${VERSION}-win-signed ../creacoin/contrib/gitian-descriptors/gitian-win-signer.yml
+    mv build/out/creacoin-*win64-setup.exe ../creacoin-${VERSION}-win64-setup.exe
+    mv build/out/creacoin-*win32-setup.exe ../creacoin-${VERSION}-win32-setup.exe
     popd
 
 Commit your signature for the signed OS X/Windows binaries:
@@ -230,23 +230,23 @@ sha256sum * > SHA256SUMS
 
 The list of files should be:
 ```
-amsterdamcoin-${VERSION}-aarch64-linux-gnu.tar.gz
-amsterdamcoin-${VERSION}-arm-linux-gnueabihf.tar.gz
-amsterdamcoin-${VERSION}-i686-pc-linux-gnu.tar.gz
-amsterdamcoin-${VERSION}-x86_64-linux-gnu.tar.gz
-amsterdamcoin-${VERSION}-osx64.tar.gz
-amsterdamcoin-${VERSION}-osx.dmg
-amsterdamcoin-${VERSION}.tar.gz
-amsterdamcoin-${VERSION}-win32-setup.exe
-amsterdamcoin-${VERSION}-win32.zip
-amsterdamcoin-${VERSION}-win64-setup.exe
-amsterdamcoin-${VERSION}-win64.zip
+creacoin-${VERSION}-aarch64-linux-gnu.tar.gz
+creacoin-${VERSION}-arm-linux-gnueabihf.tar.gz
+creacoin-${VERSION}-i686-pc-linux-gnu.tar.gz
+creacoin-${VERSION}-x86_64-linux-gnu.tar.gz
+creacoin-${VERSION}-osx64.tar.gz
+creacoin-${VERSION}-osx.dmg
+creacoin-${VERSION}.tar.gz
+creacoin-${VERSION}-win32-setup.exe
+creacoin-${VERSION}-win32.zip
+creacoin-${VERSION}-win64-setup.exe
+creacoin-${VERSION}-win64.zip
 ```
 The `*-debug*` files generated by the gitian build contain debug symbols
 for troubleshooting by developers. It is assumed that anyone that is interested
 in debugging can run gitian to generate the files for themselves. To avoid
 end-user confusion about which file to pick, as well as save storage
-space *do not upload these to the amsterdamcoin.org server*.
+space *do not upload these to the creacoin.org server*.
 
 - GPG-sign it, delete the unsigned file:
 ```
@@ -262,10 +262,10 @@ Note: check that SHA256SUMS itself doesn't end up in SHA256SUMS, which is a spur
 
   - bitcointalk announcement thread
 
-  - Optionally twitter, reddit /r/amsterdamcoin, ... but this will usually sort out itself
+  - Optionally twitter, reddit /r/creacoin, ... but this will usually sort out itself
 
   - Archive release notes for the new version to `doc/release-notes/` (branch `master` and branch of the release)
 
-  - Create a [new GitHub release](https://github.com/AmsterdamCoin-Project/AmsterdamCoin/releases/new) with a link to the archived release notes.
+  - Create a [new GitHub release](https://github.com/CreaCoin-Project/CreaCoin/releases/new) with a link to the archived release notes.
 
   - Celebrate

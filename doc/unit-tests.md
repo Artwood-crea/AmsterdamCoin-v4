@@ -12,7 +12,7 @@ To add more amsterdamcoind tests, add `BOOST_AUTO_TEST_CASE` functions to the ex
 .cpp files in the test/ directory or add new .cpp files that
 implement new BOOST_AUTO_TEST_SUITE sections.
 
-To run the amsterdamcoin-qt tests manually, launch src/qt/test/amsterdamcoin-qt_test
+To run the creacoin-qt tests manually, launch src/qt/test/creacoin-qt_test
 
-To add more amsterdamcoin-qt tests, add them to the `src/qt/test/` directory and
+To add more creacoin-qt tests, add them to the `src/qt/test/` directory and
 the `src/qt/test/test_main.cpp` file.

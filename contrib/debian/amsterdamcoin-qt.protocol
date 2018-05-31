@@ -1,6 +1,6 @@
 [Protocol]
-exec=amsterdamcoin-qt '%u'
-protocol=amsterdamcoin
+exec=creacoin-qt '%u'
+protocol=creacoin
 input=none
 output=none
 helper=true

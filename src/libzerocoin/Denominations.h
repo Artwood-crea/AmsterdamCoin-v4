@@ -3,7 +3,7 @@
  *
  * @brief      Denomination info for the Zerocoin library.
  *
- * @copyright  Copyright 2017 AmsterdamCoin Developers
+ * @copyright  Copyright 2017 CreaCoin Developers
  * @license    This project is released under the MIT license.
  **/
 

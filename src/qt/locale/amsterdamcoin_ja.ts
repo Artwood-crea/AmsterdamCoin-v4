@@ -266,6 +266,6 @@
     <name>ZAMSControlDialog</name>
     </context>
 <context>
-    <name>amsterdamcoin-core</name>
+    <name>creacoin-core</name>
     </context>
 </TS>

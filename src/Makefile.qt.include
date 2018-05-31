@@ -1,7 +1,7 @@
-bin_PROGRAMS += qt/amsterdamcoin-qt
+bin_PROGRAMS += qt/creacoin-qt
 EXTRA_LIBRARIES += qt/libbitcoinqt.a
 
-# amsterdamcoin qt core #
+# creacoin qt core #
 QT_TS = \
   qt/locale/amsterdamcoin_bg.ts \
   qt/locale/amsterdamcoin_ca.ts \
@@ -114,14 +114,14 @@ BITCOIN_MM = \
   qt/macnotificationhandler.mm
 
 QT_MOC = \
-  qt/amsterdamcoin.moc \
+  qt/creacoin.moc \
   qt/bitcoinamountfield.moc \
   qt/intro.moc \
   qt/overviewpage.moc \
   qt/rpcconsole.moc
 
 QT_QRC_CPP = qt/qrc_amsterdamcoin.cpp
-QT_QRC = qt/amsterdamcoin.qrc
+QT_QRC = qt/creacoin.qrc
 QT_QRC_LOCALE_CPP = qt/qrc_amsterdamcoin_locale.cpp
 QT_QRC_LOCALE = qt/amsterdamcoin_locale.qrc
 
@@ -332,7 +332,7 @@ RES_CSS = \
 
 RES_MOVIES = $(wildcard $(srcdir)/qt/res/movies/spinner-*.png)
 
-BITCOIN_RC = qt/res/amsterdamcoin-qt-res.rc
+BITCOIN_RC = qt/res/creacoin-qt-res.rc
 
 BITCOIN_QT_INCLUDES = -I$(builddir)/qt -I$(srcdir)/qt -I$(srcdir)/qt/forms \
   -I$(builddir)/qt/forms
@@ -359,11 +359,11 @@ $(qt_libbitcoinqt_a_OBJECTS) $(qt_amsterdamcoin_qt_OBJECTS) : | $(QT_MOC)
 $(QT_MOC): $(PROTOBUF_H)
 $(QT_MOC_CPP): $(PROTOBUF_H)
 
-# amsterdamcoin-qt binary #
+# creacoin-qt binary #
 qt_amsterdamcoin_qt_CPPFLAGS = $(BITCOIN_INCLUDES) $(BITCOIN_QT_INCLUDES) \
   $(QT_INCLUDES) $(PROTOBUF_CFLAGS) $(QR_CFLAGS)
 
-qt_amsterdamcoin_qt_SOURCES = qt/amsterdamcoin.cpp
+qt_amsterdamcoin_qt_SOURCES = qt/creacoin.cpp
 if TARGET_DARWIN
   qt_amsterdamcoin_qt_SOURCES += $(BITCOIN_MM)
 endif
@@ -404,7 +404,7 @@ $(QT_QRC_LOCALE_CPP): $(QT_QRC_LOCALE) $(QT_QM)
 
 $(QT_QRC_CPP): $(QT_QRC) $(QT_FORMS_H) $(RES_ICONS) $(RES_IMAGES) $(RES_CSS) $(RES_MOVIES) $(PROTOBUF_H)
 	@test -f $(RCC)
-	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name amsterdamcoin $< | \
+	$(AM_V_GEN) QT_SELECT=$(QT_SELECT) $(RCC) -name creacoin $< | \
 	  $(SED) -e '/^\*\*.*Created:/d' -e '/^\*\*.*by:/d' > $@
 
 CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda qt/*.gcno
@@ -412,9 +412,9 @@ CLEAN_QT = $(nodist_qt_libbitcoinqt_a_SOURCES) $(QT_QM) $(QT_FORMS_H) qt/*.gcda 
 CLEANFILES += $(CLEAN_QT)
 
 amsterdamcoin_qt_clean: FORCE
-	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_amsterdamcoin_qt_OBJECTS) qt/amsterdamcoin-qt$(EXEEXT) $(LIBBITCOINQT)
+	rm -f $(CLEAN_QT) $(qt_libbitcoinqt_a_OBJECTS) $(qt_amsterdamcoin_qt_OBJECTS) qt/creacoin-qt$(EXEEXT) $(LIBBITCOINQT)
 
-amsterdamcoin_qt : qt/amsterdamcoin-qt$(EXEEXT)
+amsterdamcoin_qt : qt/creacoin-qt$(EXEEXT)
 
 ui_%.h: %.ui
 	@test -f $(UIC)

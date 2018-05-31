@@ -3,11 +3,11 @@
  *
  * @brief      Denomination functions for the Zerocoin library.
  *
- * @copyright  Copyright 2017 AmsterdamCoin Developers
+ * @copyright  Copyright 2017 CreaCoin Developers
  * @license    This project is released under the MIT license.
  **/
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2017-2018 The AmsterdamCoin developers
+// Copyright (c) 2017-2018 The CreaCoin developers
 
 #include "denomination_functions.h"
 

@@ -2,7 +2,7 @@
 // Copyright (c) 2009-2014 The Bitcoin developers
 // Copyright (c) 2014-2015 The Dash developers
 // Copyright (c) 2015-2017 The PIVX developers
-// Copyright (c) 2015-2017 The AmsterdamCoin developers
+// Copyright (c) 2015-2017 The CreaCoin developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -238,10 +238,10 @@ Value stop(const Array& params, bool fHelp)
     if (fHelp || params.size() > 1)
         throw runtime_error(
             "stop\n"
-            "\nStop AmsterdamCoin server.");
+            "\nStop CreaCoin server.");
     // Shutdown will take long enough that the response should get back
     StartShutdown();
-    return "AmsterdamCoin server stopping";
+    return "CreaCoin server stopping";
 }
 
 
@@ -319,36 +319,36 @@ static const CRPCCommand vRPCCommands[] =
         {"hidden", "reconsiderblock", &reconsiderblock, true, true, false},
         {"hidden", "setmocktime", &setmocktime, true, false, false},
 
-        /* AmsterdamCoin features */
-        {"amsterdamcoin", "masternode", &masternode, true, true, false},
-        {"amsterdamcoin", "listmasternodes", &listmasternodes, true, true, false},
-        {"amsterdamcoin", "getmasternodecount", &getmasternodecount, true, true, false},
-        {"amsterdamcoin", "masternodeconnect", &masternodeconnect, true, true, false},
-        {"amsterdamcoin", "masternodecurrent", &masternodecurrent, true, true, false},
-        {"amsterdamcoin", "masternodedebug", &masternodedebug, true, true, false},
-        {"amsterdamcoin", "startmasternode", &startmasternode, true, true, false},
-        {"amsterdamcoin", "createmasternodekey", &createmasternodekey, true, true, false},
-        {"amsterdamcoin", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
-        {"amsterdamcoin", "listmasternodeconf", &listmasternodeconf, true, true, false},
-        {"amsterdamcoin", "getmasternodestatus", &getmasternodestatus, true, true, false},
-        {"amsterdamcoin", "getmasternodewinners", &getmasternodewinners, true, true, false},
-        {"amsterdamcoin", "getmasternodescores", &getmasternodescores, true, true, false},
-        {"amsterdamcoin", "mnbudget", &mnbudget, true, true, false},
-        {"amsterdamcoin", "preparebudget", &preparebudget, true, true, false},
-        {"amsterdamcoin", "submitbudget", &submitbudget, true, true, false},
-        {"amsterdamcoin", "mnbudgetvote", &mnbudgetvote, true, true, false},
-        {"amsterdamcoin", "getbudgetvotes", &getbudgetvotes, true, true, false},
-        {"amsterdamcoin", "getnextsuperblock", &getnextsuperblock, true, true, false},
-        {"amsterdamcoin", "getbudgetprojection", &getbudgetprojection, true, true, false},
-        {"amsterdamcoin", "getbudgetinfo", &getbudgetinfo, true, true, false},
-        {"amsterdamcoin", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
-        {"amsterdamcoin", "mnfinalbudget", &mnfinalbudget, true, true, false},
-        {"amsterdamcoin", "checkbudgets", &checkbudgets, true, true, false},
-        {"amsterdamcoin", "mnsync", &mnsync, true, true, false},
-        {"amsterdamcoin", "spork", &spork, true, true, false},
-        {"amsterdamcoin", "getpoolinfo", &getpoolinfo, true, true, false},
+        /* CreaCoin features */
+        {"creacoin", "masternode", &masternode, true, true, false},
+        {"creacoin", "listmasternodes", &listmasternodes, true, true, false},
+        {"creacoin", "getmasternodecount", &getmasternodecount, true, true, false},
+        {"creacoin", "masternodeconnect", &masternodeconnect, true, true, false},
+        {"creacoin", "masternodecurrent", &masternodecurrent, true, true, false},
+        {"creacoin", "masternodedebug", &masternodedebug, true, true, false},
+        {"creacoin", "startmasternode", &startmasternode, true, true, false},
+        {"creacoin", "createmasternodekey", &createmasternodekey, true, true, false},
+        {"creacoin", "getmasternodeoutputs", &getmasternodeoutputs, true, true, false},
+        {"creacoin", "listmasternodeconf", &listmasternodeconf, true, true, false},
+        {"creacoin", "getmasternodestatus", &getmasternodestatus, true, true, false},
+        {"creacoin", "getmasternodewinners", &getmasternodewinners, true, true, false},
+        {"creacoin", "getmasternodescores", &getmasternodescores, true, true, false},
+        {"creacoin", "mnbudget", &mnbudget, true, true, false},
+        {"creacoin", "preparebudget", &preparebudget, true, true, false},
+        {"creacoin", "submitbudget", &submitbudget, true, true, false},
+        {"creacoin", "mnbudgetvote", &mnbudgetvote, true, true, false},
+        {"creacoin", "getbudgetvotes", &getbudgetvotes, true, true, false},
+        {"creacoin", "getnextsuperblock", &getnextsuperblock, true, true, false},
+        {"creacoin", "getbudgetprojection", &getbudgetprojection, true, true, false},
+        {"creacoin", "getbudgetinfo", &getbudgetinfo, true, true, false},
+        {"creacoin", "mnbudgetrawvote", &mnbudgetrawvote, true, true, false},
+        {"creacoin", "mnfinalbudget", &mnfinalbudget, true, true, false},
+        {"creacoin", "checkbudgets", &checkbudgets, true, true, false},
+        {"creacoin", "mnsync", &mnsync, true, true, false},
+        {"creacoin", "spork", &spork, true, true, false},
+        {"creacoin", "getpoolinfo", &getpoolinfo, true, true, false},
 #ifdef ENABLE_WALLET
-        {"amsterdamcoin", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
+        {"creacoin", "obfuscation", &obfuscation, false, false, true}, /* not threadSafe because of SendMoney */
 
         /* Wallet */
         {"wallet", "addmultisigaddress", &addmultisigaddress, true, false, true},
@@ -627,7 +627,7 @@ void StartRPCThreads()
         unsigned char rand_pwd[32];
         GetRandBytes(rand_pwd, 32);
         uiInterface.ThreadSafeMessageBox(strprintf(
-                                             _("To use amsterdamcoind, or the -server option to amsterdamcoin-qt, you must set an rpcpassword in the configuration file:\n"
+                                             _("To use amsterdamcoind, or the -server option to creacoin-qt, you must set an rpcpassword in the configuration file:\n"
                                                "%s\n"
                                                "It is recommended you use the following random password:\n"
                                                "rpcuser=amsterdamcoinrpc\n"
@@ -636,7 +636,7 @@ void StartRPCThreads()
                                                "The username and password MUST NOT be the same.\n"
                                                "If the file does not exist, create it with owner-readable-only file permissions.\n"
                                                "It is also recommended to set alertnotify so you are notified of problems;\n"
-                                               "for example: alertnotify=echo %%s | mail -s \"AmsterdamCoin Alert\" admin@foo.com\n"),
+                                               "for example: alertnotify=echo %%s | mail -s \"CreaCoin Alert\" admin@foo.com\n"),
                                              GetConfigFile().string(),
                                              EncodeBase58(&rand_pwd[0], &rand_pwd[0] + 32)),
             "", CClientUIInterface::MSG_ERROR | CClientUIInterface::SECURE);
@@ -1087,7 +1087,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(string methodname, string args)
 {
-    return "> amsterdamcoin-cli " + methodname + " " + args + "\n";
+    return "> creacoin-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(string methodname, string args)
